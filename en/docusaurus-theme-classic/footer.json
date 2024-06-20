@@ -1,0 +1,22 @@
+{
+  "link.title.Liens": {
+    "message": "Links",
+    "description": "The title of the footer links column with title=Liens in the footer"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/Dicelette/discord-dicelette"
+  },
+  "link.item.label.Invitation": {
+    "message": "Invitation",
+    "description": "The label of footer link with label=Invitation linking to https://discord.com/oauth2/authorize?client_id=839830334315141120&permissions=8&scope=bot"
+  },
+  "copyright": {
+    "message": "GPLv3 License © 2024 Dicelette",
+    "description": "The footer copyright"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/5w2guxa2kS"
+  }
+}

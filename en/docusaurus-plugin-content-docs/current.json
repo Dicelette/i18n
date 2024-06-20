@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.model.category.Registering": {
+    "message": "Registering",
+    "description": "The label for category Registering in sidebar model"
+  },
+  "sidebar.introduction.category.Usage": {
+    "message": "Usage",
+    "description": "The label for category Usage in sidebar introduction"
+  }
+}
