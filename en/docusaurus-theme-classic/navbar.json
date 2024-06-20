@@ -11,10 +11,6 @@
     "message": "Introduction",
     "description": "Navbar item with label Introduction"
   },
-  "item.label.Fiches": {
-    "message": "Characters Sheets",
-    "description": "Navbar item with label Fiches"
-  },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
@@ -23,12 +19,16 @@
     "message": "Dice and notation",
     "description": "Navbar item with label Dés et notation"
   },
-  "item.label.Commandes": {
-    "message": "Commands",
-    "description": "Navbar item with label Commandes"
-  },
   "item.label.CGU": {
     "message": "TOS",
     "description": "Navbar item with label CGU"
+  },
+  "item.label.Administration": {
+    "message": "Administration",
+    "description": "Navbar item with label Administration"
+  },
+  "item.label.Usage": {
+    "message": "Usage",
+    "description": "Navbar item with label Usage"
   }
 }

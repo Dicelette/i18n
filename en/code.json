@@ -575,6 +575,6 @@
     "message": "The skill dices were incorrectly filled in."
   },
   "Trop de statistiques (max : 25)": {
-    "message": "Trop de statistiques (max : 25)"
+    "message": "Too many statistics (max: 25)"
   }
 }
