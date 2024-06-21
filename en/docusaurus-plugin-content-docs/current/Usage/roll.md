@@ -1,6 +1,6 @@
 ---
-title: Roll dice & scenes
-sidebar_position: 3
+title: Dice rolling & scenes
+sidebar_position: 2
 ---
 
 ## Dice Rolling

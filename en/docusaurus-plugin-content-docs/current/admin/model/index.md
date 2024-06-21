@@ -1,19 +1,20 @@
 ---
-title: Registering
+title: Model registering
 sidebar_position: 1
 ---
 First, you need to **generate** a new template. To do this, use the command `/register`, followed by the name of the template. More over, you can generate a server template with the following command: `/generate`.
 
 This command will allow you to create a new `JSON` file, with the following (optional) parameters:
-- `name`: The name of the statistics to be separated by a space or a comma. If any of the statistics contain a space, you must surround it with quotation marks. For example: `"Intelligence Logic", Strength, Dexterity`.
-- `die`: The type of dice to roll, which can contain a formula (see [#dice](#dice)).
-- `total`: If, when creating, your players have a number of points to distribute. Unfortunately, it is not possible to set conditions for this total (for example, depending on the character's age, they will have only 60 points, while an older character will have 70). In these cases, it is better to choose the highest value and check manually.
-- `character`: You can make entering a character name mandatory with this option.
-- `critical_success`: In natural dice rolls, if a die falls on this value, it is considered a critical success.
-- `critical_failure`: In natural dice rolls, if a die falls on this value, it is considered a critical failure.
-- `skill`: Allows defining (when the template is edited before saving) the addition of fields for skill (or attack) dice. Like the name, you must separate the values with a comma.
 
-For template examples, you can consult the `template` files [here](https://github.com/Dicelette/discord-dicelette/tree/main/template) or [here](register/template).
+- `name`: The name of the statistics, separated by commas. If a name contains a space, enclose it in quotation marks.
+- `dice`: The type of dice to be rolled, which may include a formula.
+- `total`: The total number of points that players can distribute.
+- `character`: Make it compulsory to enter a character name.
+- `critical_success`: The value considered a critical success.
+- `critical_failure`: The value considered a critical failure.
+- `skill`: Add fields for skill or attack dice.
+
+For template examples, you can consult the `template` files [here](https://github.com/Dicelette/discord-dicelette/tree/main/template).
 
 :::info
 Statistics and dice are optional:
@@ -94,9 +95,9 @@ The embed will be pinned for easy access.
 If the sheet is not marked as private but is published in a channel that users do not normally have access to, they will still be able to see the sheet with the `/display` and `/graph` commands.
 :::
 
-
 ![embed](/assets/register/embed_template.png)
 
-:::warning Caution
-The `#user_chan` and `#private_character` channels cannot be changed after registration, as they are saved globally in the database.
+:::warning About default channel
+You need to re-register the template if you want to change the default channel for private and public sheet. But, saved user doesn't needs to be re-registered as the channel & messageID are saved in the database.
+If you need to move all the sheets to another channel, you need to use the [`/export`](../config/import_export.md) command.
 :::

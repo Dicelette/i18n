@@ -17,3 +17,6 @@ This bot detects dice notation and sends the result using three methods:
    - Example: `1d20 My message`
    - The initially found die will be rolled, and the rest of the message will be sent in the log, considered as a comment.
    ![Semi-direct](/assets/rolls/semi-direct.gif)
+
+
+It is also possible to use slashcommands to throw dice, like `/roll` ([see here for more information](../Usage/roll.md))  

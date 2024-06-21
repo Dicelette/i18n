@@ -1,5 +1,5 @@
 ---
-title: Editing an user refsheet
+title: Editing an user sheet
 sidebar_position: 3
 ---
 
@@ -57,6 +57,6 @@ As with statistics, it is essential to adhere to the list and its syntax. You ca
 
 ![edit dice](/assets/edit/edit_dice.png)
 
-## Adding a New Die
+## Adding a new dice
 
 Adding a die works exactly like when recording a character.
