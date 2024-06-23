@@ -4,8 +4,8 @@ sidebar_position: 3
 ---
 
 :::usage
-- **`/config auto_role dice (@role)**
-- **`/config auto_role stats (@role)**
+- **`/config auto_role dice (@role)`**
+- **`/config auto_role stats (@role)`**
 :::
 
 Theses commands allow to automatically add role when:

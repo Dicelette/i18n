@@ -18,8 +18,8 @@ This function is extended to the `/gm dbd` command, as the dice listed will be b
 ## Help
 
 There are several help commands, depending on what you need:
-- `info help`: Displays general bot info, including how to roll a die or create a scene.
-- `admin help`: Displays administration commands, such as [logs](../admin/config/index.md#administration-logs) or [result_channel](../admin/config/index.md#save-results-result_channel).
-- `/register help`: Displays specific help for registering a server model and character files, and directs you to [documentation](../admin/model/index.md).
-- `/bug help`: Displays a link to create a bug report.
-- `/suggestion help`: Displays a link to make a suggestion.
+- `/help info`: Displays general bot info, including how to roll a die or create a scene.
+- `/help admin`: Displays administration commands, such as [logs](../admin/config/index.md#administration-logs) or [result_channel](../admin/config/index.md#save-results-result_channel).
+- `/help register`: Displays specific help for registering a server model and character files, and directs you to [documentation](../admin/model/index.md).
+- `/help bug`: Displays a link to create a bug report.
+- `/help suggestion`: Displays a link to make a suggestion.
