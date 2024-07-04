@@ -3,12 +3,12 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.model.category.Enregistrement d'un Modèle": {
-    "message": "Registering a sheet template",
-    "description": "The label for category Enregistrement d'un Modèle in sidebar model"
+  "sidebar.model.category.Model registering": {
+    "message": "Model registering",
+    "description": "The label for category Model registering in sidebar model"
   },
-  "sidebar.model.category.Configuration générale": {
-    "message": "General configuration",
-    "description": "The label for category Configuration générale in sidebar model"
+  "sidebar.model.category.General Configuration": {
+    "message": "General Configuration",
+    "description": "The label for category General Configuration in sidebar model"
   }
 }
