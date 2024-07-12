@@ -10,9 +10,23 @@ Once the user is validated, their character sheet will be automatically publishe
 Only the template and the user will always be present, unless no die type and no critical success/failure have been recorded in the template.
 
 If all information is saved, you will have access to three buttons:
+- Edit avatar (embed thumbnail)
 - Edit Statistics
 - Edit Saved Dice (which allows saving multiple new dice, but shh...)
 - Add a New Die.
+
+## Editing the avatar image
+
+![edit avatar](/assets/edit/edit_avatar.png)
+
+:::warning
+Images stored on Discord cannot be used as their links change regularly. It is therefore mandatory to use external links, for example, by using [imgur](https://imgur.com/).
+[See here for more information](https://www.bleepingcomputer.com/news/security/discord-will-switch-to-temporary-file-links-to-block-malware-delivery/).
+:::
+
+If you're using an older version of the files, you can modify the image with the command [`/edit_avatar`](../Usage/model.mdx#edit-avatar-edit_avatar).
+
+### Edit avatar (`/edit_avatar`)
 
 ## Editing Statistics
 

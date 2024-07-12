@@ -51,7 +51,7 @@ The `dbd` command allows rolling a registered die.
 
 ## Others
 
-The following two commands accept :
+The following three commands accept :
 - `(@player)` : The player's name
 - `(*character)` : And/or the character's name
 
@@ -68,7 +68,7 @@ The `display` command allows you to view the statistics and dice of a character 
 ### Graph (`/graph`)
 
 :::usage
-**`/graph (@joueur) (*personnage) (ligne) (fond) (min) (max)`**
+**`/graph (@player) (*character) (line) (bg) (min) (max)`**
 :::
 
 The `/graph` command is a "gimmick" feature that generates a graph from a character's statistics. 
@@ -88,3 +88,20 @@ By default:
    - If neither of the two previous options is available, it will be based on the die value (for example, if `1d20`, the value will be 20).
    - As a last resort, it will be automatically calculated based on the user's statistics.
 ![graph](/assets/graph.jpg)
+
+### Edit avatar (`/edit_avatar`)
+:::usage
+**`/edit_avatar [url] (@player) (*character)`**
+:::
+
+The `edit_avatar` command lets you modify the image of a character stored in the database.
+This will change the embedding of the character sheet.
+
+By default, the command will modify the image of the person who used it. Only moderators can modify the image of another player.
+
+:::warning
+Images stored on Discord cannot be used as their links change regularly. It is therefore mandatory to use external links, for example, by using [imgur](https://imgur.com/).
+[See here for more information](https://www.bleepingcomputer.com/news/security/discord-will-switch-to-temporary-file-links-to-block-malware-delivery/).
+:::
+
+If the embed doesn't have the `[MODIFY IMAGE]` button, the button will be automatically added by the command.
