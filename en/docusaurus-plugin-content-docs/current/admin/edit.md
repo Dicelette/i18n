@@ -17,7 +17,7 @@ If all information is saved, you will have access to three buttons:
 
 ## Editing the avatar image
 
-![edit avatar](/assets/edit/dit_image.png)
+![edit avatar](/assets/edit/edit_image.png)
 
 :::warning
 Images stored on Discord cannot be used as their links change regularly. It is therefore mandatory to use external links, for example, by using [imgur](https://imgur.com/).
