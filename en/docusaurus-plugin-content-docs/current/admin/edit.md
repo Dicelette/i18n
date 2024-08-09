@@ -25,6 +25,8 @@ If you are using a old version of the bot, you will have to use the following co
 - [`/edit rename`](../Usage/model.mdx#rename)
 - [`/edit user`](../Usage/model.mdx#user)
 
+To add the new button.
+
 ### Editing the avatar image
 
 ![edit avatar](/assets/edit/edit_image.png)
