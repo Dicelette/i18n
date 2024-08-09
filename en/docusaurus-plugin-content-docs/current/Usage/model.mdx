@@ -89,9 +89,12 @@ By default:
    - As a last resort, it will be automatically calculated based on the user's statistics.
 ![graph](/assets/graph.jpg)
 
-### Edit avatar (`/edit_avatar`)
+### Edit user (`/edit`)
+If the embed doesn't have the `select` button, it will be automatically added by the command.
+
+#### Avatar (`/edit avatar`)
 :::usage
-**`/edit_avatar [url] (@player) (*character)`**
+**`/edit avatar [url] (@player) (*character)`**
 :::
 
 The `edit_avatar` command lets you modify the image of a character stored in the database.
@@ -104,4 +107,29 @@ Images stored on Discord cannot be used as their links change regularly. It is t
 [See here for more information](https://www.bleepingcomputer.com/news/security/discord-will-switch-to-temporary-file-links-to-block-malware-delivery/).
 :::
 
-If the embed doesn't have the `[MODIFY IMAGE]` button, the button will be automatically added by the command.
+
+#### Rename (`/edit rename`)
+
+:::usage
+**`/edit rename [new_name] (@player) (*character)`**
+:::
+
+Allow to rename a character.
+
+:::warning
+This command doesn't allow duplicate name. You need to use different name for each character.
+:::
+
+#### User (`/edit user`)
+
+:::usage
+**`/edit user [@new_user] (@player) (*character)`**
+:::
+
+Move a character from a player to a new user. 
+
+:::warning
+It's not a copy! It will delete the character from the previous user!
+:::
+
+The action will be undone in case of duplicate name.

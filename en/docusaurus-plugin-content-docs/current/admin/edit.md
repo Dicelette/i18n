@@ -10,12 +10,22 @@ Once the user is validated, their character sheet will be automatically publishe
 Only the template and the user will always be present, unless no die type and no critical success/failure have been recorded in the template.
 
 If all information is saved, you will have access to three buttons:
-- Edit avatar (embed thumbnail)
+- Edit user data : avatar (embed thumbnail), character name or move to another user,
 - Edit Statistics
 - Edit Saved Dice (which allows saving multiple new dice, but shh...)
 - Add a New Die.
 
-## Editing the avatar image
+## Edit user data
+
+![edit user data](/assets/edit/edit_user_fr.png)
+Each tree commands will open a modal to edit the corresponding data.
+
+If you are using a old version of the bot, you will have to use the following commands:
+- [`/edit avatar`](../Usage/model.mdx#edit-avatar-edit_avatar)
+- [`/edit rename`](../Usage/model.mdx#rename)
+- [`/edit user`](../Usage/model.mdx#user)
+
+### Editing the avatar image
 
 ![edit avatar](/assets/edit/edit_image.png)
 
@@ -24,9 +34,16 @@ Images stored on Discord cannot be used as their links change regularly. It is t
 [See here for more information](https://www.bleepingcomputer.com/news/security/discord-will-switch-to-temporary-file-links-to-block-malware-delivery/).
 :::
 
-If you're using an older version of the files, you can modify the image with the command [`/edit_avatar`](../Usage/model.mdx#edit-avatar-edit_avatar).
+### Rename a character
+![rename](/assets/edit/edit_rename_fr.png)
 
-### Edit avatar (`/edit_avatar`)
+As the command, it doesn't allow duplicate character name. Each character must have different name, or error will be throw.
+
+### Move to another user
+
+![move](/assets/edit/move_fr.png)
+
+It will **move** the character to another user, deleting the one on the old user. An error will be throw in case of duplicate, and action will be undone.
 
 ## Editing Statistics
 
