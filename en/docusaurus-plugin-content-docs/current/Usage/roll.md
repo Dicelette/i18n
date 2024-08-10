@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Dice Rolling
 
 :::usage
-**`/roll (argument)`**
+**`/roll (dice) (?hidden)`**
 :::
 
 You can also use the "semi-direct" notation by adding a comment: `/roll (dice comments)`.
@@ -14,6 +14,8 @@ You can also use the "semi-direct" notation by adding a comment: `/roll (dice co
 Please note that the "indirect" notation is not available in this mode.
 
 ![Roll](/assets/rolls/slash-commands.gif)
+
+The `hidden` option only works if the [hidden rolls](../admin/config/index.md#hidden-dice-hidden_roll) are enabled. If the option is set to true, the result will be sent as an ephemeral message, and use the configured channel (if any) to save the results.
 
 ## Creating a New Scene
 

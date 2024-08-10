@@ -19,6 +19,7 @@ Unless otherwise specified, all options are disabled by default.
 - Auto-complete fields are marked with a `*` : `(*fields)`.
 - Fields requiring a statement will be marked with `@` (`@fields`). These fields work with names (role or user, depending on the command) or Discord IDs. If the entry doesn't appear immediately, start typing the beginning of the name for auto-completion.
 - Similarly, commands requesting a channel are preceded by `#` like `#fields`.
+- Boolean fields are prefixed by `?` (`?fields`).
 
 ## Journalization
 ### Administration: `logs`
@@ -46,7 +47,7 @@ Sending the command without the "channel" argument will remove the results chann
 ### Disable auto thread creation: `disable_thread`
 
 :::usage
-**`/config disable_threads [true/false]`**
+**`/config disable_threads [?toggle]`**
 :::
 
 If the option is set to **true**, it disables the default creation of threads for dice rolls. Everything will be sent (without deletion) to the channel where the command was executed.
@@ -58,6 +59,20 @@ Channels and threads prefixed with `🎲` will no longer receive logs either.
 
 Setting the option to **false** reactivates the bot's normal behavior.
 
+### Hidden dice: `hidden_roll`
+
+:::usage
+**`/config hidden_roll [?toggle] (#channel)`**
+:::
+
+For `/gm` commands and `/roll` commands, allow to hide the dice roll for the players.
+
+There are two configuration possible:
+- If a channel is provided, this channel will be used for the saved dice, replacing `result_channel` when the option `hidden` is used in the roll. 
+- If no channel is provided, the dice will be hidden in the channel where the command was executed, and no saved dice will be created.
+
+In the two cases, the result will be send as [**ephemeral** message](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ), meaning there will be no trace of the dice roll in the channel where the command was executed after some times, and no one else than the roller will see the result.
+
 ## Displaying results
 
 Diverses options allows to personalize the display of the dice's results, whether in the save section or in the channel where the throw was made.
@@ -65,7 +80,7 @@ Diverses options allows to personalize the display of the dice's results, whethe
 ### Timestamp: `timestamp`
 
 :::usage
-**`/config timestamp [true/false]`**
+**`/config timestamp [?toggle]`**
 :::
 
 If the option is set to **true**, the timestamp will be displayed in the dice results.
@@ -95,7 +110,7 @@ This command allow to have both the result log in a dedicated channel (or in thr
 ### [Save] Link to the dice's context: `context`
 
 :::usage
-**`/config context [true/false]`**
+**`/config context [?toggle]`**
 :::
 
 Adds a link to the context of the die in the die save.
@@ -111,9 +126,10 @@ If the context message is deleted, the link will no longer work.
 ### [Dice throw] Link to the saved dice: `save_link`
 
 :::usage
-**`/config save_link [true/false]`**
+**`/config save_link [?toggle]`**
 :::
 
 Adds a link to the die backup in the die result message.
 
 ![Link to backup](/assets/rolls/config/backup_link.png)
+
