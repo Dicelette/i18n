@@ -17,7 +17,7 @@ If all information is saved, you will have access to three buttons:
 
 ## Edit user data
 
-![edit user data](/assets/edit/edit_user_fr.png)
+![](/assets/edit/french/user.png)
 Each tree commands will open a modal to edit the corresponding data.
 
 If you are using a old version of the bot, you will have to use the following commands:
@@ -29,7 +29,7 @@ To add the new button.
 
 ### Editing the avatar image
 
-![edit avatar](/assets/edit/edit_image.png)
+![edit image](/assets/edit/image.png)
 
 :::warning
 Images stored on Discord cannot be used as their links change regularly. It is therefore mandatory to use external links, for example, by using [imgur](https://imgur.com/).
@@ -37,19 +37,19 @@ Images stored on Discord cannot be used as their links change regularly. It is t
 :::
 
 ### Rename a character
-![rename](/assets/edit/edit_rename_fr.png)
+![rename](/assets/edit/french/rename.png)
 
 As the command, it doesn't allow duplicate character name. Each character must have different name, or error will be throw.
 
 ### Move to another user
 
-![move](/assets/edit/move_fr.png)
+![move](/assets/edit/french/move.png)
 
 It will **move** the character to another user, deleting the one on the old user. An error will be throw in case of duplicate, and action will be undone.
 
 ## Editing Statistics
 
-![edit stats](/assets/edit/edit_stats.png)
+![edit stats](/assets/edit/stats.png)
 
 The modal will be pre-filled with a list as follows:
 ```md
@@ -88,7 +88,7 @@ Just like during recording, dice will be evaluated to verify their validity. Add
 
 As with statistics, it is essential to adhere to the list and its syntax. You can delete fields by replacing the value with "X" or "0".
 
-![edit dice](/assets/edit/edit_dice.png)
+![edit dice](/assets/edit/dice.png)
 
 ## Adding a new dice
 
