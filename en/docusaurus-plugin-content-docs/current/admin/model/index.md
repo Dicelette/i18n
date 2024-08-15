@@ -87,7 +87,7 @@ Statistics are based on a name, but you will notice that after generating the fi
 Once the template is ready, use `/register [#channel] [file] (#user_chan) (#private_character)`.
 - `#channel` is the channel where the template will be sent. It will then be used for sheet creation.
 - `file` is the previously created `JSON` file.
-- `#user_chan` is the channel where the sheets will be published.
+- `#user_chan` is the channel where the sheets will be published.[^1]
 - `#private_character` works similarly to `#user_chan`, but the sheets published in this channel will only be visible to the user who registered the sheet or to those who have access to this channel (as well as people with the `MANAGE ROLES` permission). If this channel is not defined, the private sheet function will be disabled.
 The embed will be pinned for easy access.
 
@@ -101,3 +101,5 @@ If the sheet is not marked as private but is published in a channel that users d
 You need to re-register the template if you want to change the default channel for private and public sheet. But, saved user doesn't needs to be re-registered as the channel & messageID are saved in the database.
 If you need to move all the sheets to another channel, you need to use the [`/export`](../config/import_export.md) command.
 :::
+
+[^1]: It is possible to use a forum, which will automatically create a post for the character. The player (and administrators) will be mentioned in the post. 

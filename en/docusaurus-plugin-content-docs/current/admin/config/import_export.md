@@ -54,7 +54,7 @@ The following columns are necessary for the import:
 
 Theses columns are optional:
 - `avatar` : The link to the character's avatar. If you don't use an avatar, you can leave this column empty. The avatar used in the display will be the player's.
-- `channel` : Allows you to set a channel to send the sheet to, rather than using the default channels set when registering the template.
+- `channel` : Allows you to set a channel (also supporting thread and forum[^1]) to send the sheet to, rather than using the default channels set when registering the template.
 - `dice` : Specific dice for the `/dbd` command. If you don't use this command, you can leave this column empty (or delete it).
 
 
@@ -70,3 +70,5 @@ This command allows you to export the list of characters and statistics into a C
 - If omitted, it will include **all** characters, regardless of the sheet status.
 
 The exported CSV file uses a semicolon as the separator.
+
+[^1]: It is possible to use a forum, which will automatically create a post for the character. The player (and administrators) will be mentioned in the post. 
