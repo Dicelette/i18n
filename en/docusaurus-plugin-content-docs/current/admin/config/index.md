@@ -1,5 +1,6 @@
 ---
 title: General Configuration
+sidebar_position: 1
 ---
 
 The following commands are restricted by default to members with the `Manage Roles` permission.

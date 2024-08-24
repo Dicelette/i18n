@@ -1,6 +1,6 @@
 ---
 title: Model registering
-sidebar_position: 1
+sidebar_position: 2
 ---
 First, you need to **generate** a new template. To do this, use the command `/register`, followed by the name of the template. More over, you can generate a server template with the following command: `/generate`.
 
