@@ -43,3 +43,9 @@ The bot can be:
 
 - Used with slash commands (see [commands](../Usage/roll.md#dice-rolling)).
 - But also directly on the message.
+
+## Reaction
+
+There are two functions on reactions:
+- `📩`: Allows to receive the roll message in DM. In case the result saving is enabled, the message sent will be this save, useful especially in case you have enabled the link to the context!
+- Link between reactions: In case the roll saving is enabled, the reactions on the roll message will be linked to the roll save. As long as the bot has access to the emoji, it will be able to react with it on the save message to link it to the roll message. Removing the reaction will also remove it from the roll message.
