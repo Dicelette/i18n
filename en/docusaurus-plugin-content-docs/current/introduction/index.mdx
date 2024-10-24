@@ -20,6 +20,28 @@ No more juggling complex character sheets! This bot allows you to set up a stati
 
 To perform dice rolls, this bot utilizes the [@diceRoller](https://dice-roller.github.io/documentation/) API. It also supports the notation `4#(dice)` for bulk rolls, allowing you to save time during your gaming sessions.
 
+#### Dice Formulas
+
+Moreover, it is possible to use the syntax `dice ; µ+x;µ*y` to roll a single die and apply different formulas to this same die, so as to display the result of each formula. The `µ` symbolizes the result of the die.
+
+:::warning Attention
+You must not have any spaces before and after the separation between the formulas, otherwise the bot will consider the rest as comments.
+:::
+
+:::example
+```
+/roll 1d20;µ+5;µ*2
+```
+Will display as a result:
+```
+	1d20 ⟶ [16] =  16
+  ✓ 1d20+5 ⟶ [16]+5 =  21
+  ✓ 1d20×2 ⟶ [16]×2 =  32
+```
+:::
+
+These formulas do not support comparison with a result (`>=x` for example). The comments between each formula will be merged into a single comment.
+
 ### Statistics Management
 
 Instead of saving the entire character sheet, this bot only records the message and its ID. Thus, you retain full control over your data, as the message content is not saved outside the server.
