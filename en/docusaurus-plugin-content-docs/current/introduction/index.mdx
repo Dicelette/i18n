@@ -20,27 +20,41 @@ No more juggling complex character sheets! This bot allows you to set up a stati
 
 For the rolls, this bot utilizes the [@diceRoller](https://dice-roller.github.io/documentation/) API. It also supports the notation `4#(dice)` for bulk rolls, allowing you to save time during your gaming sessions.
 
-#### Dice Formulas
+#### Shared Single Rolls (result reuse)
 
-Moreover, it is possible to use the syntax `dice;µ+x;µ*y` to roll a single die and apply different formulas to this same die, to display the result of each formula. The `µ` symbolizes the result of the die.
+Moreover, it is possible to use the syntax `dice;&+x;µ*y` to roll a single die and apply different formulas to this same die, to display the result of each formula. The `&` symbolizes the result of the first die.
 
-:::warning Attention
+:::warning[Attention]
 You must not have any spaces before and after the separation between the formulas, otherwise the bot will consider the rest as comments.
 :::
 
 :::example
 ```
-/roll 1d20;µ+5;µ*2
+/roll 1d20;&+5;&*2
 ```
 Will display as a result:
 ```
-  1d20 ⟶ [16] =  16
-  ◈ 1d20+5 ⟶ [16]+5 =  21
-  ◈ 1d20×2 ⟶ [16]×2 =  32
+  1d20 ⟶ [18] =  18
+  ◈ [1d20]+5 ⟶ [18]+5 =  23
+  ◈ [1d20]×2 ⟶ [18]×2 =  36
 ```
 :::
 
- The comments between each formula will be merged into a single comment.
+The comments between each formula will be merged into a single comment.
+
+::::tip
+It is possible to use dice in the formules, but only the first die will be saved and reused.
+:::example[1d20;&+1d4;&*2]
+```
+  1d20 ⟶ [11] =  11
+  ◈ [1d20]+1d4 ⟶  11+[2] =  13
+  ◈ [1d20]×2 ⟶ [11]×2 =  22
+```
+:::
+::::
+
+:::danger[It is not possible to use bulk roll in this syntax.]
+:::
 
 ### Statistics Management
 
