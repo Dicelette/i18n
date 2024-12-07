@@ -607,5 +607,33 @@
 	"theme.contentVisibility.draftBanner.message": {
 		"message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
 		"description": "The draft content banner message"
+	},
+	"Le dé de critique est invalide : $ ne peut pas être utilisé sans statistiques.": {
+		"message": "The critical die is invalid: $ cannot be used without statistics."
+	},
+	"Les critiques customisés ne peuvent pas être utilisés sans dé type.": {
+		"message": "Les critiques customisés ne peuvent pas être utilisés sans dé type."
+	},
+	"Affecter uniquement les dés naturels": {
+		"message": "Allocate only natural dice"
+	},
+	"Ce texte est déjà utilisé": {
+		"message": "This text is already in use"
+	},
+	"Le texte ne peut pas être vide": {
+		"message": "This text can't be empty"
+	},
+	"Critiques Customisé": {
+		"message": "Critical Custom"
+	},
+	"Signe": {
+		"message": "Sign"
+	},
+	"Formule": {
+		"message": "Formula"
+	},
+	"theme.blog.author.noPosts": {
+		"message": "This author has not written any posts yet.",
+		"description": "The text for authors with 0 blog post"
 	}
 }
