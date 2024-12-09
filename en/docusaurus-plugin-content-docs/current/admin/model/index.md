@@ -82,6 +82,38 @@ Statistics are based on a name, but you will notice that after generating the fi
 ```
 </details> 
 
+## Criticals
+
+It is possible to define:
+- **Basic Critical**, which are tied to natural dice rolls and can be configured as critical successes or critical failures.
+- **Custom Critical**, which can apply to natural dice rolls or total results.
+
+In both cases, critical are only active with the `/dbroll` command and allow a special message to be displayed depending on the result.
+
+### Basic Critical
+
+These can only be tied to an equality with the natural die roll. The value is configurable, but the displayed message is not.  
+Thus, in the case where:
+- You achieve a critical success value, the displayed message will be: `Critical Success`
+- Similarly, for a critical failure, the displayed message will be: `Critical Failure`
+
+The messages can be overridden by **Custom Critical**.
+
+### Custom Critical
+
+Custom critical allow you to define a value for which a personalized message will be displayed. Unlike basic criticals, custom criticals can compare against either a total **or** a natural die roll, and they support formulas.  
+You can create up to 22 custom critical in total.
+
+This enables, for example, critical linked to a statistic value using `$`, as in comparisons with dice types.
+
+:::example [Call of Cthulhu]
+*Reference*: [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html)  
+In the case of Call of Cthulhu, success is based on the value of a statistic. The die type would then be `1D100<=$`.  
+Custom critical could be defined as:
+- **"Hard success"**: `<=round($/2)`
+- **"Extreme success"**: `<=round($/5)`
+:::
+
 ## What's Next?
 
 Once the template is ready, use `/register [#channel] [file] (#user_chan) (#private_character)`.
