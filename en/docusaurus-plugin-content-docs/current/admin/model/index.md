@@ -133,6 +133,8 @@ Once the template is ready, use `/register [#channel] [file] (#user_chan) (#priv
 - `file` is the previously created `JSON` file.
 - `#user_chan` is the channel where the sheets will be published.[^1]
 - `#private_character` works similarly to `#user_chan`, but the sheets published in this channel will only be visible to the user who registered the sheet or to those who have access to this channel (as well as people with the `MANAGE ROLES` permission). If this channel is not defined, the private sheet function will be disabled.
+- `?wipe` : Delete all character sheet in the database, if any.
+- `?update` : Update all character sheet in the database with the new template.
 The embed will be pinned for easy access.
 
 :::Warning About private sheet
