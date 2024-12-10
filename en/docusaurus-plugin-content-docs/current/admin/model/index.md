@@ -54,34 +54,6 @@ Statistics are based on a name, but you will notice that after generating the fi
 - `max`: The maximum value the statistic can have.
 - `combination`: If the statistic is a combination of several other statistics, you can indicate it here. For example, if the `Dodge` statistic is the sum of `Strength` and `Dexterity`, you can indicate it here. Using a combination automatically cancels out the `min` and `max` values. Additionally, combined statistics will not be calculated in the total sum.
 
-<details>
-  <summary>Empty Template</summary>
-  ```json
-  {
-  "charName": false,
-  "statistics": {
-    "NAME": {
-      "min": 1,
-	  "max": 20,
-	  "combination": ""
-    },
-	"COMBINATION": {
-	  "combination": "NAME*2"
-    },
-  },
-  "diceType": "",
-  "critical": {
-    "failure": 0,
-    "success": 0
-  },
-  "total": 0,
-  "damage": {
-    "NAME": ""
-  }
-}
-```
-</details> 
-
 ## Criticals
 
 It is possible to define:
@@ -113,6 +85,46 @@ Custom critical could be defined as:
 - **"Hard success"**: `<=round($/2)`
 - **"Extreme success"**: `<=round($/5)`
 :::
+
+Finally, it is also possible to use them in the dice skill commands (`/dbd`) by clicking on the corresponding button in the template or using the `affectSkill` fields in the JSON template.
+
+:::note
+Only skill dice with a comparator will be linked to the critical.
+:::
+
+<details>
+  <summary>Empty Template</summary>
+  ```json
+   {
+	"$schema": "https://raw.githubusercontent.com/Dicelette/discord-dicelette/main/template/schema.json",
+	"charName": false,
+	"statistics": {
+		"name": {
+			"min": 1,
+			"max": 20
+		},
+		"combinaison": {
+			"combinaison": "2d6"
+		}
+	},
+	"diceType": "1d20",
+	"critical": {
+		"failure": 1,
+		"success": 20
+	},
+	"total": 80,
+	"customCritical": {
+		"name": {
+			"sign": "=",
+			"value": "15",
+			"onNaturalDice": true,
+			"affectSkill": true
+            }
+        }
+    }
+    ```
+
+</details> 
 
 ## What's Next?
 
