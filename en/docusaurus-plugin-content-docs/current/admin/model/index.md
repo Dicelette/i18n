@@ -60,7 +60,7 @@ It is possible to define:
 - **Basic Critical**, which are tied to natural dice rolls and can be configured as critical successes or critical failures.
 - **Custom Critical**, which can apply to natural dice rolls or total results.
 
-In both cases, critical are only active with the `/dbroll` command and allow a special message to be displayed depending on the result.
+In both cases, by default, critical are only active with the `/dbroll` command and allow a special message to be displayed depending on the result.
 
 ### Basic Critical
 
