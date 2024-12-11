@@ -563,7 +563,7 @@
 		"message": "Used only in the CSV for sheet import"
 	},
 	"Une erreur est survenue : {{x}}": {
-		"message": "An error occured: {{x}}"
+		"message": "An error occurred: {{x}}"
 	},
 	"dés": {
 		"message": "dices"
@@ -612,19 +612,13 @@
 		"message": "The critical die is invalid: $ cannot be used without statistics."
 	},
 	"Les critiques customisés ne peuvent pas être utilisés sans dé type.": {
-		"message": "Les critiques customisés ne peuvent pas être utilisés sans dé type."
+		"message": "Custom critics cannot be used without a type die."
 	},
 	"Affecter uniquement les dés naturels": {
-		"message": "Allocate only natural dice"
-	},
-	"Ce texte est déjà utilisé": {
-		"message": "This text is already in use"
+		"message": "Allocate only natural die"
 	},
 	"Le texte ne peut pas être vide": {
 		"message": "This text can't be empty"
-	},
-	"Critiques Customisé": {
-		"message": "Critical Custom"
 	},
 	"Signe": {
 		"message": "Sign"
@@ -635,5 +629,17 @@
 	"theme.blog.author.noPosts": {
 		"message": "This author has not written any posts yet.",
 		"description": "The text for authors with 0 blog post"
+	},
+	"Le dé \"{{x}}\" est invalide. Journalisation : {{error}}": {
+		"message": "The die \"{{x}}\" is invalid. Logs : {{error}}"
+	},
+	"Utilisable sur les dés de compétences": {
+		"message": "Can be used on skill dice"
+	},
+	"Critiques Personnalisés": {
+		"message": "Custom Critics"
+	},
+	"Le dé de compétence nommé \"{{x}}\" (\"{{formule}}\") ne semble pas être un dé.": {
+		"message": "The dice skill named \"{{x}}\" (\"{{formule}}\") don't seems to be a dice"
 	}
 }
