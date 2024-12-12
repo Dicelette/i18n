@@ -86,10 +86,21 @@ Custom critical could be defined as:
 - **"Extreme success"**: `<=round($/5)`
 :::
 
-Finally, it is also possible to use them in the dice skill commands (`/dbd`) by clicking on the corresponding button in the template or using the `affectSkill` fields in the JSON template.
+#### Skill Dice and Custom Criticals
+
+Only dice with a comparator will be affected by custom criticals.
+
+If a custom critical uses the `$` symbol, the value to be used must be found in the **name** of the skill die, enclosed in parentheses.
+
+:::example
+For a custom critical with the value `<=$`, if the skill die is named `Animal Instinct (Strength)`, then the `$` will be replaced by the statistical value of Strength, if it exists.  
+If the name is not found, the comparison will not be applied, and the die will be rolled normally.
+:::
+
+Additionally, it is possible to combine multiple statistics, as well as formulas or dice rolls, within the name of the die.
 
 :::note
-Only skill dice with a comparator will be linked to the critical.
+If the name itself contains a dice roll, it will not appear in the result but will instead be displayed in the die's comment, replacing the formula.
 :::
 
 <details>
