@@ -54,6 +54,8 @@ Statistics are based on a name, but you will notice that after generating the fi
 - `max`: The maximum value the statistic can have.
 - `combination`: If the statistic is a combination of several other statistics, you can indicate it here. For example, if the `Dodge` statistic is the sum of `Strength` and `Dexterity`, you can indicate it here. Using a combination automatically cancels out the `min` and `max` values. Additionally, combined statistics will not be calculated in the total sum.
 
+Statistics can be excluded in the dice roll selection, preventing rolling for that statistic. This can be useful for statistics that are not used in the game, or for statistics that are not rolled but are used in formulas.
+
 ## Criticals
 
 It is possible to define:
