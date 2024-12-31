@@ -3,6 +3,11 @@ title: Character sheet
 sidebar_position: 3
 ---
 
+export function CL({ children }) {
+  return <code style={{ textDecoration: "underline", fontWeight: "bold"}}>{children.toLowerCase()}</code>;
+}
+
+
 <details id="danger">
   <summary><Iconify icon="solar:danger-bold" height="26" class="danger-summary"/>Attention</summary>
   {}
@@ -16,6 +21,12 @@ sidebar_position: 3
 
 ## Dice Rolling
 
+The two commands require specifying:
+- <CL>Character</CL>: The character's name
+- <CL>Comment</CL>: Any comments on your action
+- <CL>success_threshold</CL>: Replacement of the success value (e.g., for a difficult roll), with indication of comparison (e.g., >= 10). Like expressions, it is possible to combine dice, formulas, and statistics.
+- <CL>expression</CL>: Any expressions defining conditions or modifications (such as advantage or disadvantage), which can include dice rolls, mathematical formulas, statistics names, or even the exact value of the statistic using the `$` keyword.
+
 ### DBRoll (`/dbroll`)
 
 :::info
@@ -26,12 +37,7 @@ The `dbroll` command is used to roll dice for statistics that have been previous
 **`/dbroll [statistic] (*character) (comment) (success_threshold) (modifiers)`**
 :::
 
-The command requires specifying:
-- The statistic
-- The character's name
-- Any modifiers (such as advantage or disadvantage)
-- Replacement of the success value (e.g., for a difficult roll), with indication of comparison (e.g., >= 10)
-- Any comments on your action
+The commands require you to choose the statistic to use.
 
 ![dbroll_1](/assets/rolls/db/dbroll_autocomplete.png)
 ![example](/assets/rolls/db/example.png)
@@ -47,6 +53,27 @@ The `dbd` command allows rolling a registered die.
 :::
 
 ![dbd](/assets/rolls/db/dbd_example.png)
+
+Here, the command requires you to choose the die to use. It is not possible to choose a success threshold, although it is possible to specify it in the die itself when registering it.
+
+## Calculations (`/calc`)
+
+:::info
+The `calc` command allows you to perform calculations using the statistics of a character.
+This expression can include dice rolls, mathematical formulas, statistics names, or even the exact value of the statistic using the `$` keyword.
+:::
+
+:::usage
+**`/calc [statistic] [sign] [expression] (*character) (comment)`**
+:::
+
+The commands require you to choose the statistic to use, but also a sign and an expression. The valid signs are: `+`, `-`, `*`, `/`, `^` (power), `%` (modulo), `/` (division), `≠` (not equal to), `=` (equal to), `⩾` (greater than or equal to), `⩽` (less than or equal to), `>` (greater than), `<` (less than).
+
+:::note
+It is possible to use the "non ascii" version of the signs, for example `>=` for `⩾` or `!=` for `≠` and `==` for `=`.
+:::
+
+![calc](/assets/rolls/db/calc.png)
 
 
 ## Others
