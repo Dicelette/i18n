@@ -64,10 +64,14 @@ This expression can include dice rolls, mathematical formulas, statistics names,
 :::
 
 :::usage
-**`/calc [statistic] [sign] [expression] (*character) (comment)`**
+**`/calc [statistic] [*sign] [expression] (*transform) (*character) (comment)`**
 :::
 
-The commands require you to choose the statistic to use, but also a sign and an expression. The valid signs are: `+`, `-`, `*`, `/`, `^` (power), `%` (modulo), `/` (division), `≠` (not equal to), `=` (equal to), `⩾` (greater than or equal to), `⩽` (less than or equal to), `>` (greater than), `<` (less than).
+The command requires:
+- **<CL>statistic</CL>**: The statistic to use.  
+- **<CL>sign</CL>**: The sign of the operation to perform. Valid signs are: `+`, `-`, `*`, `/`, `^` (power), `%` (modulo), `/` (division), `≠` (not equal to), `=` (equal to), `⩾` (greater than or equal to), `⩽` (less than or equal to), `>` (greater than), `<` (less than).  
+- **<CL>expression</CL>**: The expression to apply.  
+- **<CL>transform</CL>**: The transformation to apply to the final result, including: `ceil` (round up), `floor` (round down), `round` (round to the nearest integer), `abs` (absolute value), `sqrt` (square root), or `square` (square the value). You can combine two transformations, such as `ceil(abs())`. Additionally, it is possible to use [functions supported by `mathjs`](https://mathjs.org/docs/reference/functions.html), even if they are not in the list of suggested terms. The allowed function needs to take only one argument (or optionnaly two, but the second won't be set).
 
 :::note
 It is possible to use the "non ascii" version of the signs, for example `>=` for `⩾` or `!=` for `≠` and `==` for `=`.
