@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Registering a Template
 sidebar_position: 1
@@ -128,4 +127,4 @@ To move all sheets to another channel, use the [`/export`](../import_export.md) 
 :::
 
 [^1]: A forum can also be used, automatically creating a post for the character. The player (and admins) will be mentioned in the post.
-```
+

@@ -1,17 +1,6 @@
 ---
-title: Used format
+title: Commands syntax
 ---
-The following commands are restricted by default to members with the `Manage Roles` permission.
-
-You can view the current server configuration with the `/config display` command.
-
-:::info
-The following commands work for both text-only dice and dice thrown with slashcommands (whether `/roll` or `/dbd` and `/dbroll`).
-:::
-
-Unless otherwise specified, all options are disabled by default.
-
-## Format
 
 - Mandatory fields are enclosed in square brackets: `[fields]`.
 - Optional fields are enclosed in brackets: `(fields)`.
