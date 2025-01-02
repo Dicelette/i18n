@@ -19,16 +19,16 @@
     "message": "Dice and notation",
     "description": "Navbar item with label Dés et notation"
   },
-  "item.label.CGU": {
-    "message": "TOS",
-    "description": "Navbar item with label CGU"
+  "item.label.Fiche de personnage": {
+    "message": "Character sheet",
+    "description": "Navbar item with label Fiche de personnage"
   },
-  "item.label.Administration": {
-    "message": "Administration",
-    "description": "Navbar item with label Administration"
+  "item.label.Commandes": {
+    "message": "Commands",
+    "description": "Navbar item with label Commandes"
   },
-  "item.label.Usage": {
-    "message": "Usage",
-    "description": "Navbar item with label Usage"
+  "item.label.CGU & Développement": {
+    "message": "CGU & Development",
+    "description": "Navbar item with label CGU & Développement"
   }
 }
