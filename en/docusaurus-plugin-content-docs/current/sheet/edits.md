@@ -47,7 +47,7 @@ Images stored on Discord cannot be used as their links change regularly. It is t
 [See here for more information](https://www.bleepingcomputer.com/news/security/discord-will-switch-to-temporary-file-links-to-block-malware-delivery/).
 :::
 
-:::usage["Command"]
+:::usage[Command]
 **`/edit avatar [url] (@user) (*character)`**
 :::
 
@@ -58,7 +58,7 @@ By default, the commands will change the image of the person that used the comma
 
 As the command, it doesn't allow duplicate character name. Each character must have different name, or error will be throw.
 
-:::usage["Command"]
+:::usage[Command]
 **`/edit rename [new_name] (@user) (*character)`**
 :::
 
@@ -68,7 +68,7 @@ As the command, it doesn't allow duplicate character name. Each character must h
 
 It will **move** the character to another user, deleting the one on the old user. An error will be throw in case of duplicate, and action will be undone.
 
-:::usage["Command"]
+:::usage[Command]
 **`/edit user [@new_user] (@old_user) (*character)`**
 :::
 
