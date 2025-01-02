@@ -1,0 +1,75 @@
+---
+title: Mathematical Expressions
+sidebar_position: 2
+---
+
+export function CL({ children }) {
+  return <code style={{ textDecoration: "underline", fontWeight: "bold"}}>{children.toLowerCase()}</code>;
+}
+
+## Mathematical Expressions with MathJS
+
+The bot uses the [mathjs](https://mathjs.org/) library to evaluate mathematical expressions. You can use complex mathematical expressions when enclosed within `{{` and `}}`.
+Depending on the commands, you can use:
+- `$`: Represents the value of the statistic used.
+- The name of a statistic (which will be replaced by its value).
+- Dice combinations (like `1d6`).
+
+Expressions are typically used in:
+- <CL>seuil_reussite</CL>: Success threshold for dice rolls in the [`/dbroll`](../usage/model.mdx#dbroll-dbroll) command.
+- <CL>expression</CL>: For the [`/calc`](../usage/model.mdx#calcul-calc), [`/dbroll`](../usage/model.mdx#dbroll-dbroll), and [`/dbd`](../usage/model.mdx#dbd-dbd) commands.
+
+### Examples of Mathematical Expressions
+
+- `1d6 + {{ceil($ / 2)}}`
+- `1d6 > {{ceil($ / 2)}}`
+
+## Shared Unique Rolls (Reusing Results)
+
+You can use the syntax `die;&+x;µ*y` to roll a single die and apply different formulas to the same die, displaying the result of each formula. The `&` symbol represents the die's result.
+
+:::warning[Note]
+You must avoid spaces before and after the separator between formulas, or the bot will interpret the remainder as comments.
+:::
+
+:::example
+```
+/roll 1d20;&+5;&*2
+```
+Displays the result as:
+```
+  ※ `1d20` ⟶ `[10]` = ` 10 `
+  ◈ `[1d20]+5` ⟶ `[10]+5` = ` 15 `
+  ◈ `[1d20]×2` ⟶ `[10]×2` = ` 20 `
+```
+:::
+
+::::tip
+You can use dice in the formulas, but only the first die will be saved and reused.
+:::example[`1d20;&+1d4;&*2`]
+```
+  ※ `1d20` ⟶ `[7]` = ` 7 `
+  ◈ `[1d20]+1d4` ⟶ `7+[1]` = ` 8 `
+  ◈ `[1d20]×2` ⟶ `[7]×2` = ` 14 `
+```
+:::
+::::
+
+To add comments between rolls, use the syntax `[comment]`. For a global comment, use the `# comment` syntax at the end of the dice roll. 
+:::example[`1d20;&-2[HP loss]`]
+  ※ `1d20` ⟶ `[2]` = ` 2 `
+  ◈ <u>HP loss</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `
+:::
+
+Finally, you can hide the first die using the syntax `(die)`:
+:::example[`(1d20);&>100;&+2`]
+  **Failure** — `[1d20]>100` ⟶ `[12]>100` = ` 12<100 `
+  ◈ `[1d20]+2` ⟶ `[12]+2` = ` 14 `
+:::
+
+:::danger[Mass dice rolls cannot be used with this syntax.]
+:::
+
+## Bulk Rolls
+
+The bot also supports the `x#(dice)` notation for "bulk rolls," allowing you to save time during your gaming sessions.

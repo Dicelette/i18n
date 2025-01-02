@@ -13,7 +13,7 @@ The username is the actual username, not the display name. The one you may have 
 The first modal will always be the same regardless of the template:
 - It will ask for the character's name (mandatory or optional, depending on the template settings)
 - The user's name, which must be either their ID or their username. This data is mandatory and will be pre-filled by the bot with the username of the person who clicked.
-- If you have enabled the use of private sheets (see [here](../admin/model/index.md#whats-next)), you will have a third field to choose whether the sheet should be private or not. If the sheet is private, simply put `x` in the field. Leave it empty otherwise!
+- If you have enabled the use of private sheets (see [here](./model/index.md#next-steps)), you will have a third field to choose whether the sheet should be private or not. If the sheet is private, simply put `x` in the field. Leave it empty otherwise!
 - You can provide a link to an image (an avatar) that will serve as the image in the sheet's embed. If left blank, the image used will be the player's avatar.
 - Finally, it is possible to send the character sheet to a channel other than those defined in the template by `private_channel` and `public_channel`.[^1] If you don't want to send the form to a specific channel, leave the field empty.
 

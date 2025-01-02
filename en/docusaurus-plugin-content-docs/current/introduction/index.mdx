@@ -2,79 +2,44 @@
 title: Introduction
 sidebar_position: 1
 ---
-Welcome! 🎲 Here's a companion for your Discord adventures: a versatile bot designed to make your role-playing game sessions smoother and more enjoyable.
 
-## Key Features
+Welcome! 🎲 Here's your companion for adventures on Discord: a versatile bot designed to make your role-playing game sessions smoother and more enjoyable.
+
+## Main Features
 
 ### Dice Rolling
 
-With this bot, you can roll dice effortlessly: whether to determine the outcome of a crucial action or to spice up your conversations, the process is streamlined. Simply use the appropriate command and the result will be displayed in a thread rather than cluttering the channel you're in.
+With this bot, rolling dice is a breeze! Whether you're determining the outcome of a crucial action or adding some spice to your conversations, the process is simple. Just use the appropriate command, and the result will be displayed in a thread, keeping your channel clutter-free.
 
 ### Character Sheet Management
 
-No more juggling complex character sheets! This bot allows you to set up a statistics template to record the essential information of your characters. Thus, you can roll dice directly using this data, without worrying about memorizing them.
+No more juggling complex character sheets! This bot allows you to set up a stat template to store essential information about your characters. You can roll dice directly using this data without worrying about remembering it all.
 
-## Operational Mechanics
+## How It Works
 
 ### Dice Rolling
 
-This bot utilizes [@diceRoller](https://dice-roller.github.io/documentation/) API. It also supports the notation `4#(dice)` for bulk rolls, allowing you to save time during your gaming sessions.
+For dice rolls, the bot uses the [@diceRoller](https://dice-roller.github.io/documentation/) API.
 
-#### Shared Single Rolls (result reuse)
+### Stat Management
 
-Moreover, it is possible to use the syntax `dice;&+x;µ*y` to roll a single die and apply different formulas to this same die, to display the result of each formula. The `&` symbolizes the result of the first die.
+Instead of saving the entire character sheet, the bot only records the message and its ID. This way, you retain full control over your data, as the message content is not stored outside the server.
 
-:::warning[Attention]
-You must not have any spaces before and after the separation between the formulas, otherwise the bot will consider the rest as comments.
-:::
+## Data Management
 
-:::example
-```
-/roll 1d20;&+5;&*2
-```
-Will display as a result:
-```
-  1d20 ⟶ [18] =  18
-  ◈ [1d20]+5 ⟶ [18]+5 =  23
-  ◈ [1d20]×2 ⟶ [18]×2 =  36
-```
-:::
+This bot uses a database[^1] to store essential information such as message IDs, channel IDs, stat names, and character names of users. The database is cleaned in various scenarios, such as when registered messages or channels are deleted, the bot is removed from the server, or when `/register` or `/logs` commands are used.
 
-The comments between each formula will be merged into a single comment.
+:::note Reminder
+User data is not deleted when they leave a server. If you want your data to be removed, feel free to contact me.
 
-::::tip
-It is possible to use dice in the formules, but only the first die will be saved and reused.
-:::example[ `1d20;&+1d4;&*2`]
-```
-  1d20 ⟶ [11] =  11
-  ◈ [1d20]+1d4 ⟶  11+[2] =  13
-  ◈ [1d20]×2 ⟶ [11]×2 =  22
-```
-:::
-::::
-
-:::danger[It is not possible to use bulk roll in this syntax.]
-:::
-
-### Statistics Management
-
-Instead of saving the entire character sheet, this bot only records the message and its ID. Thus, you retain full control over your data, as the message content is not saved outside the server.
-
-## Data
-
-This bot uses a database[^1] to store essential information, such as the message ID, channel ID, statistic name, and user character names. This database will be cleaned in various cases, including when messages or registered channels are deleted, when the bot is kicked from the server, or when using the `/register` or `/logs` features.
-
-:::note Note
-User data is not deleted when they leave a server. If you wish for your data to be removed, feel free to contact me.
-
-Simply provide your Discord ID or server ID (with proof of ownership) via Discord (`@mara__li`) or email (`lisandra_dev@yahoo.com`).
+Provide your Discord ID or server ID (with proof of ownership) via Discord (`@mara__li`) or email (`lisandra_dev@yahoo.com`).
 :::
 
 :::warning
-In some rare cases, the bot maybe not be able to delete the data when the message is deleted (it happens when the deleted message is very old). In theses case, you can use the command `/delete_char` to delete the character data or entire data from an user.
-More over, this command will also delete the message if it still exists (useful if you don't want to search in the character sheet channel).
+In rare cases, data may not be deleted (particularly for very old records). In such cases, you can use the `/delete_char` command to remove a character or all data for a player.  
+This command will also delete the character sheet message if it still exists.
 :::
 
 🚀 [Invite the bot](https://discord.com/api/oauth2/authorize?client_id=1182819335878754385&permissions=395137215504&scope=bot+applications.commands)
 
-[^1]: It's a SQLITE3 database, using [Enmap](https://enmap.evie.dev/)
+[^1]: It uses an SQLITE3 database with [Enmap](https://enmap.evie.dev/).

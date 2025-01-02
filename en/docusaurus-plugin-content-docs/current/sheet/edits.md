@@ -1,5 +1,5 @@
 ---
-title: Editing an user sheet
+title: Editing and deleting an user sheet
 sidebar_position: 3
 ---
 
@@ -15,19 +15,30 @@ If all information is saved, you will have access to three buttons:
 - Edit Saved Dice (which allows saving multiple new dice, but shh...)
 - Add a New Die.
 
-## Edit user data
+## Delete a character
+:::usage
+**`/delete_char [@player] (*character)`**
+:::
+
+This command allow to delete a character or a player from the database.
+
+It asks:
+- `[@player]` : The player username (mention) to delete
+- `(*character)` : The character name to delete, depending of the specified player.
+
+If no character is specified, the entire data of the player will be deleted. You can use the `default` key to delete the default character of the player (character without name, if not set).
+
+## Editing
+### Edit user data
 
 ![](/assets/edit/french/user.png)
 Each tree commands will open a modal to edit the corresponding data.
 
-If you are using a old version of the bot, you will have to use the following commands:
-- [`/edit avatar`](../Usage/model.mdx#edit-avatar-edit_avatar)
-- [`/edit rename`](../Usage/model.mdx#rename)
-- [`/edit user`](../Usage/model.mdx#user)
+If you are using a old version of the bot, you will have to use the commands.
 
 To add the new button.
 
-### Editing the avatar image
+#### Editing the avatar image
 
 ![edit image](/assets/edit/image.png)
 
@@ -36,18 +47,32 @@ Images stored on Discord cannot be used as their links change regularly. It is t
 [See here for more information](https://www.bleepingcomputer.com/news/security/discord-will-switch-to-temporary-file-links-to-block-malware-delivery/).
 :::
 
-### Rename a character
+:::usage["Command"]
+**`/edit avatar [url] (@user) (*character)`**
+:::
+
+By default, the commands will change the image of the person that used the commands. Only moderator can change the image of another user.
+
+#### Rename a character
 ![rename](/assets/edit/french/rename.png)
 
 As the command, it doesn't allow duplicate character name. Each character must have different name, or error will be throw.
 
-### Move to another user
+:::usage["Command"]
+**`/edit rename [new_name] (@user) (*character)`**
+:::
+
+#### Move to another user
 
 ![move](/assets/edit/french/move.png)
 
 It will **move** the character to another user, deleting the one on the old user. An error will be throw in case of duplicate, and action will be undone.
 
-## Editing Statistics
+:::usage["Command"]
+**`/edit user [@new_user] (@old_user) (*character)`**
+:::
+
+### Editing Statistics
 
 ![edit stats](/assets/edit/stats.png)
 
@@ -77,7 +102,7 @@ Finally, values will not be checked against the total initially recorded in the 
 If statistics are edited and logs are enabled, a modification message will be sent to the channel configured in the logs.
 :::
 
-## Editing Dice
+### Editing Dice
 
 Just like with statistics, the modal will be pre-filled with a list as follows:
 ```md
@@ -90,6 +115,6 @@ As with statistics, it is essential to adhere to the list and its syntax. You ca
 
 ![edit dice](/assets/edit/dice.png)
 
-## Adding a new dice
+### Adding a new dice
 
 Adding a die works exactly like when recording a character.

@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 :::info
-The [configuration](../admin/config/index.md) allows to edit the bot's behavior. This documents explains the default behavior.
+The [configuration](../config/index.md) allows to edit the bot's behavior. This documents explains the default behavior.
 :::
 
 The functioning of this bot relies on the use of threads. Upon its initial launch, it will search for a thread prefixed with `🎲`:
@@ -19,7 +19,7 @@ In case of multiple threads being found, the bot will use the most recent one an
 
 Commands can also be executed within an existing thread. In this case, the bot will simply send the result there, which can then be accessed in channels whose names start with `🎲`.
 
-You can also create a new thread using the command [create a new scene](../Usage/roll.md#creating-a-new-scene).
+You can also create a new thread using the command [create a new scene](../usage/index.md#creating-a-new-scene).
 
 :::tip Tip
 The bot also functions in forums, but with a few differences:
@@ -41,7 +41,7 @@ The bot will **also** send the result to the channel where the command was initi
 
 The bot can be:
 
-- Used with slash commands (see [commands](../Usage/roll.md#dice-rolling)).
+- Used with slash commands (see [commands](../usage/index.md#dice-rolling)).
 - But also directly on the message.
 
 ## Reaction

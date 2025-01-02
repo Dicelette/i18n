@@ -24,7 +24,6 @@ export function CL({ children }) {
 The two commands require specifying:
 - <CL>Character</CL>: The character's name
 - <CL>Comment</CL>: Any comments on your action
-- <CL>success_threshold</CL>: Replacement of the success value (e.g., for a difficult roll), with indication of comparison (e.g., >= 10). Like expressions, it is possible to combine dice, formulas, and statistics.
 - <CL>expression</CL>: Any expressions defining conditions or modifications (such as advantage or disadvantage), which can include dice rolls, mathematical formulas, statistics names, or even the exact value of the statistic using the `$` keyword.
 
 ### DBRoll (`/dbroll`)
@@ -34,10 +33,11 @@ The `dbroll` command is used to roll dice for statistics that have been previous
 :::
 
 :::usage
-**`/dbroll [statistic] (*character) (comment) (success_threshold) (modifiers)`**
+**`/dbroll [statistic] (*character) (comment) (success_threshold) (expression)`**
 :::
 
 The commands require you to choose the statistic to use.
+It is also possible to specify a <CL>success threshold</CL> to determine or overrides the success threshold. This threshold is composed by a sign (like `>=`) and a value. It is possible to combine dice rolls, statistic names, and mathematical formulas in the expression.
 
 ![dbroll_1](/assets/rolls/db/dbroll_autocomplete.png)
 ![example](/assets/rolls/db/example.png)
@@ -49,7 +49,7 @@ The `dbd` command allows rolling a registered die.
 :::
 
 :::usage
-**`/dbd [*dice] (*character) (modifiers) (comment)`**
+**`/dbd [*dice] (*character) (expression) (comment)`**
 :::
 
 ![dbd](/assets/rolls/db/dbd_example.png)
@@ -59,8 +59,7 @@ Here, the command requires you to choose the die to use. It is not possible to c
 ## Calculations (`/calc`)
 
 :::info
-The `calc` command allows you to perform calculations using the statistics of a character.
-This expression can include dice rolls, mathematical formulas, statistics names, or even the exact value of the statistic using the `$` keyword.
+The `calc` allow to realize calculations with the statistics of the character and apply an [expression](../introduction/expression.mdx)
 :::
 
 :::usage
@@ -78,7 +77,6 @@ It is possible to use the "non ascii" version of the signs, for example `>=` for
 :::
 
 ![calc](/assets/rolls/db/calc.png)
-
 
 ## Others
 
@@ -119,46 +117,3 @@ By default:
    - If neither of the two previous options is available, it will be based on the die value (for example, if `1d20`, the value will be 20).
    - As a last resort, it will be automatically calculated based on the user's statistics.
 ![graph](/assets/graph.jpg)
-
-### Edit user (`/edit`)
-If the embed doesn't have the `select` button, it will be automatically added by the command.
-
-#### Avatar (`/edit avatar`)
-:::usage
-**`/edit avatar [url] (@player) (*character)`**
-:::
-
-The `edit_avatar` command lets you modify the image of a character stored in the database.
-This will change the embedding of the character sheet.
-
-By default, the command will modify the image of the person who used it. Only moderators can modify the image of another player.
-
-:::warning
-Images stored on Discord cannot be used as their links change regularly. It is therefore mandatory to use external links, for example, by using [imgur](https://imgur.com/).
-[See here for more information](https://www.bleepingcomputer.com/news/security/discord-will-switch-to-temporary-file-links-to-block-malware-delivery/).
-:::
-
-#### Rename (`/edit rename`)
-:::usage
-**`/edit rename [new_name] (@player) (*character)`**
-:::
-
-Allow to rename a character.
-
-:::warning
-This command doesn't allow duplicate name. You need to use different name for each character.
-:::
-
-#### User (`/edit user`)
-
-:::usage
-**`/edit user [@new_user] (@player) (*character)`**
-:::
-
-Move a character from a player to a new user. 
-
-:::warning
-It's not a copy! It will delete the character from the previous user!
-:::
-
-The action will be undone in case of duplicate name.
