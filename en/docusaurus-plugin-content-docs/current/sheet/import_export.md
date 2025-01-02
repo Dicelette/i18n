@@ -1,5 +1,6 @@
 ---
-title: "Import/Export data"
+title: Import & Export
+sidebar_position: 4
 ---
 ## Import and Export Data
 

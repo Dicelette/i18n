@@ -1,5 +1,5 @@
 ---
-title: Editing and deleting an user sheet
+title: Editing and deleting data
 sidebar_position: 3
 ---
 
