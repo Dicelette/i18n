@@ -632,6 +632,9 @@
     "message": "The dice skill named \"{{x}}\" (\"{{formule}}\") don't seems to be a dice"
   },
   "Exclure de la sélection des dés de statistiques": {
-    "message": "Exclure de la sélection des dés de statistiques"
+    "message": "Exclude from the selection of dice statistics"
+  },
+  "Télécharger le CSV": {
+    "message": "Download CSV"
   }
 }

@@ -3,12 +3,12 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.model.category.Enregistrement d'un Modèle": {
-    "message": "Register a Model",
-    "description": "The label for category Enregistrement d'un Modèle in sidebar model"
+  "sidebar.model.category.Registering a Template": {
+    "message": "Registering a Template",
+    "description": "The label for category Registering a Template in sidebar model"
   },
-  "sidebar.TOS.category.CGU": {
-    "message": "TOS",
-    "description": "The label for category CGU in sidebar TOS"
+  "sidebar.TOS.category.Terms of Service": {
+    "message": "Terms of Service",
+    "description": "The label for category Terms of Service in sidebar TOS"
   }
 }
