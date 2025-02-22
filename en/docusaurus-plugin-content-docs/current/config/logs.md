@@ -16,27 +16,22 @@ Sending the command without the `#channel` argument will remove logging.
 ### Save dice result: `result_channel`
 
 :::usage
-**`/config result_channel (#channel)`**
+**`/config result_channel [?disable_thread] (#channel)`**
 :::
 
-The `/config result_channel` command sets a channel to receive dice roll results instead of using a thread each time. The channel ID will then be stored in the database similarly to the `logs` command.
+This command lets you choose where the bot stores the dice roll results (the logs). By default, results are sent to a thread whose name begins with `🎲`.
 
-Sending the command without the "channel" argument will remove the results channel, similar to the `logs` command.
+There are two options:
+- `disable_thread`: Enable this option to send the results directly in the specified channel without creating a thread. In this case, auto-deletion of messages is disabled.
+- `#channel`: If you mention a channel, the results will be sent to a thread in that channel. This option is ignored if `disable_thread` is enabled.
 
-### Disable auto thread creation: `disable_thread`
+If no arguments are provided, the behavior is the same as `disable_thread true`: the results will be sent directly in the channel where the roll was performed.
 
-:::usage
-**`/config disable_threads [?toggle]`**
+:::example
+- `/config result_channel #channel` or `/config result_channel false #channel`: The results will be sent to a thread in the mentioned channel.
+- `/config result_channel true` or `/config result_channel true #channel` or `/config result_channel` (if a previous configuration exists): Dice roll saving is disabled.
+- `/config result_channel false`: The results will be sent to a thread prefixed by `🎲` (only if no channel is mentioned).
 :::
-
-If the option is set to **true**, it disables the default creation of threads for dice rolls. Everything will be sent (without deletion) to the channel where the command was executed.
-
-:::warning
-This option overwrite the `/config result_channel` command, meaning if it is enabled, the results won't be send in the channel configured by `/config result_channel` (if any).
-:::
-Channels and threads prefixed with `🎲` will no longer receive logs either.
-
-Setting the option to **false** reactivates the bot's normal behavior.
 
 ### Hidden dice: `hidden_roll`
 

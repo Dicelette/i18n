@@ -28,7 +28,7 @@ By default, dice roll result messages are deleted after **3** minutes. This comm
 
 If the value is set to **0**, messages will no longer be deleted.
 
-This option is disabled if `/config disable_threads` is enabled.
+This option is disabled if there is no channel or thread for saving the result.
 
 :::tip
 This command allow to have both the result log in a dedicated channel (or in threads) while keeping the result in the main channel for the players to see.
@@ -50,6 +50,10 @@ If the context message is deleted, the link will no longer work.
 :::
 
 ![Link to context](/assets/rolls/config/context.png)
+
+:::tip
+This option is disabled if there is no channel or thread for saving the result.
+:::
 
 ### [Dice throw] Link to the saved dice: `save_link`
 
