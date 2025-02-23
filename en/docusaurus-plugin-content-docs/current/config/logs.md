@@ -25,13 +25,22 @@ There are two options:
 - `disable_thread`: Enable this option to send the results directly in the specified channel without creating a thread. In this case, auto-deletion of messages is disabled.
 - `#channel`: If you mention a channel, the results will be sent to a thread in that channel. This option is ignored if `disable_thread` is enabled.
 
-If no arguments are provided, the behavior is the same as `disable_thread true`: the results will be sent directly in the channel where the roll was performed.
+If no arguments are provided, the behavior is the same as `/config result_channel true`: the results will be sent directly in the channel where the roll was performed.
 
-:::example
-- `/config result_channel #channel` or `/config result_channel false #channel`: The results will be sent to a thread in the mentioned channel.
-- `/config result_channel true` or `/config result_channel true #channel` or `/config result_channel` (if a previous configuration exists): Dice roll saving is disabled.
-- `/config result_channel false`: The results will be sent to a thread prefixed by `🎲` (only if no channel is mentioned).
-:::
+::::example
+- <u>Sent to a specific channel</u>: 
+    - `/config result_channel #channel`  
+    - `/config result_channel false #channel`   
+
+  :::pin The results will not be sent to the configured channel if the roll is made in a thread whose name begins with `🎲`.
+  :::
+
+- <u>Disable automatic thread/result channel</u>:
+    - `/config result_channel true`
+    - `/config result_channel true #channel`  
+    - `/config result_channel` (if a previous configuration exists)
+- <u>Use automatic thread creation</u>: `/config result_channel false` (the results will be sent to a thread prefixed by `🎲`) 
+::::
 
 ### Hidden dice: `hidden_roll`
 
