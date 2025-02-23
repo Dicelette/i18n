@@ -40,6 +40,8 @@ If no arguments are provided, the behavior is the same as `/config result_channe
 - <u>Use automatic thread creation</u>: `/config result_channel false` (the results will be sent to a thread prefixed by `🎲`) 
 :::
 
+If the copy is entirely disabled, the [automatic deletion](./display.md#time-before-deletion-delete_after) of the results will be disabled too.
+
 ### Hidden dice: `hidden_roll`
 
 :::usage
