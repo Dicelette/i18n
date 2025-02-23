@@ -1,6 +1,6 @@
 ---
 title: Result's channels
-description: Disable the result's forwarding in threads or send them in specific channels.
+description: Disable the result's forwarding in threads or send them in specific channel.
 sidebar_position: 2
 ---
 
