@@ -28,7 +28,8 @@ The bot also functions in forums, but with a few differences:
 - In this case, it's a message that will be created instead of a thread.
 :::
 
-Additionally, via the command `/config result_channel`, you can set a channel where all logs will be sent, rather than using a thread or forum topic.
+Additionally, via the command [`/config result_channel`](../config/threads.md), you can configure this behavior by setting a channel or disabling the automatic creation of threads.
+
 
 ## Channels
 
