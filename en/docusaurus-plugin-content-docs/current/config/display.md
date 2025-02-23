@@ -1,5 +1,6 @@
 ---
 title: Display results
+sidebar_position: 4
 ---
 
 Diverses options allows to personalize the display of the dice's results, whether in the save section or in the channel where the throw was made.
