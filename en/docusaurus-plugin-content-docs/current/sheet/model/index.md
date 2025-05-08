@@ -56,7 +56,6 @@ You can also compare using a formula:
 You can customize saved dice using different syntaxes:  
 
 - **Custom Critical:** If you use custom critical with `$`, the **dice name** must include the **statistic in parentheses**, like `Animal Instinct (Strength)`. See the [Custom Critical Hits](#custom-criticals) section for more details.  
-- **`{exp}`:** This syntax allows you to insert an expression directly into the dice, using the computed part of the command.  
 - **Statistic Name:** Allows referencing a statistic directly in the dice.  
 
 :::example
@@ -65,7 +64,6 @@ You can customize saved dice using different syntaxes:
 |-------------------------|----------------------------|------------------------------------------------------|------------------|------------|
 | **Specific Statistic**  | Strength                   | `Strength=20`                                        | `1d6 > Strength` | `1d6 > 20` |
 | **Custom Critical Hit** | Animal Instinct (Strength) | <li>`Strength=20`</li><li>Custom Critical: `>$`</li> | `1d6`            | `1d6>20`   |
-| **Expression**          | Charge Damage              | `3+4`                                                | `{exp}d4`        | `7d4`      |
 
 :::
 

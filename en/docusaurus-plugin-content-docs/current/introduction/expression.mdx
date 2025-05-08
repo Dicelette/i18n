@@ -14,6 +14,7 @@ Depending on the commands, you can use:
 - `$`: Represents the value of the statistic used.
 - The name of a statistic (which will be replaced by its value).
 - Dice combinations (like `1d6`).
+- `{exp}`: Allows you to insert an expression directly into the die, using the computed part of the command. You can also specify a default value using the `{exp||default}` syntax (like `{exp||2}`). Only numbers are accepted. If not specified, the default value will be `1`.
 
 Expressions are typically used in:
 - <CL>seuil_reussite</CL>: Success threshold for dice rolls in the [`/dbroll`](../usage/model.mdx#dbroll-dbroll) command.
