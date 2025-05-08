@@ -29,14 +29,16 @@ The two commands require specifying:
 ### DBRoll (`/dbroll`)
 
 :::info
-The `dbroll` command is used to roll dice for statistics that have been previously recorded, allowing you to avoid remembering the basic characteristics of a character.
+The `dbroll` command is mainly used to roll dice on the statistics recorded for a character, thus avoiding the need to retain a character's basic characteristics.  
+However, if the die type used **does not contain `$`**, it is possible to use the command without a sheet: the roll will then be made as a "global die", without associated statistics.
 :::
 
 :::usage
-**`/dbroll [statistic] (*character) (comment) (success_threshold) (expression)`**
+**`/dbroll (*statistic) (*character) (comment) (success_threshold) (expression)`**
 :::
 
-The commands require you to choose the statistic to use.
+The commands allows you to choose the statistic to use if the die type contains `$`.
+
 It is also possible to specify a <CL>success threshold</CL> to determine or overrides the success threshold. This threshold is composed by a sign (like `>=`) and a value. It is possible to combine dice rolls, statistic names, and mathematical formulas in the expression.
 
 ![dbroll_1](/assets/rolls/db/dbroll_autocomplete.png)
@@ -45,7 +47,8 @@ It is also possible to specify a <CL>success threshold</CL> to determine or over
 ### DBD (`/dbd`)
 
 :::info
-The `dbd` command allows rolling a registered die.
+The `dbd` command is used to roll a die stored in a character's file and/or the server template.
+If a die is registered in the template, it will be considered as a global die and can be used without a character if it does not contain `$` or the name of a statistic.
 :::
 
 :::usage
