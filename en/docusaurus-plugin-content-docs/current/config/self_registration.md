@@ -4,13 +4,13 @@ sidebar_position: 6
 ---
 
 :::usage
-`/config auto_enregistrement [?basculer]`
+`/config self_register [?toggle]`
 :::
 
-Permet aux joueurs, ayant accès au modèle, d'enregistrer leur **propre** personnage.
-
-Les modérateurs continueront à pouvoir enregistrer des personnages pour les autres joueurs.
+Allows players with access to the template to register their **own** characters.
+Moderators will continue to be able to register characters for other players.
 
 :::tip
-Vous pouvez limiter l'accès au modèle à certains rôles, afin de restreindre l'auto-enregistrement, notamment aux joueurs déjà validés.
+You can restrict access to the template to certain roles, in order to restrict self-registration to players who have already been validated.
 :::
+

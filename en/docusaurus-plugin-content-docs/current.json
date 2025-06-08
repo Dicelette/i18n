@@ -10,5 +10,13 @@
   "sidebar.TOS.category.Terms of Service": {
     "message": "Terms of Service",
     "description": "The label for category Terms of Service in sidebar TOS"
+  },
+  "sidebar.model.category.Template": {
+    "message": "Template",
+    "description": "The label for category Template in sidebar model"
+  },
+  "sidebar.commands.category.Character sheet": {
+    "message": "Character sheet",
+    "description": "The label for category Character sheet in sidebar commands"
   }
 }

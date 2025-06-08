@@ -1,0 +1,52 @@
+---
+title: Dice Rolling
+sidebar_position: 1
+---
+
+export function CL({ children }) {
+  return <code style={{ textDecoration: "underline", fontWeight: "bold"}}>{children.toLowerCase()}</code>;
+}
+
+
+The two commands require specifying:
+- <CL>Character</CL>: The character's name
+- <CL>Comment</CL>: Any comments on your action
+- <CL>expression</CL>: Any expressions defining conditions or modifications (such as advantage or disadvantage), which can include dice rolls, mathematical formulas, statistics names, or even the exact value of the statistic using the `$` keyword.
+
+## DBRoll (`/dbroll`)
+
+:::info
+The `dbroll` command is mainly used to roll dice on the statistics recorded for a character, thus avoiding the need to retain a character's basic characteristics.  
+However, if the die type used **does not contain `$`**, it is possible to use the command without a sheet: the roll will then be made as a "global die", without associated statistics.
+:::
+
+:::usage
+**`/dbroll (*statistic) (*character) (comment) (success_threshold) (expression)`**
+:::
+
+The commands allows you to choose the statistic to use if the die type contains `$`.
+
+It is also possible to specify a <CL>success threshold</CL> to determine or overrides the success threshold. This threshold is composed by a sign (like `>=`) and a value. It is possible to combine dice rolls, statistic names, and mathematical formulas in the expression.
+
+![dbroll_1](/assets/rolls/db/dbroll_autocomplete.png)
+![example](/assets/rolls/db/example.png)
+
+:::tip
+It is possible not to specify the comparison sign, in which case the success threshold will use the default one, if available.
+If the sign is completely absent, this option will be ignored for syntax error.
+:::
+
+## DBD (`/dbd`)
+
+:::info
+The `dbd` command is used to roll a die stored in a character's file and/or the server template.
+If a die is registered in the template, it will be considered as a global die and can be used without a character if it does not contain `$` or the name of a statistic.
+:::
+
+:::usage
+**`/dbd [*dice] (*character) (expression) (comment)`**
+:::
+
+![dbd](/assets/rolls/db/dbd_example.png)
+
+Here, the command requires you to choose the die to use. It is not possible to choose a success threshold, although it is possible to specify it in the die itself when registering it.

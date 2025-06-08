@@ -15,7 +15,7 @@ Please note that the "indirect" notation is not available in this mode.
 
 ![Roll](/assets/rolls/slash-commands.gif)
 
-The `hidden` option only works if the [hidden rolls](../config/logs.md#hidden-dice-hidden_roll) are enabled. If the option is set to true, the result will be sent as an ephemeral message, and use the configured channel (if any) to save the results.
+The `hidden` option only works if the [hidden rolls](../config/threads.md#hidden-dice-hidden_roll) are enabled. If the option is set to true, the result will be sent as an ephemeral message, and use the configured channel (if any) to save the results.
 
 ## Creating a New Scene
 
