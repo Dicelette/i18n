@@ -7,7 +7,7 @@ sidebar_position: 4
 The following commands allow you to import and export data from and to a CSV file.
 
 :::tip About Dice
-It is entirely possible to import specific dice for the command [`/dbd`](../usage/model.mdx#dbd-dbd), but you need to fill in the `dice` column as follows:
+It is entirely possible to import specific dice for the command [`/dbd`](../usage/model/dice.mdx#dbd-dbd), but you need to fill in the `dice` column as follows:
 ```md
 - [dice]: [value]
 ```
