@@ -10,7 +10,7 @@ It is possible to define :
 By default, critics are active only on the `/dbroll` command, and display a special message depending on the result.
 
 
-## Basic criticisms
+## Basic criticis
 
 Basic criticisms only concern equality on the natural die.  
 The message displayed is fixed:
@@ -25,7 +25,7 @@ The message displayed is fixed:
 | Critical Failure | 1d20 | 1 | Critical Failure |
 
 
-## Custom reviews
+## Custom critics
 
 Custom critics let you define a value or formula to display a personalized message.  
 They can be applied to the total or the natural die, and support mathematical formulas. Up to 22 custom critiques are possible.

@@ -31,7 +31,7 @@ The bot will then create a new thread, prefixed with `🎲`, where it will send 
 
 There are several help commands, depending on what you need:
 - `/help info`: Displays general bot info, including how to roll a die or create a scene.
-- `/help admin`: Displays administration commands, such as [logs](../config/logs.md#edits-logs-and-errors-config-logs) or [result_channel](../config/logs.md#save-dice-result-result_channel).
+- `/help admin`: Displays administration commands, such as [logs](../config/logs.md) or [result_channel](../config/threads.md#configure-the-results-channel).
 - `/help register`: Displays specific help for registering a server model and character files, and directs you to [documentation](../sheet/model/index.md).
 - `/help bug`: Displays a link to create a bug report.
 - `/help suggestion`: Displays a link to make a suggestion.
