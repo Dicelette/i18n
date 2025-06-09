@@ -1,5 +1,5 @@
 ---
-title: Auto-enregistrement
+title: Self Registration
 sidebar_position: 6
 ---
 
