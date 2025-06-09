@@ -3,7 +3,6 @@ title: Others
 sidebar_position: 3
 ---
 
-
 The following two commands accept :
 - `(@player)` : The player's name
 - `(*character)` : And/or the character's name
@@ -33,11 +32,12 @@ Colors can be in hexadecimal or RGB. For example, `#FF0000` or `255,0,0`.
 
 Finally, you can set a minimum and maximum for the axes with `min` and `max`.
 
-By default:
+Default:
 - The minimum is calculated according to the server template (if existing).
 - The maximum is determined in different ways:
    - If a maximum is defined by the template, it will be used.
    - Otherwise, it will be based on the critical success value.
    - If neither of the two previous options is available, it will be based on the die value (for example, if `1d20`, the value will be 20).
    - As a last resort, it will be automatically calculated based on the user's statistics.
+
 ![graph](/assets/graph.jpg)

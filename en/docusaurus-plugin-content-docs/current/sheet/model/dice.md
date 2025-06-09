@@ -8,7 +8,7 @@ There are two types of dice:
 - The dice used with `dbroll` (the **type dice**).
 - The dice saved for `dbd` (the **saved dice**).
 
-Both types follow the [dice-roller](https://dice-roller.github.io/documentation/) syntax and also support various [expressions](../../introduction/expression.mdx).
+Both types follow the [dice-roller](https://dice-roller.github.io/documentation/) syntax and also support various [notation and expression](../../introduction/expression.mdx).
 
 When targeting a stat, the method differs depending on the dice type:
 - For type dice, use the `$` keyword. This symbol will be replaced by the stat value used in `/dbroll`.

@@ -42,5 +42,5 @@ If the name is not found, the comparison will not apply, and the dice will roll 
 Additionally, you can combine different stats, formulas, or dice rolls in the name of the dice.
 
 :::note
-If the name itself includes a dice roll, it will appear in the dice's comment instead of the result.
+If the name itself includes a die roll, it will appear in the dice's comment instead of the result.
 :::

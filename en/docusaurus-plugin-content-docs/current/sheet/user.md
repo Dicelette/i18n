@@ -12,7 +12,7 @@ The username is the actual username, not the display name. The one you may have 
 
 The first modal will always be the same regardless of the template:
 - It will ask for the character's name (mandatory or optional, depending on the template settings)
-- The user's name, which must be either their ID or their username. This data is mandatory and will be pre-filled by the bot with the username of the person who clicked.
+- The user's name, which must be either their ID or their username. This data is mandatory[^2] and will be pre-filled by the bot with the username of the person who clicked.
 - If you have enabled the use of private sheets (see [here](./model/index.md#next-steps)), you will have a third field to choose whether the sheet should be private or not. If the sheet is private, simply put `x` in the field. Leave it empty otherwise!
 - You can provide a link to an image (an avatar) that will serve as the image in the sheet's embed. If left blank, the image used will be the player's avatar.
 - Finally, it is possible to send the character sheet to a channel other than those defined in the template by `private_channel` and `public_channel`.[^1] If you don't want to send the form to a specific channel, leave the field empty.
@@ -39,3 +39,4 @@ Each die must be registered manually.
 Once all of this is done, simply click "Validate" and the sheet will be reposted in the channel chosen during registration (or in a thread named `📝 • [STATS]` if no channel was chosen during template registration).
 
 [^1]: It is possible to use a forum, which will automatically create a post for the character. The player (and administrators) will be mentioned in the post. 
+[^2]: This field is not present if [self-registration](../config/self_registration.md) is allowed and a non-moderator clicked the button, as a non-moderator cannot register a character for another user.
