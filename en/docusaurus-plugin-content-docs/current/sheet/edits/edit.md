@@ -1,34 +1,9 @@
 ---
-title: Editing and deleting data
-sidebar_position: 3
+title: Edition
+sidebar_position: 1
 ---
 
-Once the user is validated, their character sheet will be automatically published in a thread or in the chosen channel. All character sheets will follow this format:
 
-![user embed](/assets/edit/user_embed.png)
-
-Only the template and the user will always be present, unless no die type and no critical success/failure have been recorded in the template.
-
-If all information is saved, you will have access to three buttons:
-- Edit user data : avatar (embed thumbnail), character name or move to another user,
-- Edit Statistics
-- Edit Saved Dice (which allows saving multiple new dice, but shh...)
-- Add a New Die.
-
-## Delete a character
-:::usage
-**`/delete_char [@player] (*character)`**
-:::
-
-This command allow to delete a character or a player from the database.
-
-It asks:
-- `[@player]` : The player username (mention) to delete
-- `(*character)` : The character name to delete, depending of the specified player.
-
-If no character is specified, the entire data of the player will be deleted. You can use the `default` key to delete the default character of the player (character without name, if not set).
-
-## Editing
 ### Edit user data
 
 ![](/assets/edit/french/user.png)
@@ -49,6 +24,9 @@ Images stored on Discord cannot be used as their links change regularly. It is t
 
 :::usage[Command]
 **`/edit avatar [url] (@user) (*character)`**
+- `url`: URL of the image to use.
+- `@user`: User to edit if different from the one using the command.
+- `*character`: Name of the character to edit. If not specified, the default character will be edited.
 :::
 
 By default, the commands will change the image of the person that used the commands. Only moderator can change the image of another user.
@@ -60,6 +38,9 @@ As the command, it doesn't allow duplicate character name. Each character must h
 
 :::usage[Command]
 **`/edit rename [new_name] (@user) (*character)`**
+- `new_name`: New name of the character.
+- `@user`: User to edit if different from the one using the command.
+- `*character`: Name of the character to edit. If not specified, the default character will be edited.
 :::
 
 #### Move to another user
@@ -70,6 +51,9 @@ It will **move** the character to another user, deleting the one on the old user
 
 :::usage[Command]
 **`/edit user [@new_user] (@old_user) (*character)`**
+- `@new_user`: User to move the character to.
+- `@old_user`: User to move the character from.
+- `*character`: Name of the character to move. If not specified, the default character will be moved.
 :::
 
 ### Editing Statistics
@@ -92,7 +76,7 @@ You can remove values by using `X` or leaving it blank, like this:
 - NAME: X
 ```
 
-If statistics have been removed from the template, they will be automatically removed from the list. Additionally, they will be automatically added back when added to the template, with a default value of "0".
+If statistics have been removed from the template, they will be automatically removed from the list. Additionally, they will be automatically added back when the template add new statistics, with a default value of "0".
 
 It is possible to modify combinations.
 
@@ -114,7 +98,3 @@ Just like during recording, dice will be evaluated to verify their validity. Add
 As with statistics, it is essential to adhere to the list and its syntax. You can delete fields by replacing the value with "X" or "0".
 
 ![edit dice](/assets/edit/dice.png)
-
-### Adding a new dice
-
-Adding a die works exactly like when recording a character.

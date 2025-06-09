@@ -4,8 +4,9 @@ sidebar_position: 3
 ---
 
 :::usage
-- **`/config auto_role dice (@role)`**
-- **`/config auto_role stats (@role)`**
+**`/config auto_role dice (@role)`**  
+**`/config auto_role stats (@role)`**
+- `@role` : The role to assign during the validation of the dice or stats.
 :::
 
 Theses commands allow to automatically add role when:

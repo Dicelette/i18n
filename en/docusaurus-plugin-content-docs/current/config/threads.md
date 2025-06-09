@@ -14,45 +14,40 @@ It is possible to:
 If the roll is made in a thread prefixed by `🎲`, the result will not be sent in the configured channel or an automatic thread.
 :::
 
+## Configure the result's channel
 
 :::usage
 **`/config result_channel [?disable_thread] (#channel)`**
+- `?disable_thread`: Disable the automatic thread creation for the results.
+- `#channel`: target channel
 :::
 
-
-There are two options:
-- `disable_thread`: Enable this option to send the results directly in the specified channel without creating a thread. In this case, auto-deletion of messages is disabled.
-- `#channel`: If you mention a channel, the results will be sent to a thread in that channel. This option is ignored if `disable_thread` is enabled.
-
-If no arguments are provided, the behavior is the same as `/config result_channel true`: the results will be sent directly in the channel where the roll was performed.
-
+- If `disable_thread` is enabled, results are sent to the salon without creating a thread (and auto-delete is disabled).
+- If a salon is specified, results will be sent to a thread in that salon (unless `disable_thread` is enabled).
+- Without arguments, the behavior corresponds to `/config result_channel true`.
 
 
 :::example
-- <u>Sent to a specific channel</u>: 
-    - `/config result_channel #channel`  
-    - `/config result_channel false #channel`   
-
-- <u>Disable automatic thread/result channel</u>:
-    - `/config result_channel true`
-    - `/config result_channel true #channel`  
-    - `/config result_channel` (if a previous configuration exists)
-- <u>Use automatic thread creation</u>: `/config result_channel false` (the results will be sent to a thread prefixed by `🎲`) 
+- **Send to a specific channel**: `/config result_channel #channel`.
+- **Disable automatic creation/result channel**: `/config result_channel true`
+- **Use automatic thread creation**: `/config result_channel false`
 :::
 
-If the copy is entirely disabled, the [automatic deletion](./display.md#time-before-deletion-delete_after) of the results will be disabled too.
+If the copy is entirely disabled, the [automatic deletion](./display.md#time-before-deletion) of the results will be disabled too.
 
-### Hidden dice: `hidden_roll`
+### Hidden dice
 
 :::usage
 **`/config hidden_roll [?toggle] (#channel)`**
+- `?toggle`: Enable or disable the hidden rolls.
+- `#channel`: Channel to use to save the hidden rolls
 :::
 
-For `/gm` commands and `/roll` commands, allow to hide the dice roll for the players.
+Enables the `hidden` option for `/gm` and `/roll` commands, and hides the result from other players.
 
-There are two configuration possible:
-- If a channel is provided, this channel will be used for the saved dice, replacing `result_channel` when the option `hidden` is used in the roll. 
-- If no channel is provided, the dice will be hidden in the channel where the command was executed, and no saved dice will be created.
+- If a salon is mentioned, it will be used to save the invisible roll.
+- Otherwise, no save is made.
 
-In the two cases, the result will be sent as [**ephemeral** message](https://support.discord.com/hc/en-us/articles/1500000580222-Ephemeral-Messages-FAQ), meaning there will be no trace of the dice roll in the channel where the command was executed after some times, and no one else than the roller will see the result.
+In all cases, the message will be sent in [**ephemeral**](https://support.discord.com/hc/fr/articles/1500000580222-Ephemeral-Messages-FAQ): only the person who rolled the die will see the result.
 
+<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.md).</small>

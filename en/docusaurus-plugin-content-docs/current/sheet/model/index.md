@@ -3,58 +3,64 @@ title: Template
 sidebar_position: 1
 ---
 
-To get started, you need to **create** a new template. Use `/register` followed by the template's name. You can also create an empty template using `/generate` or the form available [here](../form.mdx).
+To begin with, you need to **generate** a new template. You can create an empty template using `/generate` or by using the form available [right here](../form.mdx).
 
-This command allows you to create a `JSON` file with the following (optional) parameters:
+:::usage
+**`/generate (statistics) (die type) (total) (character) (critical_success) (critical_failure) (skill)`**
+- name`: The name of the statistics, separated by commas. If a name contains a space, enclose it in quotation marks.
+- `de`: The type of dice to be rolled, which may include a formula.
+- `total`: The total number of points that players can distribute.
+- `character`: Make it compulsory to enter a character name.
+- critical_success`: The value considered a critical success.
+- critical_failure`: The value considered as a critical failure.
+- skill`: Add fields for skill or attack dice.
+:::
 
-- `name`: The names of the stats, separated by commas. If a name contains a space, enclose it in quotes.
-- `dice`: The type of dice to roll, which can include a formula.
-- `total`: The total number of points players can distribute.
-- `character`: Makes entering a character name mandatory.
-- `critical_success`: The value considered a critical success.
-- `critical_failure`: The value considered a critical failure.
-- `skills`: Adds fields for skill or attack dice.
-
-You can check template examples in the `template` files [here](https://github.com/Dicelette/discord-dicelette/tree/main/template).
+See the template examples in the `template` files [here](https://github.com/Dicelette/discord-dicelette/tree/main/template).
 
 :::info Note
-Stats and dice are optional:
-- Without stats, you cannot use the `/dbroll` command.
-- Without dice, you cannot use `/dbd`.
+Statistics and dice are optional:
+- Without statistics, you won't be able to use the `/dbroll` command.
+- Without dice, you won't be able to use `/dbd`. 
 :::
 
 
+## Next steps
 
-## Next Steps
+Once the template is ready, register it with :
 
-Once the template is ready, use `/register [#channel] [file] (#user_channel) (#private_character)`.
-- `#channel`: The channel where the template will be sent, later used for creating character sheets.
-- `file`: The `JSON` file you created earlier.
-- `#user_channel`: The channel where character sheets will be published.[^1]
-- `#private_character`: Similar to `#user_channel`, but sheets published here are only visible to the user who created them or those with access to the channel (or users with the `MANAGE_ROLES` permission). If undefined, the private sheet function will be disabled.
-- `?update`: Updates all existing character sheets if they exist.
-- `?delete_all`: Deletes all existing character sheets if they exist.
+:::usage
+**`/register [#channel] [file] (#user_chan) (#personality_private) (?update) (?delete_everything)`**
+- `#channel`: Channel in which the template will be sent (used for file creation).
+- `[fichier]` : JSON file created previously.
+- `#user_chan`: Channel where the files will be published.
+- `#personnel_private`: Channel for private files (see box below).
+- `?update`: Updates all old character files, if any.
+- `?delete_all`: Deletes all old character files, if any.
+:::
 
-:::warning About Private Sheets
-If a sheet is not marked private but is published in a restricted channel, users can still view it using the `/show` and `/graph` commands.
+:::danger About private files
+If the sheet is not marked as private but is published in a room to which users do not normally have access, they will still be able to view the sheet with the `/display` and `/graph` commands.
 :::
 
 The embed will be pinned for easy access.
 
 ![embed](/assets/register/embed_template.png)
 
-:::warning Note
-You must re-register the template if you want to change the default channel for public and private sheets. However, the registered user does not need to be re-registered since the channel and message ID are saved in the database.  
+:::danger
+You need to re-register the template if you want to change the default channel for private and public sheets.  
+But the registered user doesn't need to be re-registered, as the channel and message ID are saved in the database.
+
 To move all sheets to another channel, use the [`/export`](../import_export.md) command.
 :::
 
 ## TLDR
-
 1. Create the template using [form](../form.mdx) or the `/generate` command.
 2. Save the template with `/register`.
 3. Create a player file by clicking on the “Register character” button.
 4. Fill in the character information and click on “Validate”.
 5. Modify command access rights if necessary.
 
-[^1]: A forum can also be used, automatically creating a post for the character. The player (and admins) will be mentioned in the post.
+For more information on field syntax: [see dedicated page](../../introduction/format.md).
 
+[^1]: It is possible to use a forum, which will automatically create a post for the character. The player (and administrators) will be mentioned in the post.

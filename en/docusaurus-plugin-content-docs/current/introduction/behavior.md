@@ -1,5 +1,5 @@
 ---
-title: Behavior
+title: Default behavior
 sidebar_position: 2
 ---
 
@@ -21,7 +21,7 @@ Commands can also be executed within an existing thread. In this case, the bot w
 
 You can also create a new thread using the command [create a new scene](../usage/index.md#creating-a-new-scene).
 
-:::tip Tip
+:::tip
 The bot also functions in forums, but with a few differences:
 - Multiple logs can coexist simultaneously (unless they have exactly the same name).
 - Logs will be automatically named `🎲 [topic name]`, with the `🪡 Dice Roll` tag added automatically (created if it doesn't exist).
@@ -29,7 +29,6 @@ The bot also functions in forums, but with a few differences:
 :::
 
 Additionally, via the command [`/config result_channel`](../config/threads.md), you can configure this behavior by setting a channel or disabling the automatic creation of threads.
-
 
 ## Channels
 
@@ -42,7 +41,7 @@ The bot will **also** send the result to the channel where the command was initi
 
 The bot can be:
 
-- Used with slash commands (see [commands](../usage/index.md#dice-rolling)).
+- Used with slash commands (see [commands](../usage/index.md)).
 - But also directly on the message.
 
 ## Reaction

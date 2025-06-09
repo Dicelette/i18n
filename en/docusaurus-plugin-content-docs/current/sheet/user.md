@@ -2,41 +2,61 @@
 sidebar_position: 2
 title: Registering an user
 ---
-Now that the template is created, you can register users. As we saw earlier, the template embed contains a "Register a Character" button.
 
-Once the button is activated, you will have a series of modals to fill out.
+Now that the template has been created, you can register users. As we saw earlier, the template's embed contains a button **"Register a character ”**.
+
+Once this button has been activated, you'll be presented with a series of forms to fill in.
 
 :::info
-The username is the actual username, not the display name. The one you may have been forced to change when Discord removed numbers after pseudonyms...
+The username is the Discord username (not the display name). This is the one you may have had to change when Discord removed the numbers after the nicknames...
 :::
 
-The first modal will always be the same regardless of the template:
-- It will ask for the character's name (mandatory or optional, depending on the template settings)
-- The user's name, which must be either their ID or their username. This data is mandatory[^2] and will be pre-filled by the bot with the username of the person who clicked.
-- If you have enabled the use of private sheets (see [here](./model/index.md#next-steps)), you will have a third field to choose whether the sheet should be private or not. If the sheet is private, simply put `x` in the field. Leave it empty otherwise!
-- You can provide a link to an image (an avatar) that will serve as the image in the sheet's embed. If left blank, the image used will be the player's avatar.
-- Finally, it is possible to send the character sheet to a channel other than those defined in the template by `private_channel` and `public_channel`.[^1] If you don't want to send the form to a specific channel, leave the field empty.
 
-	:::warning
-	The form can only be hidden **if** the form is private. Even if the record is sent to a channel inaccessible to other users, they will be able to view it without this option.
-	:::
+## Main form
 
+The first form is always the same, whatever the model:
+
+- **Character name** (*required or optional depending on model*)  
+- **Username** (*mandatory if moderation[^2]*): Discord ID or username. Pre-filled with the name of the person clicking.  
+- **Private form** (*optional*): If enabled (see [private form](./model/index.md#next-steps)), allows you to choose whether the form should be private (`x` if yes, empty otherwise).  
+- **Avatar** (*optional*): Link to the image to be used for the form. If empty, the player's avatar will be used.
+- **Display room** (*optional*): Allows you to send the form to a room other than those defined by the template (`private_channel` or `public_channel`). Leave blank to use default channels.
+
+:::warning
+The listing can be hidden **only** if the `private_channel` option is enabled: even if the listing is sent to a channel inaccessible to others, they will be able to view it if this option is not enabled.
+:::
 
 ![Page_1](/assets/register/register_user_P1.png)
 
-The second modal will depend on the template: if there are more than 5 saved characteristics, you will have multiple pages to fill out. Each time, you will simply enter the value of the statistic. These values will then be checked (min/max and if they are indeed numbers). Unfortunately, for now, Discord does not allow direct verification of this in the modal, so you will have to wait until the end to see if everything is correct.
+## Statistics form
+
+The following form(s) depend on the model:  
+- If more than five characteristics are present, several pages will be displayed.
+- At each step, simply enter the value of the requested statistic (min/max controls and number).
+
 ![fin embed](/assets/register/fin_stat.png)
 
 
-Once the registration is complete (meaning all statistics have been filled out), moderators have the option to validate or register dice.
+## Registered dice
+
+Once registration is complete (all statistics filled in), you can add specific dice for this character.
 
 ![modal_dice](/assets/register/add_dice.png)
 
-Each die must be registered manually.
+Each dice must be registered manually.
 
 ![fin](/assets/register/fin_embed.png)
 
-Once all of this is done, simply click "Validate" and the sheet will be reposted in the channel chosen during registration (or in a thread named `📝 • [STATS]` if no channel was chosen during template registration).
 
-[^1]: It is possible to use a forum, which will automatically create a post for the character. The player (and administrators) will be mentioned in the post. 
-[^2]: This field is not present if [self-registration](../config/self_registration.md) is allowed and a non-moderator clicked the button, as a non-moderator cannot register a character for another user.
+## Validation
+
+Click on **"Validate ”** to finalize the form.  
+The form will then be sent to the chosen salon (or to a thread named `📝 - [STATS]` if no salon is defined or accessible).
+
+## Important reminders
+
+- Form field syntax and auto-completion](../introduction/format.md)
+- If [auto-registration](../config/self_registration.md) is enabled and a non-moderator clicks on the button, he'll only be able to register one character for himself.
+
+[^1]: It is possible to use a forum, which will automatically create a post for the character. The player (as well as the administrators) will be mentioned in the post. 
+[^2]: The “username” field is not present if [auto_registration](../config/self_registration.md) is enabled and a non-moderator has clicked on the button.

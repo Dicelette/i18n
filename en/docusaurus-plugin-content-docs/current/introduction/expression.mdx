@@ -10,11 +10,12 @@ export function CL({ children }) {
 ## Mathematical Expressions with MathJS
 
 The bot uses the [mathjs](https://mathjs.org/) library to evaluate mathematical expressions. You can use complex mathematical expressions when enclosed within `{{` and `}}`.
-Depending on the commands, you can use:
-- `$`: Represents the value of the statistic used.
+
+Depending on the command, you can use :
+- `$`: Symbolizes the value of the statistic used.
 - The name of a statistic (which will be replaced by its value).
-- Dice combinations (like `1d6`).
-- `{exp}`: Allows you to insert an expression directly into the die, using the computed part of the command. You can also specify a default value using the `{exp||default}` syntax (like `{exp||2}`). Only numbers are accepted. If not specified, the default value will be `1`.
+- Dice combinations (such as `1d6`).
+- `{exp}`: This syntax allows you to insert an expression directly into the dice, using the calculated part of the command. You can specify a default value using the `{exp||default}` syntax (like `{exp||2}`). Otherwise, the default value will be `1`.
 
 Expressions are typically used in:
 - <CL>success_threshold</CL>: Success threshold for dice rolls in the [`/dbroll`](../usage/model/dice.mdx#dbroll-dbroll) command.
@@ -29,7 +30,7 @@ Expressions are typically used in:
 
 You can use the syntax `die;&+x;µ*y` to roll a single die and apply different formulas to the same die, displaying the result of each formula. The `&` symbol represents the die's result.
 
-:::warning[Note]
+:::warning
 You must avoid spaces before and after the separator between formulas, or the bot will interpret the remainder as comments.
 :::
 

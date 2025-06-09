@@ -8,6 +8,7 @@ export function CL({ children }) {
 }
 
 
+
 The two commands require specifying:
 - <CL>Character</CL>: The character's name
 - <CL>Comment</CL>: Any comments on your action
@@ -22,11 +23,21 @@ However, if the die type used **does not contain `$`**, it is possible to use th
 
 :::usage
 **`/dbroll (*statistic) (*character) (comment) (success_threshold) (expression)`**
+- <CL>statistic</CL>: The statistic to use, only needed if the die type contains `$`.
+- <CL>*character</CL>: The character to use, if any.
+- <CL>comment</CL>: Any comments on your action.
+- <CL>success_threshold</CL>: The success threshold to use, if any.
+- <CL>expression</CL>: Any expressions defining conditions or modifications.
 :::
 
 The commands allows you to choose the statistic to use if the die type contains `$`.
 
 It is also possible to specify a <CL>success threshold</CL> to determine or overrides the success threshold. This threshold is composed by a sign (like `>=`) and a value. It is possible to combine dice rolls, statistic names, and mathematical formulas in the expression.
+
+:::tip
+It is possible not to specify the comparison sign, in which case the success threshold will use the default one, if available.
+If the sign is completely absent, this option will be ignored for syntax error.
+:::
 
 ![dbroll_1](/assets/rolls/db/dbroll_autocomplete.png)
 ![example](/assets/rolls/db/example.png)
@@ -45,8 +56,14 @@ If a die is registered in the template, it will be considered as a global die an
 
 :::usage
 **`/dbd [*dice] (*character) (expression) (comment)`**
+- <CL>*dice</CL>: The die to use
+- <CL>*character</CL>: The character to use, if any.
+- <CL>expression</CL>: Any expressions defining conditions or modifications.
+- <CL>comment</CL>: Any comments on your action.
 :::
 
 ![dbd](/assets/rolls/db/dbd_example.png)
 
 Here, the command requires you to choose the die to use. It is not possible to choose a success threshold, although it is possible to specify it in the die itself when registering it.
+
+<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.md).</small>

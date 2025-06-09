@@ -2,15 +2,12 @@
 title: Others
 sidebar_position: 3
 ---
-
-The following two commands accept :
-- `(@player)` : The player's name
-- `(*character)` : And/or the character's name
-
 ### Display
 
 :::usage
 **`/display (@player) (*character)`**
+- `@player`: The player whose character you want to display.
+- `*character`: The character you want to display, if any.
 :::
 
 The `display` command allows you to view the statistics and dice of a character recorded in the database. 
@@ -21,18 +18,18 @@ The `display` command allows you to view the statistics and dice of a character 
 
 :::usage
 **`/graph (@player) (*character) (line) (bg) (min) (max)`**
+- `@player`: The player whose character you want to graph.
+- `*character`: The character you want to graph, if any.
+- `line`: The color of the line (default: `#0e47b2`).
+- `bg`: The background color (default: `#0e47b2`).
+- `min`: The minimum value for the axes.
+- `max`: The maximum value for the axes.
 :::
 
-The `/graph` command is a "gimmick" feature that generates a graph from a character's statistics. 
-Optionally, you can also specify colors with:
-- `line`: For lines (default, `#0e47b2`).
-- `background`: For background (default, `#0e47b2`).
+The `/graph` command is a "gimmick" feature that generates a graph from a character's statistics. You can personalize the color of the line and the background using hexadecimal or RGB values (e.g., `#FF0000` or `255,0,0`).
 
-Colors can be in hexadecimal or RGB. For example, `#FF0000` or `255,0,0`.
 
-Finally, you can set a minimum and maximum for the axes with `min` and `max`.
-
-Default:
+By default:
 - The minimum is calculated according to the server template (if existing).
 - The maximum is determined in different ways:
    - If a maximum is defined by the template, it will be used.
@@ -41,3 +38,5 @@ Default:
    - As a last resort, it will be automatically calculated based on the user's statistics.
 
 ![graph](/assets/graph.jpg)
+
+<small>For more information about the commands syntax, see: [the dedicated page](../../introduction/format.md).</small>

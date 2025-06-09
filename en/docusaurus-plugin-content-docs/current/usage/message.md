@@ -19,4 +19,4 @@ This bot detects dice notation and sends the result using three methods:
    ![Semi-direct](/assets/rolls/semi-direct.gif)
 
 
-It is also possible to use slashcommands to throw dice, like `/roll` ([see here for more information](../usage/index.md#dice-rolling))  
+It is also possible to use slash-commands to throw dice, like `/roll` ([see here for more information](../usage/index.md#dice-rolling))  

@@ -9,9 +9,10 @@ Diverses options allows to personalize the display of the dice's results, whethe
 
 :::usage
 **`/config timestamp [?toggle]`**
+- `?toggle`: Disable or enable the timestamp.
 :::
 
-If the option is set to **true**, the timestamp will be displayed in the dice results.
+If the option is enabled (**true**), the timestamp will be displayed in the dice results.
 
 ![](/assets/rolls/config/timestamp.png)
 
@@ -19,32 +20,32 @@ If the option is set to **true**, the timestamp will be displayed in the dice re
 The timestamp automatically adapts to the user's time zone.
 :::
 
-## Time before deletion: `delete_after`
+## Time before deletion
 
 :::usage
 **`/config delete_after [time]`**
+- `[time]` : Delay in second (0 = never deleted)
 :::
 
-By default, dice roll result messages are deleted after **3** minutes. This command allows you to change the delay (up to 60 minutes) before messages are deleted.
+Defines the delay before automatic deletion of result messages (from 0 to 3600s, default: 180s).
 
-If the value is set to **0**, messages will no longer be deleted.
-
-This option is disabled if there is no channel or thread for saving the result.
+This setting is disabled if there are no backup channels or threads.
 
 :::tip
-This command allow to have both the result log in a dedicated channel (or in threads) while keeping the result in the main channel for the players to see.
+Allows you to have both a dedicated log and to keep the result indefinitely in the original room if required.
 :::
 
-## Context and backup links
-### [Save] Link to the dice's context: `context`
+## Context's link
+### Link to the die context
 
 :::usage
 **`/config context [?toggle]`**
+- `?toggle`: Disable or enable the context link.
 :::
 
 Adds a link to the context of the die in the die save.
 - If auto-delete is enabled, the link created will return to the previous die message.
-- If auto-delete is disabled, the link will refer to the die's message directly.
+- Otherwise the link will refer to the die's message directly.
 
 :::warning
 If the context message is deleted, the link will no longer work.
@@ -56,13 +57,15 @@ If the context message is deleted, the link will no longer work.
 This option is disabled if there is no channel or thread for saving the result.
 :::
 
-### [Dice throw] Link to the saved dice: `save_link`
+### Link to the saved dice
 
 :::usage
 **`/config save_link [?toggle]`**
+- `?toggle`: Disable or enable the link to the saved dice.
 :::
 
 Adds a link to the die backup in the die result message.
 
 ![Link to backup](/assets/rolls/config/backup_link.png)
 
+<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.md).</small>

@@ -15,13 +15,11 @@ The `calc` allow to realize calculations with the statistics of the character an
 
 :::usage
 **`/calc [statistic] [*sign] [expression] (*transform) (*character) (comment)`**
-:::
-
-The command requires:
 - **<CL>statistic</CL>**: The statistic to use.  
 - **<CL>sign</CL>**: The sign of the operation to perform. Valid signs are: `+`, `-`, `*`, `/`, `^` (power), `%` (modulo), `/` (division), `≠` (not equal to), `=` (equal to), `⩾` (greater than or equal to), `⩽` (less than or equal to), `>` (greater than), `<` (less than).  
 - **<CL>expression</CL>**: The expression to apply.  
 - **<CL>transform</CL>**: The transformation to apply to the final result, including: `ceil` (round up), `floor` (round down), `round` (round to the nearest integer), `abs` (absolute value), `sqrt` (square root), or `square` (square the value). You can combine two transformations, such as `ceil(abs())`. Additionally, it is possible to use [functions supported by `mathjs`](https://mathjs.org/docs/reference/functions.html), even if they are not in the list of suggested terms. The allowed function needs to take only one argument (or optionally two, but the second won't be set).
+:::
 
 :::note
 It is possible to use the "non ascii" version of the signs, for example `>=` for `⩾` or `!=` for `≠` and `==` for `=`.
@@ -33,6 +31,9 @@ It is possible to use the "non ascii" version of the signs, for example `>=` for
 
 :::usage
 **`/math [expression] (*character) (comment)`**
+- `expression` : Expression mathématique to perform.
+- `(*personnage)` : Character to use (only for the result display)
+- `(commentaire)` : Comments if needed.
 :::
 
 The command allows you to perform a simple calculation without using a statistic. The expression can include mathematical operations, dice rolls, and functions supported by `mathjs`.

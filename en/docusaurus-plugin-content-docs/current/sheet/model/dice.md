@@ -27,7 +27,7 @@ You can also compare using a formula:
 - For a saved dice: `1d6 > {{ceil(Strength / 2)}}`
 :::
 
-The presence of the `$` makes the statistic mandatory. Otherwise, the die can be rolled without a sheet.
+The presence of the `$` sign makes the statistic mandatory. Otherwise, the die can be rolled without a sheet.
 
 ## Saved Dice  
 
@@ -37,10 +37,8 @@ You can customize saved dice using different syntaxes:
 - **Statistic Name:** Allows referencing a statistic directly in the dice.  
 
 :::example
-
 | Type                    | Dice Name                  | Replaced Value                                       | Syntax           | Example    |
 |-------------------------|----------------------------|------------------------------------------------------|------------------|------------|
 | **Specific Statistic**  | Strength                   | `Strength=20`                                        | `1d6 > Strength` | `1d6 > 20` |
 | **Custom Critical Hit** | Animal Instinct (Strength) | <li>`Strength=20`</li><li>Custom Critical: `>$`</li> | `1d6`            | `1d6>20`   |
-
 :::

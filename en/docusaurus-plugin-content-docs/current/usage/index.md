@@ -7,27 +7,25 @@ sidebar_position: 1
 
 :::usage
 **`/roll (dice) (?hidden)`**
+- `dice`: The dice to roll, which can be a simple die (e.g., `d20`, `2d6+3`, etc.) or a more [complex expression](./../introduction/expression.mdx).
+- `?hidden`: Optional boolean to indicate if the roll should be hidden (cf. [hidden roll](../config/threads.md#hidden-dice)).
 :::
 
-You can also use the "semi-direct" notation by adding a comment: `/roll (dice comments)`.
-
-Please note that the "indirect" notation is not available in this mode.
+To understand all the dice notations that can be used with the bot (direct, indirect, semi-direct notation), see [this page](./message.md).
 
 ![Roll](/assets/rolls/slash-commands.gif)
-
-The `hidden` option only works if the [hidden rolls](../config/threads.md#hidden-dice-hidden_roll) are enabled. If the option is set to true, the result will be sent as an ephemeral message, and use the configured channel (if any) to save the results.
 
 ## Creating a New Scene
 
 :::usage
 **`/scene [name] (tempo)`**
+- `name`: The name of the scene, which will be used to create a thread.
+- `tempo`: Create a time bubble (the thread will be prefixed by a clock and named with today's date by default)
 :::
 
 The bot will then create a new thread, prefixed with `🎲`, where it will send dice logs. This thread will be named after the `scene`, and all other threads prefixed with `🎲` will be archived.
 
 ![Scene](/assets/rolls/scene.gif)
-
-The `tempo` argument allows you to create a "temporal bubble," which will create a thread prefixed with a clock icon, and by default, the channel name will be today's date.
 
 ## Help
 
