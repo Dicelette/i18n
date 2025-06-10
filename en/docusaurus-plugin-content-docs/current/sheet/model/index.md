@@ -7,7 +7,7 @@ To begin with, you need to **generate** a new template. You can create an empty 
 
 :::usage
 **`/generate (statistics) (die type) (total) (character) (critical_success) (critical_failure) (skill)`**
-- name`: The name of the statistics, separated by commas. If a name contains a space, enclose it in quotation marks.
+- `name`: The name of the statistics, separated by commas. If a name contains a space, enclose it in quotation marks.
 - `de`: The type of dice to be rolled, which may include a formula.
 - `total`: The total number of points that players can distribute.
 - `character`: Make it compulsory to enter a character name.
