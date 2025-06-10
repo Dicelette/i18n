@@ -20,7 +20,7 @@ See the template examples in the `template` files [here](https://github.com/Dice
 
 :::info Note
 Statistics and dice are optional:
-- Without statistics, you won't be able to use the `/dbroll` command.
+- `/dbroll` will only be available if you **don't** specify a dice type with `$`. Otherwise, you will need to register statistics to be able to use it.
 - Without dice, you won't be able to use `/dbd`. 
 :::
 
