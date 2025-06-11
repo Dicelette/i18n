@@ -17,4 +17,4 @@ All commands are similar to [dbroll](./dice.mdx#dbroll-dbroll), [dbd](./dice.mdx
 
 The option `?hidden` only works if [hidden rolls](../../config/threads.md#hidden-dice) are enabled. If the option is set to true, the result will be sent as an ephemeral message, and use the configured channel (if any) to save the results. 
 
-<small>For more information about the commands syntax, see: [the dedicated page](../../introduction/format.md).</small>
+<small>For more information about the commands syntax, see: [the dedicated page](../../introduction/format.mdx).</small>

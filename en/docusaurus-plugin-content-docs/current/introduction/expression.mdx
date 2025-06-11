@@ -1,25 +1,59 @@
 ---
-title: Dice notations
-sidebar_position: 2
+title: Dice Notations
+sidebar_position: 3
 ---
 
 export function CL({ children }) {
   return <code style={{ textDecoration: "underline", fontWeight: "bold"}}>{children.toLowerCase()}</code>;
 }
 
+The bot uses the [dice roller](https://dice-roller.github.io/documentation/)[^1] library for dice rolls and supports its syntax. 
+However, there are some differences as Dicelette aims to be more flexible and display dice roll results in a more readable way.
+
+## Differences with Dice Roller
+### Extended Syntax for Comments
+
+Dicelette extends the Dice Roller syntax by taking inspiration from [Dice Parser](https://invent.kde.org/rolisteam/rolisteam-diceparser/-/blob/master/HelpMe.md#comment): 
+- The use of `# comment` in addition to the basic syntax for comments.
+- The ability to use `[comment]` to annotate a shared dice roll, providing context for each result line.
+
+### Comparators
+
+By default, when a comparison sign (`>`, `<`, `=`, etc.) is present, the bot will consider the total and the compared value (while rolling and/or calculating if necessary) and indicate whether the roll is a failure or a success: 
+:::roll[ **Success** — `1d20` ⟶ `[20]` = `[20] > 10` ]
+:::
+
+However, some systems require counting the number of rolls above (or below) a value rather than comparing the total result. 
+To maintain compatibility between Dicelette and Dice Roller, the roll must be enclosed in curly braces `{}`, such as `{3d12>20}`.
+:::roll[ `{3d12>20} ⟶ {[11, 9, 7]} =  [0] `]
+:::
+
+In these specific cases, the bot will not display success, failure, or critical text, and does the same when using [target failure](https://dice-roller.github.io/documentation/guide/notation/group-rolls.html#target-failure-dice-pool).
+
+:::note
+- `{1d3}>20` will yield the same result as `1d3>20`
+- But **not** `{1d3,1d6}>20`, which retains the default Dice Roller syntax. To compare the total to a value, use `1d3+1d6>20`.
+:::
+
+:::tldr
+- If you want to count the number of dice passing a comparison, you must enclose the die and comparator in curly braces `{}`.
+- If you want to use target failures, you must retain the Dice Roller syntax.
+:::
+
+
 ## Mathematical Expressions with MathJS
 
-The bot uses the [mathjs](https://mathjs.org/) library to evaluate mathematical expressions. You can use complex mathematical expressions when enclosed within `{{` and `}}`.
+The bot uses the [mathjs](https://mathjs.org/) library to evaluate mathematical expressions. You can use complex mathematical expressions when they are enclosed in `{{` and `}}`.
 
-Depending on the command, you can use :
-- `$`: Symbolizes the value of the statistic used.
+Depending on the commands, you can use:
+- `$`: Represents the value of the used statistic.
 - The name of a statistic (which will be replaced by its value).
-- Dice combinations (such as `1d6`).
-- `{exp}`: This syntax allows you to insert an expression directly into the dice, using the calculated part of the command. You can specify a default value using the `{exp||default}` syntax (like `{exp||2}`). Otherwise, the default value will be `1`.
+- Dice combinations (like `1d6`).
+- `{exp}`: This syntax allows you to directly insert an expression into the die, reusing the calculated part of the command. A default value can be specified using the syntax `{exp||default}` (e.g., `{exp||2}`). Otherwise, the default value will be `1`.
 
-Expressions are typically used in:
+Expressions are generally used in:
 - <CL>success_threshold</CL>: Success threshold for dice rolls in the [`/dbroll`](../usage/model/dice.mdx#dbroll-dbroll) command.
-- <CL>expression</CL>: For the [`/calc`](../usage/model/calc.mdx#based-on-statistic-calc), [`/dbroll`](../usage/model/dice.mdx#dbroll-dbroll) et [`/dbd`](../usage/model/dice.mdx#dbd-dbd)
+- <CL>expression</CL>: For the [`/calc`](../usage/model/calc.mdx#based-on-statistics-calc), [`/dbroll`](../usage/model/dice.mdx#dbroll-dbroll), and [`/dbd`](../usage/model/dice.mdx#dbd-dbd) commands.
 
 ### Examples of Mathematical Expressions
 
@@ -28,50 +62,60 @@ Expressions are typically used in:
 
 ## Shared Unique Rolls (Reusing Results)
 
-You can use the syntax `die;&+x;µ*y` to roll a single die and apply different formulas to the same die, displaying the result of each formula. The `&` symbol represents the die's result.
+You can use the syntax `die;&+x;µ*y` to roll a single die and apply different formulas to the same die, displaying the result of each formula. The `&` represents the die result.
 
 :::warning
-You must avoid spaces before and after the separator between formulas, or the bot will interpret the remainder as comments.
+You must not have spaces before or after the separator between formulas, otherwise the bot will treat the rest as comments.
 :::
 
 :::example
-```
 /roll 1d20;&+5;&*2
+Will display the result as:
 ```
-Displays the result as:
+  ※ `1d20` ⟶ `[10]` = ` 10 `  
+  ◈ `[1d20]+5` ⟶ `[10]+5` = ` 15 `  
+  ◈ `[1d20]×2` ⟶ `[10]×2` = ` 20 `  
 ```
-  ※ `1d20` ⟶ `[10]` = ` 10 `
-  ◈ `[1d20]+5` ⟶ `[10]+5` = ` 15 `
-  ◈ `[1d20]×2` ⟶ `[10]×2` = ` 20 `
-```
+:::
+
 :::
 
 ::::tip
 You can use dice in the formulas, but only the first die will be saved and reused.
-:::example[`1d20;&+1d4;&*2`]
+:::roll[ `1d20;&+1d4;&*2`]
 ```
-  ※ `1d20` ⟶ `[7]` = ` 7 `
-  ◈ `[1d20]+1d4` ⟶ `7+[1]` = ` 8 `
-  ◈ `[1d20]×2` ⟶ `[7]×2` = ` 14 `
+  ※ `1d20` ⟶ `[7]` = ` 7 `  
+  ◈ `[1d20]+1d4` ⟶ `7+[1]` = ` 8 `  
+  ◈ `[1d20]×2` ⟶ `[7]×2` = ` 14 `  
 ```
 :::
 ::::
 
-To add comments between rolls, use the syntax `[comment]`. For a global comment, use the `# comment` syntax at the end of the dice roll. 
-:::example[`1d20;&-2[HP loss]`]
-  ※ `1d20` ⟶ `[2]` = ` 2 `
-  ◈ <u>HP loss</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `
+To comment between each roll, use the `[comment]` syntax. A global comment should use the `# comment` syntax at the end of the dice.
+
+:::roll[ `1d20;&-2[hp loss]` ]
+  ※ `1d20` ⟶ `[2]` = ` 2 `  
+  ◈ <u>hp loss</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `  
 :::
 
-Finally, you can hide the first die using the syntax `(die)`:
-:::example[`(1d20);&>100;&+2`]
-  **Failure** — `[1d20]>100` ⟶ `[12]>100` = ` 12<100 `
-  ◈ `[1d20]+2` ⟶ `[12]+2` = ` 14 `
+Finally, it is possible to hide the first die using the syntax `(die)`:
+:::roll[ `(1d20);&>100;&+2` ]  
+  **Failure** — `[1d20]>100` ⟶ `[12]>100` = ` 12<100 `  
+  ◈ `[1d20]+2` ⟶ `[12]+2` = ` 14 `  
 :::
 
-:::danger[Mass dice rolls cannot be used with this syntax.]
+:::danger[It is not possible to use bulk dice in this syntax.]
 :::
 
 ## Bulk Rolls
 
-The bot also supports the `x#(dice)` notation for "bulk rolls," allowing you to save time during your gaming sessions.
+The bot also supports the `x#(dice)` notation, inspired by [rollem](https://rollem.rocks/docs/v1-syntax/bulk-rolling) for "bulk rolls".
+
+:::roll[ `4#2d10` ]
+  `2d10` ⟶ `[2, 7]` = ` [9] `  
+  `2d10` ⟶ `[2, 8]` = ` [10] `  
+  `2d10` ⟶ `[4, 3]` = ` [7] `  
+  `2d10` ⟶ `[8, 9]` = ` [17] `  
+:::
+
+[^1]: Dice Roller itself uses [random-js](https://www.npmjs.com/package/random-js) for random generation, not `math.random` which is pseudo-random. So it's not possible to cheat on dice results (unless you're a cryptomancer or can see the future... Or both.).

@@ -61,6 +61,6 @@ To move all sheets to another channel, use the [`/export`](../import_export.md) 
 4. Fill in the character information and click on “Validate”.
 5. Modify command access rights if necessary.
 
-For more information on field syntax: [see dedicated page](../../introduction/format.md).
+For more information on field syntax: [see dedicated page](../../introduction/format.mdx).
 
 [^1]: It is possible to use a forum, which will automatically create a post for the character. The player (and administrators) will be mentioned in the post.

@@ -24,4 +24,4 @@ Allow to change the language of the bot, overriding any language configuration (
 
 For the moment, only English and French are available.
 
-<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.md).</small>
+<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>

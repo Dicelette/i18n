@@ -39,4 +39,4 @@ By default:
 
 ![graph](/assets/graph.jpg)
 
-<small>For more information about the commands syntax, see: [the dedicated page](../../introduction/format.md).</small>
+<small>For more information about the commands syntax, see: [the dedicated page](../../introduction/format.mdx).</small>

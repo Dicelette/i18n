@@ -15,4 +15,4 @@ Moderators will continue to be able to register characters for other players.
 You can restrict access to the template to certain roles, in order to restrict self-registration to players who have already been validated.
 :::
 
-<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.md).</small>
+<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>

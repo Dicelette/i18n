@@ -14,4 +14,4 @@ The `logs` command allows you to set up a channel to:
 
 Sending the command without the `#channel` argument will remove logging.
 
-<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.md).</small>
+<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>

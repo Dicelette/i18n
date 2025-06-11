@@ -64,4 +64,4 @@ If the name itself contains a die roll, the latter will be displayed in the die 
 - The `$` value is replaced by the die name statistic (in brackets).
 - Up to 22 custom reviews per model.
 
-<small>For more information on field syntax: [see dedicated page](../../introduction/format.md).</small>
+<small>For more information on field syntax: [see dedicated page](../../introduction/format.mdx).</small>

@@ -50,4 +50,4 @@ Enables the `hidden` option for `/gm` and `/roll` commands, and hides the result
 
 In all cases, the message will be sent in [**ephemeral**](https://support.discord.com/hc/fr/articles/1500000580222-Ephemeral-Messages-FAQ): only the person who rolled the die will see the result.
 
-<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.md).</small>
+<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>

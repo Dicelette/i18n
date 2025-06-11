@@ -68,4 +68,4 @@ Adds a link to the die backup in the die result message.
 
 ![Link to backup](/assets/rolls/config/backup_link.png)
 
-<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.md).</small>
+<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>
