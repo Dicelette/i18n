@@ -1,11 +1,10 @@
 ---
 title: Dice Notations
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-export function CL({ children }) {
-  return <code style={{ textDecoration: "underline", fontWeight: "bold"}}>{children.toLowerCase()}</code>;
-}
+import { CL} from "@site/src/components/utils.tsx";
+
 
 The bot uses the [dice roller](https://dice-roller.github.io/documentation/)[^1] library for dice rolls and supports its syntax. 
 However, there are some differences as Dicelette aims to be more flexible and display dice roll results in a more readable way.

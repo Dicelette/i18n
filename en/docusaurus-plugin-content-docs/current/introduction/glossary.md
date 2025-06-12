@@ -1,6 +1,6 @@
 ---
 title: Glossary
-sidebar_position: 4
+sidebar_position: 99
 ---
 A quick reference of main terms used in Dicelette.
 
