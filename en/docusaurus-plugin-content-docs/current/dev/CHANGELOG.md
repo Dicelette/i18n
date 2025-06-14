@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.50.0](https://github.com/Dicelette/discord-dicelette/compare/1.49.0...1.50.0) (2025-06-14)
+
+
+### Features
+
+* **allowSelf:** add option where moderator needs to validate the sheet ([64fb496](https://github.com/Dicelette/discord-dicelette/commit/64fb496f6fffbe35d6bfbfe54eee6162974b0d56))
+
+## [1.49.0](https://github.com/Dicelette/discord-dicelette/compare/1.48.4...1.49.0) (2025-06-14)
+
+
+### Features
+
+* allow force distribution of points ([085b11e](https://github.com/Dicelette/discord-dicelette/commit/085b11e07a9680b4d8c36d3bc935c269e135ad04))
+
 ## [1.48.4](https://github.com/Dicelette/discord-dicelette/compare/1.48.3...1.48.4) (2025-06-13)
 
 ## [1.48.3](https://github.com/Dicelette/discord-dicelette/compare/1.48.2...1.48.3) (2025-06-11)
