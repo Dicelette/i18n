@@ -4,8 +4,9 @@ sidebar_position: 6
 ---
 
 :::usage
-`/config self_register [?toggle]`
-- `?toggle`: enable/disable the self-registration (optional)
+`/config self_register [?toggle] (?validation_moderation)`
+- `?toggle`: enable/disable the self-registration
+- `?validation_moderation`: Only the moderators can validate the sheet after the self-registration by the player.
 :::
 
 Allows players with access to the template to register their **own** characters.
