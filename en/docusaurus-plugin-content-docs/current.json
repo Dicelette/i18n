@@ -18,5 +18,13 @@
   "sidebar.commands.category.Character sheet": {
     "message": "Character sheet",
     "description": "The label for category Character sheet in sidebar commands"
+  },
+  "sidebar.model.category.Editing and deleting data": {
+    "message": "Editing and deleting data",
+    "description": "The label for category Editing and deleting data in sidebar model"
+  },
+  "sidebar.commands.category.Character roll": {
+    "message": "Character roll",
+    "description": "The label for category Character roll in sidebar commands"
   }
 }
