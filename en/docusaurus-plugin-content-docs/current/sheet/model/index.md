@@ -3,24 +3,13 @@ title: Template
 sidebar_position: 1
 ---
 
-To begin with, you need to **generate** a new template. You can create an empty template using `/generate` or by using the form available [right here](../form.mdx).
-
-:::usage
-**`/generate (statistics) (die type) (total) (character) (critical_success) (critical_failure) (skill)`**
-- `name`: The name of the statistics, separated by commas. If a name contains a space, enclose it in quotation marks.
-- `de`: The type of dice to be rolled, which may include a formula.
-- `total`: The total number of points that players can distribute.
-- `character`: Make it compulsory to enter a character name.
-- critical_success`: The value considered a critical success.
-- critical_failure`: The value considered as a critical failure.
-- skill`: Add fields for skill or attack dice.
-:::
+To begin with, you need to **generate** a new template. You can create one by using the form available [right here](../form.mdx).
 
 See the template examples in the `template` files [here](https://github.com/Dicelette/discord-dicelette/tree/main/template).
 
 :::info Note
 Statistics and dice are optional:
-- `/dbroll` will only be available if you **don't** specify a dice type with `$`. Otherwise, you will need to register statistics to be able to use it.
+- `/dbroll` will only be available if you **don't** specify a die type with `$`. Otherwise, you will need to register statistics to be able to use it.
 - Without dice, you won't be able to use `/dbd`. 
 :::
 
