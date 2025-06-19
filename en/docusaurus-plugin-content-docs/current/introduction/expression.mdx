@@ -39,6 +39,28 @@ In these specific cases, the bot will not display success, failure, or critical 
 - If you want to use target failures, you must retain the Dice Roller syntax.
 :::
 
+### Critical Successes and Failures
+
+You can define thresholds for critical successes and failures in dice rolls using the following syntax:
+- <CL>Critical Failure</CL>: `{cf:[sign](value)}`
+- <CL>Critical Success</CL>: `{cs:[sign](value)}`
+
+This expression can be placed anywhere in the dice roll, except after a comment, and must be **attached** directly to the die (no space between the die and the expression).
+
+Where:
+- `sign` is the comparison operator (`>`, `<`, `=`, etc.).
+- `value` can be a number, a die, a math expression, or a statistic (just like [custom criticals](../sheet/model/critics.md#custom-critics)).
+- `*` (optional) allows comparison only on the **natural die** (the first dice roll), not the total.
+
+:::roll[ **Critical Failure** — `1d20>=20{cf:>10}` ⟶ `[20]` = ` 20 > 10 ` ]
+:::roll[ **Critical Success** — `{cs:<2}1d20<=1` ⟶ `[1]` = ` 1 < 2 ` ]
+
+:::tip
+The full formula syntax is: `{c[f|s]:[>=<!]+(text)}`
+:::
+
+:::warning[ This method is not compatible with the exceptions mentioned in the previous section. ]
+
 
 ## Mathematical Expressions with MathJS
 

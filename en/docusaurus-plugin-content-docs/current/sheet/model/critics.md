@@ -19,10 +19,10 @@ The message displayed is fixed:
 
 **Configuration example:**
 
-| Type | Natural die | Value | Display message |
-|-----------------|------------|--------|----------------------|
-| Critical success | 1d20 | 20 | Critical success |
-| Critical Failure | 1d20 | 1 | Critical Failure |
+| Type             | Natural die | Value | Display message  |
+|------------------|-------------|-------|------------------|
+| Critical success | 1d20        | 20    | Critical success |
+| Critical Failure | 1d20        | 1     | Critical Failure |
 
 
 ## Custom critics
