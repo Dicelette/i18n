@@ -24,11 +24,13 @@ However, if the die type used **does not contain `$`**, it is possible to use th
 - <CL>comment</CL>: Any comments on your action.
 - <CL>success_threshold</CL>: The success threshold to use, if any.
 - <CL>expression</CL>: Any expressions defining conditions or modifications.
+- <CL>opposition</CL>: The "secondary" success threshold.
 :::
 
-The commands allows you to choose the statistic to use if the die type contains `$`.
+The commands allow to choose the statistic to use if the die type contains `$`.
 
 It is also possible to specify a <CL>success threshold</CL> to determine or overrides the success threshold. This threshold is composed by a sign (like `>=`) and a value. It is possible to combine dice rolls, statistic names, and mathematical formulas in the expression.
+The <CL>opposition</CL> threshold works similarly, but it is only validated if the main success threshold is reached. It can also contain mathematical expressions, statistics, or dice rolls.
 
 :::tip
 It is possible not to specify the comparison sign, in which case the success threshold will use the default one, if available.
@@ -56,10 +58,11 @@ If a die is registered in the template, it will be considered as a global die an
 - <CL>*character</CL>: The character to use, if any.
 - <CL>expression</CL>: Any expressions defining conditions or modifications.
 - <CL>comment</CL>: Any comments on your action.
+- <CL>opposition</CL>: The "secondary" success threshold, only evaluated if there is a main success threshold, registered in the die.
 :::
 
 ![dbd](/assets/rolls/db/dbd_example.png)
 
-Here, the command requires you to choose the die to use. It is not possible to choose a success threshold, although it is possible to specify it in the die itself when registering it.
+Here, the command requires you to choose the die to use. It is not possible to choose a success threshold, although it is possible to specify it in the die itself when registering it. In this case, the <CL>opposition</CL> threshold can be used as a secondary success threshold, only evaluated if the main success threshold is reached.
 
 <small>For more information about the commands syntax, see: [the dedicated page](../../introduction/format.mdx).</small>
