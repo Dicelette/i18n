@@ -5,13 +5,11 @@ sidebar_position: 1
 
 The following commands are restricted by default to members with the `Manage Roles` permission.
 
-You can view the current server configuration with the `/config display` command.
-
-:::info
-The following commands work for both text-only dice and dice thrown with slashcommands (whether `/roll` or `/dbd` and `/dbroll`).
+You can view the current server configuration with the `/config display` commands :
+:::usage
+- **`/config display general`**: Display the server's general configuration.
+- **`/config display template`**: Display the template configuration (links, statistics names, excluded or global dice names), if any.
 :::
-
-Unless otherwise specified, all options are disabled by default.
 
 ## Change language
 
