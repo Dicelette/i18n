@@ -7,39 +7,87 @@ Welcome! 🎲 Here's your companion for adventures on Discord: a versatile bot d
 
 ## Main Features
 
-### Dice Rolling
+### 🎲 Advanced Dice System
 
-With this bot, rolling dice is a breeze! Whether you're determining the outcome of a crucial action or adding some spice to your conversations, the process is simple. Just use the appropriate command, and the result will be displayed in a thread, keeping your channel clutter-free.
+- **Flexible dice rolls**: Full support for [complex expressions](./expression.mdx) to support all types of rolls.
+- **Custom dice**: Create and use dice specific to your characters and campaigns.
+- **Automatic result management**: Results can be organized in [dedicated threads](../config/threads.md) to avoid clutter, or sent to a specific channel.
 
-### Character Sheet Management
+### 📊 Complete Character Management
 
-No more juggling complex character sheets! This bot allows you to set up a stat template to store essential information about your characters. You can roll dice directly using this data without worrying about remembering it all.
+- **Server templates**: Configure a [unique template](../sheet/model/index.md) adapted to your system.
+- **Character sheets**: [Simple registration](../sheet/user.md) with an intuitive interface.
+- **Dynamic statistics**: Modify and update your characters.
+- **Multi-character**: Manage multiple characters per user.
+- **Private sheets**: Control the visibility of character information.
+
+### 🔧 Flexible Server Configuration
+
+- **Customizable settings**: Adapt the bot to your needs with numerous [configuration options](../config/index.md).
+- **[Auto-roles](../config/auto_role.md)**: Automatic role assignment for simplified permission management.
+- **[Logging](../config/logs.md)**: Track modifications and error management
+- **[Self-registration](../config/self_registration.md)**: Allow players to register their own characters
+- **[OOC message removal](../config/strip_ooc.md)**: Automatic cleanup of out-of-character messages
+- **[Display options](../config/display.md)**: Customize result display (timestamps, deletion delays, anchor links...)
+- **Multilingual support**: Interface available in French and English
+
+### 🎭 Game Master Features[^2]
+
+- **Rolls for players**: Make rolls on behalf of your players.
+- **Hidden rolls**: Make secret rolls hidden from players to maintain suspense.
+
+### 🛠️ Practical Tools
+
+- **Import/Export**: [Save and transfer](../sheet/import_export.md) your data easily
+- **Integrated help system**: Quick access to documentation and guides
+- **Automatic cleanup**: Intelligent management of obsolete data
+- **Intuitive user interface**: Forms and interactive menus to simplify usage
 
 ## How It Works
 
-### Dice Rolling
+### Technical Architecture
 
-For dice rolls, the bot uses the [@diceRoller](https://dice-roller.github.io/documentation/) API.
+The bot uses the [@diceRoller](https://dice-roller.github.io/documentation/) API for all dice calculations, ensuring reliable results and a wide variety of supported expressions.
 
-### Stat Management
+### Data-Respectful Approach
 
-Instead of saving the entire character sheet, the bot only records the message and its ID. This way, you retain full control over your data, as the message content is not stored outside the server.
+Unlike other solutions, this bot prioritizes your control over your data:
+- **Minimal storage**: Only message IDs and essential information are saved
+- **Full control**: Your character sheets remain in your Discord messages
+- **Automatic cleanup**: Obsolete data is automatically deleted
+
+This approach guarantees maximum security and full control over your gaming information.
 
 ## Data Management
 
-This bot uses a database[^1] to store essential information such as message IDs, channel IDs, stat names, and character names of users. The database is cleaned in various scenarios, such as when registered messages or channels are deleted, the bot is removed from the server, or when `/register` or `/logs` commands are used.
+### What is Stored
 
-:::note Reminder
-User data is not deleted when they leave a server. If you want your data to be removed, feel free to contact me.
+The bot uses a SQLite3 database[^1] to store only:
+- IDs of messages containing your sheets
+- Links between users and their characters
+- Server configuration settings
+- Custom statistics templates
 
-Provide your Discord ID or server ID (with proof of ownership) via Discord (`@mara__li`) or email (`lisandra_dev@yahoo.com`).
+### Automatic Cleanup
+
+Data is automatically deleted in several cases:
+- Deletion of registered messages or channels
+- Bot removal from the server
+- Use of integrated cleanup features
+
+### Privacy Respect
+
+:::note Contact for deletion
+If you want to delete your data after leaving a server, contact us via Discord (`@mara__li`) or email (`lisandra_dev@yahoo.com`) with your Discord ID or server ID.
 :::
 
-:::warning
-In rare cases, data may not be deleted (particularly for very old records). In such cases, you can use the `/delete_char` command to remove a character or all data for a player.  
-This command will also delete the character sheet message if it still exists.
+:::warning Manual cleanup
+In case of issues with automatic deletion, use the manual deletion commands available in the bot to clean up your data.
 :::
 
-🚀 [Invite the bot](https://discord.com/api/oauth2/authorize?client_id=1182819335878754385&permissions=395137215504&scope=bot+applications.commands)
+---
 
-[^1]: It uses an SQLITE3 database with [Enmap](https://enmap.evie.dev/).
+🚀 **Ready to start?** [Invite the bot to your server](https://discord.com/api/oauth2/authorize?client_id=1182819335878754385&permissions=395137215504&scope=bot+applications.commands)
+
+[^1]: Local database using [Enmap](https://enmap.evie.dev/) for optimized management.
+[^2]: By default, players with the <mark>Manage Roles</mark> permission are considered "game masters".

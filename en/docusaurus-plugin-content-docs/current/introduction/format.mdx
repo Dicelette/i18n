@@ -6,8 +6,8 @@ import { CL} from "@site/src/components/utils.tsx";
 
 ## Symbols and Expressions
 
-- **`$`** : 
-  - <CL>Usage</CL>: Represents the value of the statistic used in the dice formula.  
+- **<mark>`$`</mark>** :
+  - <CL>Usage</CL>: Represents the value of the statistic used in the dice formula.
   - <CL>Where?</CL> Used in dice types (`/dbroll`, `/calc`, critical formulas, etc.)  
     :::example  
       - `1d6 > $`: Compares the dice result to the selected statistic value.  
@@ -15,8 +15,8 @@ import { CL} from "@site/src/components/utils.tsx";
       - `1d100 <=$`: For systems like Call of Cthulhu, compares to the stat threshold.
     :::
 
-- **`{exp}`** :
-  - <CL>Usage:</CL> Allows inserting a dynamic expression into a dice formula, derived from a calculated part of the command.  
+- **<mark>`{exp}`</mark>** :
+  - <CL>Usage:</CL> Allows inserting a dynamic expression into a dice formula, derived from a calculated part of the command.
   - <CL>Advanced Syntax:</CL> `{exp||default}` allows defining a default value if the expression is not provided.  
     :::example `{exp||2}` (default value = 2)
     :::  
@@ -26,21 +26,21 @@ import { CL} from "@site/src/components/utils.tsx";
       - `1d6 > {exp||10}`: if `exp` is not provided, the comparison is made to 10.  
     :::
 
-- **`{{...}}`** :
-  - <CL>Usage:</CL> Delimits a complex mathematical expression evaluated by MathJS.  
-  - <CL>Where?</CL> In all commands supporting formulas (`/calc`, `/dbroll`, `/dbd`, etc.)  
+- **<mark>`{{...}}`</mark>** :
+  - <CL>Usage:</CL> Delimits a complex mathematical expression evaluated by <mark>MathJS</mark>.
+  - <CL>Where?</CL> In all commands supporting formulas (`/calc`, `/dbroll`, `/dbd`, etc.)
     :::example  
       - `1d6 + {{ceil($ / 2)}}`: Adds the rounded half of the stat to the dice result.  
       - `1d6 > {{ceil($ / 2)}}`: The success threshold is half the stat, rounded.  
     :::
 
-- **`[comment]`** : 
+- **<mark>`[comment]`</mark>** :
   - <CL>Usage:</CL> Adds a comment to a dice roll.  
   - <CL>Where?</CL> In [shared dice](./expression.mdx#shared-unique-rolls-reusing-results).  
     :::example `1d20;&-2[HP Loss]`: Applies -2 to the result of `1d20` and annotates the  second line result.
     :::
 
-- **`#comment`** : 
+- **<mark>`#comment`</mark>** :
   - <CL>Usage:</CL> Global comment for a dice roll. The `#` symbol can be omitted when used in direct messages.  
   - <CL>Where?</CL> At the end of the dice roll, to annotate the action. Also allows creating a global comment in shared dice.  
     Not used for dice via slash commands.  
@@ -49,8 +49,8 @@ import { CL} from "@site/src/components/utils.tsx";
     - `1d20;&+5;&*2 # My shared dice roll`
     :::
 
-- **`&`, `;&+x;`, etc.** :
-  - <CL>Usage:</CL> Allows reusing the result of the same dice in multiple formulas (unique shared rolls).  
+- **<mark>`&`</mark>**, **<mark>`;&+x;`</mark>**, etc.** :
+  - <CL>Usage:</CL> Allows reusing the result of the same dice in multiple formulas (unique shared rolls).
     :::example
     ```
     /roll 1d20;&+5;&*2
@@ -63,11 +63,12 @@ import { CL} from "@site/src/components/utils.tsx";
     ```
     :::
 
-- **`()` (parentheses in dice names)** :
+- **<mark>`()`</mark> (parentheses in dice names)** :
   - <CL>Usage:</CL> Specifies the statistic to use for custom criticals.  
     :::example[ `Animal Instinct (Strength)` ]
     :::
 
+---
 :::example
 - **Dice type:**  
   - `1d6 > $` or `1d6 + $`  
@@ -81,14 +82,15 @@ import { CL} from "@site/src/components/utils.tsx";
   - Result: `1d6>10` (if `Strength = 10`)
 :::
 
+---
 ## Commands syntax
 
-- Mandatory fields are enclosed in square brackets: `[fields]`.
-- Optional fields are enclosed in brackets: `(fields)`.
-- Auto-complete fields are marked with a `*`: `(*fields)`.
-- Fields requiring a statement will be marked with `@` (`@fields`). These fields work with names (role or user, depending on the command) or Discord IDs. If the entry doesn't appear immediately, start typing the beginning of the name for auto-completion.
-- In a similar way, commands requesting a salon are preceded by `#` like `#fields`.
-- True/false fields (`true` or `false`) are prefixed by `?` (`?fields`).
+- Mandatory fields are enclosed in square brackets: <mark class='green'>`[fields]`</mark>.
+- Optional fields are enclosed in brackets: <mark class='green'>`(fields)`</mark>.
+- Auto-complete fields are marked with a <mark>`*`</mark>: <mark class='green'>`(*fields)`</mark>.
+- Fields requiring a statement will be marked with <mark>`@`</mark> (<mark class='green'>`@fields`</mark>). These fields work with names (role or user, depending on the command) or <mark>Discord IDs</mark>. If the entry doesn't appear immediately, start typing the beginning of the name for auto-completion.
+- In a similar way, commands requesting a salon are preceded by <mark>`#`</mark> like <mark class='green'>`#fields`</mark>.
+- True/false fields (`true` or `false`) are prefixed by <mark>`?`</mark> <mark class='green'>(`?fields`)</mark>.
 
 ### Auto-complete commands
 

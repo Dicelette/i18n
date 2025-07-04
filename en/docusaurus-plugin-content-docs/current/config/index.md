@@ -3,7 +3,7 @@ title: General configuration
 sidebar_position: 1
 ---
 
-The following commands are restricted by default to members with the `Manage Roles` permission.
+The following commands are restricted by default to members with the <mark>Manage Roles</mark> permission.
 
 You can view the current server configuration with the `/config display` commands :
 :::usage
