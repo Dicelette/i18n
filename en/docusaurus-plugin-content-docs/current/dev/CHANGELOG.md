@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.56.1](https://github.com/Dicelette/discord-dicelette/compare/1.56.0...1.56.1) (2025-07-04)
+
+
+### Bug Fixes
+
+* **diceNotFound:** I dunno why but in some condition, the template is not fully fetched on user resulting in cache error. ([1dd6be0](https://github.com/Dicelette/discord-dicelette/commit/1dd6be006d56d8f98cfaadea03bbd571dc744388))
+
 ## [1.56.0](https://github.com/Dicelette/discord-dicelette/compare/1.55.0...1.56.0) (2025-07-03)
 
 
@@ -255,7 +262,7 @@ All notable changes to this project will be documented in this file. See [commit
 * **channels:** enhance channel type checks to exclude non-text channels ([920f6f3](https://github.com/Dicelette/discord-dicelette/commit/920f6f3eab3eb6c49b0351f9ccc885c2ed90b3b7))
 * **configuration:** remove unused disabledLogs variable ([bbd0a4d](https://github.com/Dicelette/discord-dicelette/commit/bbd0a4d60f338ed729a1276a0cd0f71a8e5921cd))
 * **dependencies:** update discord.js to latest version ([f547642](https://github.com/Dicelette/discord-dicelette/commit/f547642b42fd2b290d60ef133fab4e903be24211))
-* **embeds:** specify message type as Djs.Message`<boolean>` ([a7f488f](https://github.com/Dicelette/discord-dicelette/commit/a7f488fc1858e31762ca5fcfbb3a23ea4633d201))
+* **embeds:** specify message type as Djs.Message<boolean> ([a7f488f](https://github.com/Dicelette/discord-dicelette/commit/a7f488fc1858e31762ca5fcfbb3a23ea4633d201))
 * **errors:** add missing permission error messages for bot access ([e69da26](https://github.com/Dicelette/discord-dicelette/commit/e69da2618287515c925ff0bd64537e55df09cf70))
 * remove log ([045acaf](https://github.com/Dicelette/discord-dicelette/commit/045acaf280c3cf97f9907b22cfd2d83a0475f5c9))
 * **reply:** ensure proper handling of reply options for edited responses ([491e1dc](https://github.com/Dicelette/discord-dicelette/commit/491e1dcfa5f162751fc703ca7999eedea53d1bf9))
@@ -307,8 +314,8 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Bug Fixes
 
-* **dice:** expression should be also converted even used in `{exp}` ([9fec858](https://github.com/Dicelette/discord-dicelette/commit/9fec858c0dce36183ecb65f9e87c951b2f24ae35))
-* **dice:** use `{exp}` to prevent colliding with {`{exp}`} stats name ([3732260](https://github.com/Dicelette/discord-dicelette/commit/373226062fb91c0e71ab979874ac53167a39e96d))
+* **dice:** expression should be also converted even used in {exp} ([9fec858](https://github.com/Dicelette/discord-dicelette/commit/9fec858c0dce36183ecb65f9e87c951b2f24ae35))
+* **dice:** use {exp} to prevent colliding with {{exp}} stats name ([3732260](https://github.com/Dicelette/discord-dicelette/commit/373226062fb91c0e71ab979874ac53167a39e96d))
 * **roll:** evaluate expressions in dice rolls and update modificator handling ([43a9697](https://github.com/Dicelette/discord-dicelette/commit/43a9697eea402f0688638b225c840de807c8a8e2))
 
 ## [1.39.0](https://github.com/Dicelette/discord-dicelette/compare/1.38.2...1.39.0) (2025-02-11)
@@ -316,7 +323,7 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Features
 
-* **dbd:** allow using {`{exp}`} in dice for replace with the expression ([719d883](https://github.com/Dicelette/discord-dicelette/commit/719d88357712d534f85428110f674790560f5d73))
+* **dbd:** allow using {{exp}} in dice for replace with the expression ([719d883](https://github.com/Dicelette/discord-dicelette/commit/719d88357712d534f85428110f674790560f5d73))
 
 
 ### Bug Fixes
