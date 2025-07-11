@@ -115,9 +115,10 @@ You can use dice in the formulas, but only the first die will be saved and reuse
 :::
 ::::
 
-To comment between each roll, use the `[comment]` syntax. A global comment should use the `# comment` syntax at the end of the dice.
+To comment between each roll, use the `[comment]` syntax. A global comment should use the `#comment` syntax at the end of the dice.[^2]
 
-:::roll[ `1d20;&-2[hp loss]` ]
+:::roll[ `1d20;&-2 [hp loss] #comments` ]
+*comments*
   ※ `1d20` ⟶ `[2]` = ` 2 `  
   ◈ <u>hp loss</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `  
 :::
@@ -143,3 +144,4 @@ The bot also supports the `x#(dice)` notation, inspired by [rollem](https://roll
 :::
 
 [^1]: Dice Roller itself uses [random-js](https://www.npmjs.com/package/random-js) for random generation, not `math.random` which is pseudo-random. So it's not possible to cheat on dice results (unless you're a cryptomancer or can see the future... Or both.).
+[^2]: Shared dice and comments are very sensitive to spaces. Thus, bracketed dice comments must be preceded by a space, as must global comments. The `#` in global comments must be pasted into the comment text, without spaces.
