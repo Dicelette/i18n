@@ -1,12 +1,13 @@
 ---
-title: "Command References"
+title: "Commands"
 description: "Command references for creating and editing the character sheet template."
+sidebar_position: 1
 ---
 
 ## Template Registration
 
 :::usage
-**<mark>`/template register`</mark> `[#channel] [file] (#public_channel) (#private_channel) (?update_characters) (?delete_characters)`**
+**`/template register [#channel] [file] (#public_channel) (#private_channel) (?update_characters) (?delete_characters)`**
 - `#channel`: Channel where the template will be sent (used for sheet creation).
 - `[file]`: Previously created JSON file.
 - `#public_channel`: Channel where the character sheets will be published.
@@ -39,10 +40,13 @@ To modify the template, you can use the <mark>`/template update`</mark> command.
 This command allows you to upload a new JSON file that will replace the existing template. Unlike the previous command, it retains the different channels.
 
 :::usage
-**<mark>`/template update`</mark> `[file] (?update_characters) (?delete_characters)`**
+**`/template update [file] (?update_characters) (?delete_characters)`**
 - `[file]`: JSON file
 - `?update_characters`: Updates all old character sheets.
 - `?delete_characters`: Deletes all existing character sheets.
 :::
 
 ![edit](/assets/register/modif_template_en.png)
+
+---
+<small>For more information on field syntax: [see dedicated page](../../introduction/format.mdx).</small>

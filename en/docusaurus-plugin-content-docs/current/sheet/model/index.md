@@ -18,12 +18,13 @@ Statistics and dice are optional:
 Once the template is ready, register it with this [command](./ref.md#template-registration).
 
 ## TLDR
-1. Create the template using [form](../form.mdx) or the <mark>`/generate`</mark> command.
-2. Save the template with <mark>`/template register`</mark>.
+1. Create the template using [form](../form.mdx).
+2. Save the template with [<mark>`/template register`</mark>](./ref.md#template-registration).
 3. Create a player file by clicking on the "Register character" button.
 4. Fill in the character information and click on "Validate".
 5. Modify command access rights if necessary.
 
-For more information on field syntax: [see dedicated page](../../introduction/format.mdx).
+---
+<small>For more information on field syntax: [see dedicated page](../../introduction/format.mdx).</small>
 
 [^1]: It is possible to use a forum, which will automatically create a post for the character. The player (and administrators) will be mentioned in the post.
