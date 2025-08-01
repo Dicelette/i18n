@@ -18,5 +18,12 @@ This bot detects dice notation and sends the result using three methods:
    - The initially found die will be rolled, and the rest of the message will be sent in the log, considered as a comment.
    ![Semi-direct](/assets/rolls/semi-direct.gif)
 
+:::tip
+In the textual notation, it's possible to reference:
+- A statistic, using `$statistic` (e.g., `$strength`).
+- A character, using `@character` (e.g., `@Bob`).
+- An opposition, by “stacking” the comparison signs: 1d100>20>10 (the last value will be treated as the opposition).
+As long as the player has a registered character sheet.
+:::
 
 It is also possible to use slash-commands to throw dice, like `/roll` ([see here for more information](../usage/index.md#dice-rolling))  

@@ -39,6 +39,15 @@ In these specific cases, the bot will not display success, failure, or critical 
 - If you want to use target failures, you must retain the Dice Roller syntax.
 :::
 
+#### Opposition Comparison
+
+A die roll can be compared to an opposition using the following syntax: `dice[base comparison][opposition]`.
+⚠️ An opposition cannot be used alone: it acts as a secondary validation, and therefore requires a base comparison to function.
+
+:::roll[1d20>10>5]
+**Success** — `1d20` ⟶ `[20]` = `[20] > 5` (__opposition__)  & `> 10` (__base__)
+:::
+
 ### Critical Successes and Failures
 
 You can define thresholds for critical successes and failures in dice rolls using the following syntax:
