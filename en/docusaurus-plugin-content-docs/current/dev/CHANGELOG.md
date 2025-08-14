@@ -2,6 +2,73 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0](https://github.com/Dicelette/discord-dicelette/compare/1.65.0...2.0.0) (2025-08-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* the dbd command doesn't exists anymore, user need to use /macro instead of.
+
+### Features
+
+* rename DBD to macro ([f02f16e](https://github.com/Dicelette/discord-dicelette/commit/f02f16ece60f3d9453407491cf5cb0c161a7ae6b))
+
+## [1.65.0](https://github.com/Dicelette/discord-dicelette/compare/1.64.5...1.65.0) (2025-08-14)
+
+
+### Features
+
+* base roll should works the same as parsing message content ([5fb8c78](https://github.com/Dicelette/discord-dicelette/commit/5fb8c7864ebbac9c6287374b415db52040026a6b))
+
+## [1.64.5](https://github.com/Dicelette/discord-dicelette/compare/1.64.4...1.64.5) (2025-08-12)
+
+## [1.64.4](https://github.com/Dicelette/discord-dicelette/compare/1.64.3...1.64.4) (2025-08-12)
+
+
+### Bug Fixes
+
+* should not be 0 when the number is under 10 ([c0604ab](https://github.com/Dicelette/discord-dicelette/commit/c0604ab968aaff1488ef7170ab2aa23d1aa9fa59))
+
+## [1.64.3](https://github.com/Dicelette/discord-dicelette/compare/1.64.2...1.64.3) (2025-08-12)
+
+
+### Bug Fixes
+
+* can't display negative result ([553ce9f](https://github.com/Dicelette/discord-dicelette/commit/553ce9fc644c01b41c226c68ffa31d59288fd0d5))
+* fetch as text ([71c68c4](https://github.com/Dicelette/discord-dicelette/commit/71c68c4e2e4aaad3f3c0776ff692cc138640b62f))
+
+## [1.64.2](https://github.com/Dicelette/discord-dicelette/compare/1.64.1...1.64.2) (2025-08-03)
+
+
+### Bug Fixes
+
+* bad env for Math constants ([9a01672](https://github.com/Dicelette/discord-dicelette/commit/9a016725015ea683298b9db39282398459e98a2e))
+
+## [1.64.1](https://github.com/Dicelette/discord-dicelette/compare/1.64.0...1.64.1) (2025-08-01)
+
+
+### Bug Fixes
+
+* comments not set when using with stats ([3797521](https://github.com/Dicelette/discord-dicelette/commit/37975216dea0c01138c5a978f59b393b7ddebf2a))
+
+## [1.64.0](https://github.com/Dicelette/discord-dicelette/compare/1.63.0...1.64.0) (2025-08-01)
+
+
+### Features
+
+* add character name support to dice roll processing ([c18e06d](https://github.com/Dicelette/discord-dicelette/commit/c18e06da698931ca3d3814c79f2b83c608a4e1c1))
+* add support for info stats comments and refactor comment extraction logic ([efa8a64](https://github.com/Dicelette/discord-dicelette/commit/efa8a64a32f8f9333a197daab962cb3bd6395fb9))
+* enhance dice roll processing with infoRoll support and refactor user data handling ([97f8c8d](https://github.com/Dicelette/discord-dicelette/commit/97f8c8d976acf2ff3411e0a7e8dc1f4d0ef9610e))
+* enhance user data handling and improve comment formatting ([666505d](https://github.com/Dicelette/discord-dicelette/commit/666505d79cbf851075d936a830730e49afcfd9da))
+* integrate user data into dice roll processing and result formatting ([7536b0d](https://github.com/Dicelette/discord-dicelette/commit/7536b0df53b135cc771f36ce458293a03dcb7008))
+* remove character name parameter from dice roll functions ([600b934](https://github.com/Dicelette/discord-dicelette/commit/600b934b79ec841f9168f90cfffedb6905df52af))
+* update comment processing logic and improve test assertions for dice rolls ([aaff09a](https://github.com/Dicelette/discord-dicelette/commit/aaff09a91c91290e79c3f75008c134b9179815be))
+
+
+### Bug Fixes
+
+* should not processed dice between code (`1d20`) ([fec2af8](https://github.com/Dicelette/discord-dicelette/commit/fec2af8a05055b7f89e92e1356645dbe75e3bb9a))
+
 ## [1.63.0](https://github.com/Dicelette/discord-dicelette/compare/1.62.1...1.63.0) (2025-07-31)
 
 
