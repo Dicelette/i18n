@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.1](https://github.com/Dicelette/discord-dicelette/compare/2.0.0...2.0.1) (2025-08-14)
+
 ## [2.0.0](https://github.com/Dicelette/discord-dicelette/compare/1.65.0...2.0.0) (2025-08-14)
 
 
@@ -140,7 +142,7 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Features
 
-* add `invert` option for some system ([85225c1](https://github.com/Dicelette/discord-dicelette/commit/85225c1506810macroeae4f6a5f5bc8a5640e15511))
+* add `invert` option for some system ([85225c1](https://github.com/Dicelette/discord-dicelette/commit/85225c1506810dbdeae4f6a5f5bc8a5640e15511))
 
 ## [1.58.0](https://github.com/Dicelette/discord-dicelette/compare/1.57.0...1.58.0) (2025-07-13)
 
@@ -170,7 +172,7 @@ All notable changes to this project will be documented in this file. See [commit
 
 * await in fetchChannel ([9d4a9cf](https://github.com/Dicelette/discord-dicelette/commit/9d4a9cf412e4889a64014200c11edeedbccc1852))
 * **cache:** duplicate key translation create a cascading issue in french ([fe3b227](https://github.com/Dicelette/discord-dicelette/commit/fe3b2270f639d7dfbddffb90414194b6d74673ff))
-* **macro:** missing translation ([0d87190](https://github.com/Dicelette/discord-dicelette/commit/0d87190995c33b611e988b6e983778869abfabea))
+* **dbd:** missing translation ([0d87190](https://github.com/Dicelette/discord-dicelette/commit/0d87190995c33b611e988b6e983778869abfabea))
 * **registration:** duplicate found even if the diceEmbed is empty ([f858a2f](https://github.com/Dicelette/discord-dicelette/commit/f858a2f6b5fc1cd6c1ad217855f40e85fe6bf968))
 
 ## [1.56.1](https://github.com/Dicelette/discord-dicelette/compare/1.56.0...1.56.1) (2025-07-04)
@@ -407,7 +409,7 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Features
 
-* allow "global" macro & dbroll if the template allow it ([#13](https://github.com/Dicelette/discord-dicelette/issues/13)) ([b3d01d9](https://github.com/Dicelette/discord-dicelette/commit/b3d01d948242cf6c39713d1c413b1665f08fb7a5))
+* allow "global" dbd & dbroll if the template allow it ([#13](https://github.com/Dicelette/discord-dicelette/issues/13)) ([b3d01d9](https://github.com/Dicelette/discord-dicelette/commit/b3d01d948242cf6c39713d1c413b1665f08fb7a5))
 
 ## [1.42.4](https://github.com/Dicelette/discord-dicelette/compare/1.42.3...1.42.4) (2025-04-12)
 
@@ -494,14 +496,14 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Features
 
-* **macro:** allow using {{exp}} in dice for replace with the expression ([719d883](https://github.com/Dicelette/discord-dicelette/commit/719d88357712d534f85428110f674790560f5d73))
+* **dbd:** allow using {{exp}} in dice for replace with the expression ([719d883](https://github.com/Dicelette/discord-dicelette/commit/719d88357712d534f85428110f674790560f5d73))
 
 
 ### Bug Fixes
 
 * **buttons:** button disappear when register dice ([7cfdf44](https://github.com/Dicelette/discord-dicelette/commit/7cfdf443a4f8a93ec751755034d38b06671da17c))
-* **i18n:** translation not found ([44bf1e9](https://github.com/Dicelette/discord-dicelette/commit/44bf1e9ed185aaaef5f379246874d97bfmacroe0a8))
-* if the select menu disappear, make it appear with the button ([f69a154](https://github.com/Dicelette/discord-dicelette/commit/f69a15457a8e6bd86de81a2cef76dd9emacro715bf))
+* **i18n:** translation not found ([44bf1e9](https://github.com/Dicelette/discord-dicelette/commit/44bf1e9ed185aaaef5f379246874d97bfdbde0a8))
+* if the select menu disappear, make it appear with the button ([f69a154](https://github.com/Dicelette/discord-dicelette/commit/f69a15457a8e6bd86de81a2cef76dd9edbd715bf))
 
 ## [1.38.2](https://github.com/Dicelette/discord-dicelette/compare/1.38.1...1.38.2) (2025-02-11)
 
@@ -683,7 +685,7 @@ All notable changes to this project will be documented in this file. See [commit
 * **edit:** bulk edit memory when editing template ([cb15d29](https://github.com/Dicelette/discord-dicelette/commit/cb15d297dfecf203b36e1bbe51fdc423f5bd8a6a))
 * improve critical hit handling and modify import paths ([b0b2176](https://github.com/Dicelette/discord-dicelette/commit/b0b21763eec10345c3132321edd5efa3c78c513c))
 * **memory-database:** make updateCharactersDb call awaitable in thread message handling ([c2e5707](https://github.com/Dicelette/discord-dicelette/commit/c2e5707ace7a6fd08772dddbbae5eb16e70c2acb))
-* **parse-result:** add custom critical value evaluation in the /macro ([a351c7e](https://github.com/Dicelette/discord-dicelette/commit/a351c7e8d3c00939860b5c4022fd20098b350c9d))
+* **parse-result:** add custom critical value evaluation in the /dbd ([a351c7e](https://github.com/Dicelette/discord-dicelette/commit/a351c7e8d3c00939860b5c4022fd20098b350c9d))
 * **parse-result:** handle undefined statistics in convertNameToValue function ([e70edae](https://github.com/Dicelette/discord-dicelette/commit/e70edaeb071fe25d1d166e127d7e674e7fcceaa9))
 * **parse-result:** handle when cc used without $ value & allow them ([8fd5b8a](https://github.com/Dicelette/discord-dicelette/commit/8fd5b8a9abcd3742f1fcc3b240395faff57caf5a))
 * **skill:** improve dice validation and parsing in bot ([bfc5522](https://github.com/Dicelette/discord-dicelette/commit/bfc5522d1c13dc7833e700159c239330e04aceb0))
@@ -717,7 +719,7 @@ All notable changes to this project will be documented in this file. See [commit
 * **edit:** bulk edit memory when editing template ([cb15d29](https://github.com/Dicelette/discord-dicelette/commit/cb15d297dfecf203b36e1bbe51fdc423f5bd8a6a))
 * improve critical hit handling and modify import paths ([b0b2176](https://github.com/Dicelette/discord-dicelette/commit/b0b21763eec10345c3132321edd5efa3c78c513c))
 * **memory-database:** make updateCharactersDb call awaitable in thread message handling ([c2e5707](https://github.com/Dicelette/discord-dicelette/commit/c2e5707ace7a6fd08772dddbbae5eb16e70c2acb))
-* **parse-result:** add custom critical value evaluation in the /macro ([a351c7e](https://github.com/Dicelette/discord-dicelette/commit/a351c7e8d3c00939860b5c4022fd20098b350c9d))
+* **parse-result:** add custom critical value evaluation in the /dbd ([a351c7e](https://github.com/Dicelette/discord-dicelette/commit/a351c7e8d3c00939860b5c4022fd20098b350c9d))
 * **parse-result:** handle undefined statistics in convertNameToValue function ([e70edae](https://github.com/Dicelette/discord-dicelette/commit/e70edaeb071fe25d1d166e127d7e674e7fcceaa9))
 * **parse-result:** handle when cc used without $ value & allow them ([8fd5b8a](https://github.com/Dicelette/discord-dicelette/commit/8fd5b8a9abcd3742f1fcc3b240395faff57caf5a))
 * **skill:** improve dice validation and parsing in bot ([bfc5522](https://github.com/Dicelette/discord-dicelette/commit/bfc5522d1c13dc7833e700159c239330e04aceb0))
@@ -749,7 +751,7 @@ All notable changes to this project will be documented in this file. See [commit
 * **edit:** bulk edit memory when editing template ([cb15d29](https://github.com/Dicelette/discord-dicelette/commit/cb15d297dfecf203b36e1bbe51fdc423f5bd8a6a))
 * improve critical hit handling and modify import paths ([b0b2176](https://github.com/Dicelette/discord-dicelette/commit/b0b21763eec10345c3132321edd5efa3c78c513c))
 * **memory-database:** make updateCharactersDb call awaitable in thread message handling ([c2e5707](https://github.com/Dicelette/discord-dicelette/commit/c2e5707ace7a6fd08772dddbbae5eb16e70c2acb))
-* **parse-result:** add custom critical value evaluation in the /macro ([a351c7e](https://github.com/Dicelette/discord-dicelette/commit/a351c7e8d3c00939860b5c4022fd20098b350c9d))
+* **parse-result:** add custom critical value evaluation in the /dbd ([a351c7e](https://github.com/Dicelette/discord-dicelette/commit/a351c7e8d3c00939860b5c4022fd20098b350c9d))
 * **parse-result:** handle undefined statistics in convertNameToValue function ([e70edae](https://github.com/Dicelette/discord-dicelette/commit/e70edaeb071fe25d1d166e127d7e674e7fcceaa9))
 * **parse-result:** handle when cc used without $ value & allow them ([8fd5b8a](https://github.com/Dicelette/discord-dicelette/commit/8fd5b8a9abcd3742f1fcc3b240395faff57caf5a))
 * **skill:** improve dice validation and parsing in bot ([bfc5522](https://github.com/Dicelette/discord-dicelette/commit/bfc5522d1c13dc7833e700159c239330e04aceb0))
@@ -779,7 +781,7 @@ All notable changes to this project will be documented in this file. See [commit
 * **edit:** bulk edit memory when editing template ([cb15d29](https://github.com/Dicelette/discord-dicelette/commit/cb15d297dfecf203b36e1bbe51fdc423f5bd8a6a))
 * improve critical hit handling and modify import paths ([b0b2176](https://github.com/Dicelette/discord-dicelette/commit/b0b21763eec10345c3132321edd5efa3c78c513c))
 * **memory-database:** make updateCharactersDb call awaitable in thread message handling ([c2e5707](https://github.com/Dicelette/discord-dicelette/commit/c2e5707ace7a6fd08772dddbbae5eb16e70c2acb))
-* **parse-result:** add custom critical value evaluation in the /macro ([a351c7e](https://github.com/Dicelette/discord-dicelette/commit/a351c7e8d3c00939860b5c4022fd20098b350c9d))
+* **parse-result:** add custom critical value evaluation in the /dbd ([a351c7e](https://github.com/Dicelette/discord-dicelette/commit/a351c7e8d3c00939860b5c4022fd20098b350c9d))
 * **parse-result:** handle undefined statistics in convertNameToValue function ([e70edae](https://github.com/Dicelette/discord-dicelette/commit/e70edaeb071fe25d1d166e127d7e674e7fcceaa9))
 * **skill:** improve dice validation and parsing in bot ([bfc5522](https://github.com/Dicelette/discord-dicelette/commit/bfc5522d1c13dc7833e700159c239330e04aceb0))
 * wrong data dir in enmap ([6fc00a8](https://github.com/Dicelette/discord-dicelette/commit/6fc00a8a98fcdc1ef60a9b6dae661193d9f11340))
