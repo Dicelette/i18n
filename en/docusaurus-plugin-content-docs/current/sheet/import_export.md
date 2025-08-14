@@ -7,7 +7,7 @@ sidebar_position: 4
 The following commands allow you to import and export data from and to a CSV file.
 
 :::tip About Dice
-It is entirely possible to import specific dice for the command [`/dbd`](../usage/model/dice.mdx#dbd-dbd), but you need to fill in the `dice` column as follows:
+It is entirely possible to import specific dice for the command [`/macro`](../usage/model/dice.mdx#macro-macro), but you need to fill in the `dice` column as follows:
 ```md
 - [dice]: [value]
 ```
@@ -58,7 +58,7 @@ The following columns are necessary for the import:
 These columns are optional:
 - `avatar` : The link to the character's avatar. If you don't use an avatar, you can leave this column empty. The avatar used in the display will be the player's.
 - `channel` : Allows you to set a channel (also supporting thread and forum[^1]) to send the sheet to, rather than using the default channels set when registering the template.
-- `dice` : Specific dice for the `/dbd` command. If you don't use this command, you can leave this column empty (or delete it).
+- `dice` : Specific dice for the `/macro` command. If you don't use this command, you can leave this column empty (or delete it).
 
 
 ### Export Data

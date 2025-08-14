@@ -28,7 +28,7 @@ import { CL} from "@site/src/components/utils.tsx";
 
 - **<mark>`{{...}}`</mark>** :
   - <CL>Usage:</CL> Delimits a complex mathematical expression evaluated by <mark>MathJS</mark>.
-  - <CL>Where?</CL> In all commands supporting formulas (`/calc`, `/dbroll`, `/dbd`, etc.)
+  - <CL>Where?</CL> In all commands supporting formulas (`/calc`, `/dbroll`, `/macro`, etc.)
     :::example  
       - `1d6 + {{ceil($ / 2)}}`: Adds the rounded half of the stat to the dice result.  
       - `1d6 > {{ceil($ / 2)}}`: The success threshold is half the stat, rounded.  
@@ -73,7 +73,7 @@ import { CL} from "@site/src/components/utils.tsx";
 - **Dice type:**  
   - `1d6 > $` or `1d6 + $`  
   - `1d6 + {{ceil($/2)}}`
-- **Saved dice:**  
+- **Macro:**
   - `1d6 > Strength` or `1d6 + Strength`  
   - `1d6 + {{ceil(Strength / 2)}}`
 - **Custom critical:**  
@@ -104,4 +104,4 @@ If you wish to display another player's characters, you must mention the player 
 Due to certain limitations of the Discord API, if you wish to change player, you must retype the entire command.
 :::
 
-This function is extended to the `/mj dbd` command, as the dice listed will be based on the character, listed therefore from the player. In fact, by default, skills are listed from the player who made the command.
+This function is extended to the `/mj macro` command, as the dice listed will be based on the character, listed therefore from the player. In fact, by default, skills are listed from the player who made the command.

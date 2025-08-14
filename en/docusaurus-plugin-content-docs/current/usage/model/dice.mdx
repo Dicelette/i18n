@@ -45,23 +45,23 @@ It is possible not to specify the comparison sign, in which case the success thr
 If the sign is completely absent, this option will be ignored for syntax error.
 :::
 
-## DBD (`/dbd`)
+## macro (`/macro`)
 
 :::info
-The `dbd` command is used to roll a die stored in a character's file and/or the server template.
+The `macro` command is used to roll a die stored in a character's file and/or the server template.
 If a die is registered in the template, it will be considered as a global die and can be used without a character if it does not contain `$` or the name of a statistic.
 :::
 
 :::usage
-**`/dbd [*dice] (*character) (expression) (comment)`**
-- <CL>*dice</CL>: The die to use
+**`/macro [*dice] (*character) (expression) (comment)`**
+- <CL>*dice</CL>: The macro to use (saved die)
 - <CL>*character</CL>: The character to use, if any.
 - <CL>expression</CL>: Any expressions defining conditions or modifications.
 - <CL>comment</CL>: Any comments on your action.
 - <CL>opposition</CL>: The "secondary" success threshold, only evaluated if there is a main success threshold, registered in the die.
 :::
 
-![dbd](/assets/rolls/db/dbd_example.png)
+![macro](/assets/rolls/db/macro_example.png)
 
 Here, the command requires you to choose the die to use. It is not possible to choose a success threshold, although it is possible to specify it in the die itself when registering it. In this case, the <CL>opposition</CL> threshold can be used as a secondary success threshold, only evaluated if the main success threshold is reached.
 

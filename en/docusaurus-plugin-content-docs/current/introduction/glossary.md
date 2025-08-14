@@ -30,7 +30,7 @@ A quick reference of main terms used in Dicelette.
 ## C
 
 - **Character Sheet**:  
-  A record of a character's statistics, skills, and saved dice, linked to a Discord user.
+  A record of a character's statistics, skills, and macro, linked to a Discord user.
 - **Channel Selector**:  
   A command option where the argument begins with `#` to indicate a Discord channel.
 - **Command Argument**:  
@@ -106,7 +106,8 @@ The highest or lowest possible roll, usually with special effects.
   A structure defining which stats and dice are available for character sheets on a server.
 - **Modal**:  
   A Discord popup or interactive form used for entering or editing data.
-
+- **Macro**:  
+  Custom dice formulas saved in a character’s sheet or the server template.
 ---
 
 ## O
@@ -134,8 +135,6 @@ The highest or lowest possible roll, usually with special effects.
 
 ## S
 
-- **Saved Dice**:  
-  Custom dice formulas saved in a character’s sheet or the server template.
 - **Scene**:  
   A dedicated thread or channel for a game session, used for logging dice rolls.
 - **Semi-Direct Notation**:  

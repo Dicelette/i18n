@@ -6,32 +6,32 @@ sidebar_position: 2
 There are two types of dice:
 
 - The dice used with `dbroll` (the **type dice**).
-- The dice saved for `dbd` (the **saved dice**).
+- The dice saved for `macro` (the **saved dice**).
 
 Both types follow the [dice-roller](https://dice-roller.github.io/documentation/) syntax and also support various [notation and expression](../../introduction/expression.mdx).
 
 When targeting a stat, the method differs depending on the dice type:
 - For type dice, use the `$` keyword. This symbol will be replaced by the stat value used in `/dbroll`.
-- For saved dice, simply use the names of the stats.
+- For macro, simply use the names of the stats.
 
 :::tip[Example]
 - For a type dice: `1d6>$` or `1d6+$`
-- For a saved dice: `1d6 > Strength` or `1d6 + Strength`
+- For a macro: `1d6 > Strength` or `1d6 + Strength`
 
 For dice based on a formula:
 - For a type dice: `1d6 + {{ceil($ / 2)}}`
-- For a saved dice: `1d6 + {{ceil(Strength / 2)}}`
+- For a macro: `1d6 + {{ceil(Strength / 2)}}`
 
 You can also compare using a formula:
 - For a type dice: `1d6 > {{ceil($ / 2)}}`
-- For a saved dice: `1d6 > {{ceil(Strength / 2)}}`
+- For a macro: `1d6 > {{ceil(Strength / 2)}}`
 :::
 
 The presence of the `$` sign makes the statistic mandatory. Otherwise, the die can be rolled without a sheet.
 
-## Saved Dice  
+## Macro  
 
-You can customize saved dice using different syntaxes:  
+You can customize a macro (saved die) using different syntaxes:  
 
 - **Custom Critics:** If you use custom critical with `$`, the **dice name** must include the **statistic in parentheses**, like `Animal Instinct (Strength)`. See the [Custom Critics Hits](./critics.md#custom-critics) section for more details.  
 - **Statistic Name:** Allows referencing a statistic directly in the dice.  

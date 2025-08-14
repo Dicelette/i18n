@@ -12,6 +12,6 @@ Only the template and the user will always be present, unless no die type and no
 If all information is saved, you will have access to three buttons:
 - Edit user data : avatar (embed thumbnail), character name or move to another user,
 - Edit Statistics
-- Edit Saved Dice (which allows saving multiple new dice, but shh...)
+- Edit Macro (which allows saving multiple new dice, but shh...)
 - Add a New Die.
 
