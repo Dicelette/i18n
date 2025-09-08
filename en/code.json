@@ -679,10 +679,14 @@
 	"Le maximum doit être supérieur au minimum": {
 		"message": "The maximum must be greater than the minimum"
 	},
-	"Les macro ont été mal renseignés.": {
-		"message": "The macros were incorrectly filled in."
-	},
+
 	"Les macro ont été mal renseignées.": {
 		"message": "The macros are malformed."
+	},
+	"Utilisable sur les macros": {
+		"message": "Use on macros"
+	},
+	"Macros": {
+		"message": "Macros"
 	}
 }
