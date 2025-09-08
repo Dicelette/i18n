@@ -27,6 +27,34 @@ The bot will then create a new thread, prefixed with `🎲`, where it will send 
 
 ![Scene](/assets/rolls/scene.gif)
 
+## Luck Meter
+
+The bot will automatically count successful and failed rolls on the server by user. <mark>This only works for dice rolled with the bot with a comparison</mark>, indicating `Failure` or `Success` in the message. Criticals are also counted.
+
+This command allows you to obtain:
+- A leaderboard of the most (or least!) lucky players on the server,
+- The metrics of a specific player,
+- Global statistics for the server.
+
+:::usage
+**`/luck_meter bilan (@user)`**
+- `@user`: Optional, allows you to get statistics for a specific user.
+:::
+
+:::usage
+**`/luck_meter leaderboard [type]`**
+- `type`: Required, allows you to choose the type of dice to display. Choices are `Success`, `Failures`, `Critical Success`, and `Critical Failure`.
+:::
+
+:::usage
+**`/luck_meter average`**
+Displays the global statistics for the server.
+:::
+
+:::warning
+Obviously, the luck meter only works for dice rolled with the bot, and does not work with custom crits that do not match the standard texts `Failure`, `Success`, etc.
+:::
+
 ## Help
 
 There are several help commands, depending on what you need:
