@@ -42,12 +42,13 @@ This command allows you to obtain:
 :::
 
 :::usage
-**`/luck_meter leaderboard [type]`**
-- `type`: Required, allows you to choose the type of dice to display. Choices are `Success`, `Failures`, `Critical Success`, and `Critical Failure`.
+**`/luck_meter leaderboard (type)`**
+- `type`: Allows you to choose the type of dice to display. Choices are `Success`, `Failures`, `Critical Success`, `Critical Failure` and `Total`.
+Without a chosen type, it displays the server statistics, as well as the leaderboard for each type.
 :::
 
 :::usage
-**`/luck_meter average`**
+**`/luck_meter server`**
 Displays the global statistics for the server.
 :::
 
