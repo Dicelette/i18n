@@ -7,20 +7,16 @@ Now that the template has been created, you can register users. As we saw earlie
 
 Once this button has been activated, you'll be presented with a series of forms to fill in.
 
-:::info
-The username is the Discord username (not the display name). This is the one you may have had to change when Discord removed the numbers after the nicknames...
-:::
-
 
 ## Main form
 
 The first form is always the same, whatever the model:
 
+- **Player** (*mandatory if moderation[^2]*): Select the user to be associated with the character. Pre-filled with the name of the person clicking.
 - **Character name** (*required or optional depending on model*)  
-- **Username** (*mandatory if moderation[^2]*): Discord ID or username. Pre-filled with the name of the person clicking.  
-- **Private form** (*optional*): If enabled (see [private form](./model/index.md#next-steps)), allows you to choose whether the form should be private (`x` if yes, empty otherwise).  
 - **Avatar** (*optional*): Link to the image to be used for the form. If empty, the player's avatar will be used.
-- **Display room** (*optional*): Allows you to send the form to a room other than those defined by the template (`private_channel` or `public_channel`). Leave blank to use default channels.
+- **Channel where to post the sheet** (*optional*): Allows you to send the form to a room other than those defined by the template (`private_channel` or `public_channel`). Leave blank to use default channels.
+- **Private sheet** (*optional*): If enabled (see [private form](./model/index.md#next-steps)), allows you to choose whether the form should be private (`x` if yes, empty otherwise).  
 
 :::warning
 The listing can be hidden **only** if the `private_channel` option is enabled: even if the listing is sent to a channel inaccessible to others, they will be able to view it if this option is not enabled.

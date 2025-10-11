@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ### Edit user data
 
-![](/assets/edit/french/user.png)
+![](/assets/edit/user.png)
 Each tree commands will open a modal to edit the corresponding data.
 
 If you are using a old version of the bot, you will have to use the commands.
@@ -32,7 +32,7 @@ Images stored on Discord cannot be used as their links change regularly. It is t
 By default, the commands will change the image of the person that used the commands. Only moderator can change the image of another user.
 
 #### Rename a character
-![rename](/assets/edit/french/rename.png)
+![rename](/assets/edit/rename.png)
 
 As the command, it doesn't allow duplicate character name. Each character must have different name, or error will be throw.
 
@@ -45,7 +45,7 @@ As the command, it doesn't allow duplicate character name. Each character must h
 
 #### Move to another user
 
-![move](/assets/edit/french/move.png)
+![move](/assets/edit/move.png)
 
 It will **move** the character to another user, deleting the one on the old user. An error will be throw in case of duplicate, and action will be undone.
 
