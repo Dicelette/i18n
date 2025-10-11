@@ -51,7 +51,7 @@ The form will then be sent to the chosen salon (or to a thread named `📝 - [ST
 
 ## Important reminders
 
-- [Form field syntax and auto-completion](../introduction/format.md)
+- [Form field syntax and auto-completion](../introduction/format.mdx)
 - If [auto-registration](../config/self_registration.md) is enabled and a non-moderator clicks on the button, he'll only be able to register one character for himself.
 
 [^1]: It is possible to use a forum, which will automatically create a post for the character. The player (as well as the administrators) will be mentioned in the post. 

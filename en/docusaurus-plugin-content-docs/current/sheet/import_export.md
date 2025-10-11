@@ -24,10 +24,10 @@ For example:
 - Player `id`s may be recognized as numbers and altered. It is advised to save them as text by adding `'` before the `id`, like `'123456789012345678`.
 
 It is highly recommended to disable Excel's automatic conversions:
-![Excel](/assets/csv/EXCEL_EN_disable.png)
+![Excel](../assets/csv/disable.png)
 
 And to disable the error checking rule "Numbers formatted as text or preceded by an apostrophe" in the error checking options (Formulas > Error Checking Rules):
-![](/assets/csv/EN_disable_nb.png)
+![](../assets/csv/disable_nb.png)
 :::
 
 ![Example](/assets/csv/example.png)
