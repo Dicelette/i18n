@@ -16,10 +16,10 @@ This is useful for statistics only used in formulas or not intended for rolls.
 
 ### Example configuration
 
-| Name | min | max | combination | Exclude from roll |
-|-----------|-----|-----|-------------------|:--------------:|
-| Strength | 1 | 10 | |
-| PV | | Constitution+Endu | ✅ |
-| Dexterity | 1 | 12 | | |
+| Name      | min | max               | combination | Exclude from roll |
+|-----------|-----|-------------------|-------------|:-----------------:|
+| Strength  | 1   | 10                |             |
+| PV        |     | Constitution+Endu | ✅           |
+| Dexterity | 1   | 12                |             |                   |
 
 <small>For more information about the commands syntax, see: [the dedicated page](../../introduction/format.mdx).</small>

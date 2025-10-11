@@ -29,7 +29,7 @@ The `display` command allows you to view the statistics and dice of a character 
 The `/graph` command is a "gimmick" feature that generates a graph from a character's statistics. You can personalize the color of the line and the background using hexadecimal or RGB values (e.g., `#FF0000` or `255,0,0`).
 
 
-By default:
+By default,
 - The minimum is calculated according to the server template (if existing).
 - The maximum is determined in different ways:
    - If a maximum is defined by the template, it will be used.

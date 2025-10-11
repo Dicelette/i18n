@@ -22,7 +22,7 @@ The first form is always the same, whatever the model:
 The listing can be hidden **only** if the `private_channel` option is enabled: even if the listing is sent to a channel inaccessible to others, they will be able to view it if this option is not enabled.
 :::
 
-![Page_1](/assets/register/register_user_P1.png)
+![Page_1](../assets/register/register_user_P1.png)
 
 ## Statistics form
 
@@ -30,18 +30,18 @@ The following form(s) depend on the model:
 - If more than five characteristics are present, several pages will be displayed.
 - At each step, simply enter the value of the requested statistic (min/max controls and number).
 
-![fin embed](/assets/register/fin_stat.png)
+![fin embed](../assets/register/fin_stat.png)
 
 
 ## Registered dice
 
 Once registration is complete (all statistics filled in), you can add specific dice for this character.
 
-![modal_dice](/assets/register/add_dice.png)
+![modal_dice](../assets/register/add_dice.png)
 
 Each dice must be registered manually.
 
-![fin](/assets/register/fin_embed.png)
+![fin](../assets/register/fin_embed.png)
 
 
 ## Validation
@@ -51,7 +51,7 @@ The form will then be sent to the chosen salon (or to a thread named `📝 - [ST
 
 ## Important reminders
 
-- Form field syntax and auto-completion](../introduction/format.md)
+- [Form field syntax and auto-completion](../introduction/format.md)
 - If [auto-registration](../config/self_registration.md) is enabled and a non-moderator clicks on the button, he'll only be able to register one character for himself.
 
 [^1]: It is possible to use a forum, which will automatically create a post for the character. The player (as well as the administrators) will be mentioned in the post. 

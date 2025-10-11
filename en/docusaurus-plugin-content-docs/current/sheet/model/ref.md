@@ -16,7 +16,7 @@ sidebar_position: 1
 - `?delete_characters`: Deletes all existing character sheets if they exist.
 :::
 
-![registration](/assets/register/cmd_add_en.png)
+![registration](../../assets/register/cmd_add.png)
 
 :::danger About Private Sheets
 If the sheet is not marked as private but is published in a channel that users don’t normally have access to, they will still be able to view the sheet using the <mark>`/show`</mark> and <mark>`/graph`</mark> commands.
@@ -24,7 +24,7 @@ If the sheet is not marked as private but is published in a channel that users d
 
 The embed will be pinned for easier access.
 
-![embed](/assets/register/embed_template.png)
+![embed](../../assets/register/embed_template.png)
 
 :::danger
 You must re-register the template if you want to change the default channel for public or private sheets.  
@@ -46,7 +46,7 @@ This command allows you to upload a new JSON file that will replace the existing
 - `?delete_characters`: Deletes all existing character sheets.
 :::
 
-![edit](/assets/register/modif_template_en.png)
+![edit](../../assets/register/modif_template.png)
 
 ---
 <small>For more information on field syntax: [see dedicated page](../../introduction/format.mdx).</small>
