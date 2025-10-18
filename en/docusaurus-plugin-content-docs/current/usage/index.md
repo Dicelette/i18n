@@ -27,7 +27,7 @@ The bot will then create a new thread, prefixed with `🎲`, where it will send 
 
 ![Scene](/assets/rolls/scene.gif)
 
-## Luck Meter
+## Karma
 
 The bot will automatically count successful and failed rolls on the server by user. <mark>This only works for dice rolled with the bot with a comparison</mark>, indicating `Failure` or `Success` in the message. Criticals are also counted.
 
@@ -37,23 +37,23 @@ This command allows you to obtain:
 - Global statistics for the server.
 
 :::usage
-**`/luck_meter bilan (@user)`**
+**`/karma bilan (@user)`**
 - `@user`: Optional, allows you to get statistics for a specific user.
 :::
 
 :::usage
-**`/luck_meter leaderboard (type)`**
+**`/karma leaderboard (type)`**
 - `type`: Allows you to choose the type of dice to display. Choices are `Success`, `Failures`, `Critical Success`, `Critical Failure` and `Total`.
 Without a chosen type, it displays the server statistics, as well as the leaderboard for each type.
 :::
 
 :::usage
-**`/luck_meter server`**
+**`/karma server`**
 Displays the global statistics for the server.
 :::
 
 :::warning
-Obviously, the luck meter only works for dice rolled with the bot, and does not work with custom crits that do not match the standard texts `Failure`, `Success`, etc.
+Obviously, the karma only works for dice rolled with the bot, and does not work with custom crits that do not match the standard texts `Failure`, `Success`, etc.
 :::
 
 ## Help
