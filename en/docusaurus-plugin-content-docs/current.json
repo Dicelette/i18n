@@ -5,18 +5,18 @@
   },
   "sidebar.TOS.category.Terms of Service": {
     "message": "Terms of Service",
-    "description": "The label for category Terms of Service in sidebar TOS"
+    "description": "The label for category 'Terms of Service' in sidebar 'TOS'"
   },
   "sidebar.model.category.Editing and deleting data": {
     "message": "Editing and deleting data",
-    "description": "The label for category Editing and deleting data in sidebar model"
+    "description": "The label for category 'Editing and deleting data' in sidebar 'model'"
   },
   "sidebar.commands.category.Character roll": {
     "message": "Character roll",
-    "description": "The label for category Character roll in sidebar commands"
+    "description": "The label for category 'Character roll' in sidebar 'commands'"
   },
   "sidebar.model.category.index": {
     "message": "index",
-    "description": "The label for category index in sidebar model"
+    "description": "The label for category 'index' in sidebar 'model'"
   }
 }
