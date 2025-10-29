@@ -18,4 +18,10 @@ Moderators will continue to be able to register characters for other players.
 You can restrict access to the template to certain roles, in order to restrict self-registration to players who have already been validated.
 :::
 
+Also, when the `validation_moderation` is enabled, the sheet's editions will need to be validated by a moderator. 
+
+:::note
+The `self_register` settings itself doesn't change the edition validation process. If you don't want to allow user to edit their sheet after the registration, you need to restrict access to the sheet itself. 
+:::
+
 <small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>

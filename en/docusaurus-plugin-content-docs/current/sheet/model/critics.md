@@ -10,7 +10,7 @@ It is possible to define :
 By default, critics are active only on the `/dbroll` command, and display a special message depending on the result.
 
 
-## Basic criticis
+## Basic
 
 Basic criticisms only concern equality on the natural die.  
 The message displayed is fixed:
@@ -25,7 +25,7 @@ The message displayed is fixed:
 | Critical Failure | 1d20        | 1     | Critical Failure |
 
 
-## Custom critics
+## Custom
 
 Custom critics let you define a value or formula to display a personalized message.  
 They can be applied to the total or the natural die, and support mathematical formulas. Up to 22 custom critiques are possible.
@@ -38,6 +38,10 @@ In Call of Cthulhu, successes are based on the value of the statistic. The typic
 Customized reviews will be:
 - Major Success": `<=round($/2)`.
 - Extreme Success": `<=round($/5)`.
+:::
+
+:::tip
+As custom critical are also applied on "normal" rolls (using `/roll` or [other notations](../../usage/message.md)), custom critical that contains `$` will be skipped if no statistic is found.
 :::
 
 
