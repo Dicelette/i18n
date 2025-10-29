@@ -16,7 +16,7 @@ If all information is saved, you will have access to three buttons:
 - Add a New Die.
 
 :::important
-If [self-registration](../../config/self_registration.md) is enabled **with** moderator approval, all proposed changes to a listing must be approved by a moderator before being applied. A message containing the proposed changes will be sent to the same chat room as the card; if a moderator approves the message, the changes are applied, otherwise they are rejected (and the user will be notified).  
+If [self-registration](../../config/self_registration.md) is enabled **with** moderator approval, all proposed changes to a character must be approved by a moderator before being applied. A message containing the proposed changes will be sent to the same channel as the sheet; if a moderator approves the message, the changes are applied, otherwise they are rejected (and the user will be notified).  
 
-The self-registration setting **alone** does not prevent editing of entries. To completely prevent users from editing their entries, place them in a chat room that is only accessible to moderators.
+The self-registration setting **alone** does not prevent editing of entries. To completely prevent users from editing their entries, place the sheet in a channel that is only accessible to moderators.
 :::

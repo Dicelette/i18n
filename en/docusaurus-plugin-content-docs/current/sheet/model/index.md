@@ -1,4 +1,4 @@
-n ---
+---
 title: Template
 sidebar_position: 1
 ---
