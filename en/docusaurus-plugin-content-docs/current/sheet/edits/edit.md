@@ -23,13 +23,20 @@ Images stored on Discord cannot be used as their links change regularly. It is t
 :::
 
 :::usage[Command]
-**`/edit avatar [url] (@user) (*character)`**
+**`/edit avatar [(url) (file)] (@user) (*character)`**
 - `url`: URL of the image to use.
+- `file` : Image file to upload.
 - `@user`: User to edit if different from the one using the command.
 - `*character`: Name of the character to edit. If not specified, the default character will be edited.
 :::
 
 By default, the commands will change the image of the person that used the commands. Only moderator can change the image of another user.
+
+:::important
+If both URL and file are provided, the file will take priority.
+:::
+
+Even as the two options are optional, at least one of them must be provided, or an error will be thrown.
 
 #### Rename a character
 ![rename](../../assets/edit/rename.png)
