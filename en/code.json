@@ -275,7 +275,7 @@
     "description": "The title of the tag list page"
   },
   "tagline": {
-    "message": "A discord bot that rolls dice in threads... And much more!",
+    "message": "A hightly customizable dice bot for every roleplay sessions!",
     "description": "The tagline for the website"
   },
   "Inviter le bot": {
@@ -571,7 +571,7 @@
     "message": "Custom critics cannot be used without a type die."
   },
   "Affecter uniquement les dés naturels": {
-    "message": "Allocate only natural die"
+    "message": "Affect only on natural die"
   },
   "Le texte ne peut pas être vide": {
     "message": "This text can't be empty"
@@ -662,7 +662,7 @@
     "message": "Macros"
   },
   "Ajouter une macro": {
-    "message": "Ajouter une macro"
+    "message": "Add a macro"
   },
   "macros": {
     "message": "macros"
@@ -773,5 +773,11 @@
   },
   "Personnalisez chaque aspect du bot : auto-rôles, gestion des scènes, suppression HRP, et bien plus selon vos besoins.": {
     "message": "Personalize every aspect of the bot: auto-roles, scene management, OOC deletion, and much more according to your needs."
+  },
+  "Général": {
+    "message": "General"
+  },
+  "Critique": {
+    "message": "Critics"
   }
 }

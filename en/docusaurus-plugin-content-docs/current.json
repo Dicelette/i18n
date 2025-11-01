@@ -15,8 +15,8 @@
     "message": "Character roll",
     "description": "The label for category 'Character roll' in sidebar 'commands'"
   },
-  "sidebar.model.category.index": {
-    "message": "index",
-    "description": "The label for category 'index' in sidebar 'model'"
+  "sidebar.model.category.Template": {
+    "message": "Template",
+    "description": "The label for category 'Template' in sidebar 'model'"
   }
 }
