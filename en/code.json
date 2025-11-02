@@ -779,5 +779,32 @@
   },
   "Critique": {
     "message": "Critics"
+  },
+  "Type de fichier invalide": {
+    "message": "Invalid file type"
+  },
+  "Veuillez sélectionner un fichier JSON.": {
+    "message": "Please select a JSON file."
+  },
+  "Modèle importé avec succès.": {
+    "message": "Template imported successfully."
+  },
+  "Erreur de lecture": {
+    "message": "Read error"
+  },
+  "Impossible de lire le fichier sélectionné.": {
+    "message": "Unable to read the selected file."
+  },
+  "Préremplir le formulaire à partir d'un fichier JSON généré précédemment": {
+    "message": "Pre-fill the form from a previously generated JSON file"
+  },
+  "Importer un JSON": {
+    "message": "Import JSON"
+  },
+  "Réinitialiser le formulaire et supprimer les données enregistrées": {
+    "message": "Reset the form and delete saved data"
+  },
+  "Vider le formulaire": {
+    "message": "Clear the form"
   }
 }
