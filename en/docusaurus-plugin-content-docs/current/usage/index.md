@@ -15,6 +15,10 @@ To understand all the dice notations that can be used with the bot (direct, indi
 
 ![Roll](/assets/rolls/slash-commands.gif)
 
+:::tip
+The global command (usable in DMs and in all servers allowing it) for the command is `/r`.
+:::
+
 ## Creating a New Scene
 
 :::usage
@@ -54,6 +58,19 @@ Displays the global statistics for the server.
 
 :::warning
 Obviously, the karma only works for dice rolled with the bot, and does not work with custom crits that do not match the standard texts `Failure`, `Success`, etc.
+:::
+
+## Choose
+:::usage
+**`/choose [list] (how_many)`**
+- `list`: A list of items separated by commas, semicolon or a space.
+- `how_many`: Optional, number of items to choose. Default is 1.
+:::
+
+This command allows to randomly select one or more options from a given list.
+
+:::tip
+The global command (usable in DMs and in all servers allowing it) for the command is `/select`.
 :::
 
 ## Help
