@@ -22,20 +22,24 @@ The server format takes priority over the user format.
 ## Format
 
 :::usage
-**`/config create_link format [final] [results] [dice] [info] [name] [results_join]`**
+**`/config create_link format [final] (results) (dice) (info) (name) (original_dice) (character) (join_results)`**
 - `dice`: The raw dice result, usually `[RES](SIGN)(COMPARISON)`, for example `[29]>=10`.
 - `info`: The information text, such as critical (including custom), failure, or success messages.
 - `name`: The name of the statistic or macro, if one is found.
-- `results_join`: The text used to join multiple results together.
-- `results`: A list that contains the combination of `dice` and `info`, joined using the `results_join` variable.
+- `join_results`: The text used to join multiple results together.
+- `results`: A list that contains the combination of `dice` and `info`, joined using the `join_results` variable.
 - `final`: The final format that combines variables to build the link.
+- `original_dice`: The original dice rolled, for example `1d100`.
+- `character`: The name of the character who rolled the dice.
 :::
 
 :::warning
 Discord does not allow trailing (or leading) spaces in options. If you want to add a space at the beginning or end of a variable, use `\s` to represent a space.
 :::
 
-## Variables
+When variables are left empty, default values are used.
+
+### Variables
 
 To simplify format creation, you can use the following variables in your format fields:
 - `{{dice}}` : Dice result (example: `[29]>=10`)
@@ -43,26 +47,25 @@ To simplify format creation, you can use the following variables in your format 
 - `{{name}}` : Statistic or macro name (example: `Strength`)
 - `{{results}}` : List combining multiple `{{dice}}` and `{{info}}`
 - `{{link}}` : Link to the message containing the dice result
+- `{{original_dice}}` : The original dice rolled (example: `1d100`)
+- `{{character}}` : The name of the character who rolled the dice
 
-Some customizations are available for `name` and `info`:
-- `{{name:short}}` : Uses the initials of the statistic/macro if it has multiple words (example: `AC` for `Armor Class`)
-- `{{name:long}}` : Uses the full name (same as `{{name}}`)
+There are certain customizations possible for `name`, `info`, and `character` by adding `:short` or `:long` after the variable name:
+- `:short` : Provides the initials of the variable only if it consists of at least two words. For example, for `{{name}}`, if the name is `Strength Test`, `{{name:short}}` will yield `ST`.
+- `:long` gives the same result as the absence of this option, providing the full variable.
 
-Similarly, `info` can be customized with:
-- `{{info:short}}` : Uses an abbreviated version (example: `CF` instead of `Critical Failure`)
-- `{{info:long}}` : Uses the full version (same as `{{info}}`)
-
-### Results (`{{results}}`)
+#### Results (`{{results}}`)
 The `{{results}}` variable is actually a list joined using the variable `results_join`. This variable **can only** contain:
 - `{{dice}}`
 - `{{info}}`
+- `{{original_dice}}`
 
-### Final
+#### Final
 The `final` variable may only contain `{{results}}`, `{{link}}`, and `{{name}}`.
 
 ![Variable Diagram](../assets/variable_diagram.png)
 
-## Default
+### Default
 
 By default, the format is defined as follows:
 - Final: `[[{{name}}{{results}}]](<{{link}}>)`,
