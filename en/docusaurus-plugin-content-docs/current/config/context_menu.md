@@ -67,9 +67,31 @@ The `final` variable may only contain `{{results}}`, `{{link}}`, and `{{name}}`.
 By default, the format is defined as follows:
 - Final: `[[{{name}}{{results}}]](<{{link}}>)`,
 - Results: ``{{info}} `{{dice}}` ``,
-- Results_join: `; `,
+- Results join: `; `,
 - Dice: `{{dice}}`,
 - Info: `{{info}} - `,
 - Name: `__{{name}}__: ` ,
 
-Which gives: ``[[__Strength__ :  Critical Failure - `[29] ⩾ 10`]](<https://discord.com/channels/guildId/channelId/messageId>)``
+Which gives: ``[[__Name__ :  Critical Failure - `[29] ⩾ 10`]](<https://discord.com/channels/guildId/channelId/messageId>)``
+
+
+## Display
+
+:::usage
+**`/config create_link display`**
+:::
+
+Displays the list of the current link formats for the server, along with an example based on the following format:
+
+```
+__**Character**__ (<@000000000000000000>)  (\`>= 11\`):
+[__Nom__]
+  **Critical Failure** — \`1d100\` ⟶ \`[29]\` = \`[29] ⩾ 10\`
+```
+
+## Reset
+:::usage
+**`/config create_link reset`**
+:::
+
+Resets the link format to its default values.
