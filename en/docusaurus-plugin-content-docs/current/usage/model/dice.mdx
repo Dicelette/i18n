@@ -53,12 +53,14 @@ If a die is registered in the template, it will be considered as a global die an
 :::
 
 :::usage
-**`/macro [*dice] (*character) (expression) (comment)`**
+**`/macro [*dice] (*character) (expression) (success_threshold) (comment)`**
 - <CL>*dice</CL>: The macro to use (saved die)
 - <CL>*character</CL>: The character to use, if any.
 - <CL>expression</CL>: Any expressions defining conditions or modifications.
 - <CL>comment</CL>: Any comments on your action.
 - <CL>opposition</CL>: The "secondary" success threshold, only evaluated if there is a main success threshold, registered in the die.
+- <CL>success_threshold</CL>: The success threshold to use, if any.
+
 :::
 
 ![macro](../../assets/rolls/db/macro_example.png)
@@ -74,11 +76,13 @@ Snippets can include comments, mathematical expressions, success thresholds, opp
 :::
 
 :::usage
-**`/snippets [*dice] (expression) (opposition) (comment)`**
+**`/snippets [*dice] (expression) (opposition) (success_threshold) (comment)`**
 - <CL>*dice</CL>: The name of the snippet (saved dice)
 - <CL>expression</CL>: Mathematical expression
 - <CL>opposition</CL>: “Secondary” success threshold, only evaluated if there is a primary success threshold already saved in the dice.
 - <CL>comment</CL>: Action comment, which will be merged with any existing comment already present in the snippet.
+- <CL>success_threshold</CL>: The success threshold to use, if any.
+
 :::
 
 To create a snippet, [see this section](../../config/snippets.md).
