@@ -65,4 +65,26 @@ If a die is registered in the template, it will be considered as a global die an
 
 Here, the command requires you to choose the die to use. It is not possible to choose a success threshold, although it is possible to specify it in the die itself when registering it. In this case, the <CL>opposition</CL> threshold can be used as a secondary success threshold, only evaluated if the main success threshold is reached.
 
+## Snippets (`/snippets`)
+
+:::info
+Allows you to roll dice saved by each user on the server. Unlike macros, snippets are not stored in a character sheet and are not linked to stats or the model.
+
+Snippets can include comments, mathematical expressions, success thresholds, opposition thresholds, as well as character names (using `@name`).
+:::
+
+:::usage
+**`/snippets [*dice] (expression) (opposition) (comment)`**
+- <CL>*dice</CL>: The name of the snippet (saved dice)
+- <CL>expression</CL>: Mathematical expression
+- <CL>opposition</CL>: “Secondary” success threshold, only evaluated if there is a primary success threshold already saved in the dice.
+- <CL>comment</CL>: Action comment, which will be merged with any existing comment already present in the snippet.
+:::
+
+To create a snippet, [see this section](../../config/snippets.md).
+
+![snippets](../../assets/snippets/example.png)
+
+
+
 <small>For more information about the commands syntax, see: [the dedicated page](../../introduction/format.mdx).</small>

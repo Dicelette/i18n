@@ -6,7 +6,7 @@ sidebar_position: 5
 import { CL} from "@site/src/components/utils.tsx";
 
 
-The bot uses the [dice roller](https://dice-roller.github.io/documentation/)[^1] library for dice rolls and supports its syntax. 
+The bot uses the [dice roller](https://dice-roller.github.io/documentation/) library for dice rolls and supports its syntax.
 However, there are some differences as Dicelette aims to be more flexible and display dice roll results in a more readable way.
 
 ## Differences with Dice Roller
@@ -124,7 +124,7 @@ You can use dice in the formulas, but only the first die will be saved and reuse
 :::
 ::::
 
-To comment between each roll, use the `[comment]` syntax. A global comment should use the `#comment` syntax at the end of the dice.[^2]
+To comment between each roll, use the `[comment]` syntax. A global comment should use the `#comment` syntax at the end of the dice.[^1]
 
 :::roll[ `1d20;&-2 [hp loss] #comments` ]
 *comments*
@@ -138,7 +138,10 @@ Finally, it is possible to hide the first die using the syntax `(die)`:
   ◈ `[1d20]+2` ⟶ `[12]+2` = ` 14 `  
 :::
 
-:::danger[It is not possible to use bulk dice in this syntax.]
+:::danger[Limitations]
+- It is not possible to combine shared unique rolls with bulk rolls.
+- The first dice cannot be compared. If necessary, it is possible to hide the first die in order to use a comparison in the following formulas.
+- Opposition comparison are not supported.
 :::
 
 ## Bulk Rolls
@@ -152,5 +155,4 @@ The bot also supports the `x#(dice)` notation, inspired by [rollem](https://roll
   `2d10` ⟶ `[8, 9]` = ` [17] `  
 :::
 
-[^1]: Dice Roller itself uses [random-js](https://www.npmjs.com/package/random-js) for random generation, not `math.random` which is pseudo-random. So it's not possible to cheat on dice results (unless you're a cryptomancer or can see the future... Or both.).
-[^2]: Shared dice and comments are very sensitive to spaces. Thus, bracketed dice comments must be preceded by a space, as must global comments. The `#` in global comments must be pasted into the comment text, without spaces.
+[^1]: Shared dice and comments are very sensitive to spaces. Thus, bracketed dice comments must be preceded by a space, as must global comments. The `#` in global comments must be pasted into the comment text, without spaces.
