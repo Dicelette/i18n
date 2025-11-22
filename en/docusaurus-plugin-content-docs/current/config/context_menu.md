@@ -50,12 +50,22 @@ To simplify format creation, you can use the following variables in your format 
 - `{{original_dice}}` : The original dice rolled (example: `1d100`)
 - `{{character}}` : The name of the character who rolled the dice
 
-There are certain customizations possible for `name`, `info`, and `character` by adding `:short` or `:long` after the variable name:
-- `:short` : Provides the initials of the variable only if it consists of at least two words. For example, for `{{name}}`, if the name is `Strength Test`, `{{name:short}}` will yield `ST`.
-- `:long` gives the same result as the absence of this option, providing the full variable.
+It is also possible to associate specific functions with these variables by adding:
+- `:upper`: capitalizes all characters.
+- `:lower`: lowercases all characters.
+- `:title`: capitalizes the first letter of each word.
+- `:capitalize`: capitalizes only the first letter.
+- `:standardize`: removes accents by replacing them with standard characters (`é -> e`, `ü -> u`, etc.).
+- `:trunc=N`: truncates to N characters. For example, `{{name:trunc=5}}` will give the first `5` characters of the name.
+- `:short`: Keeps only the initials if the word contains several (example: `Jean-Luc Picard` becomes `JLP`).
+- `:long`: Keeps the entire word unchanged (exactly as if no option were applied).
+
+These options are applied in the order in which they are written. For example, `{{name:short:upper}}` will give the initials in uppercase.
+
+These variables can only be used in the corresponding format fields, not in the `final` field.
 
 #### Results (`{{results}}`)
-The `{{results}}` variable is actually a list joined using the variable `results_join`. This variable **can only** contain:
+The `{{results}}` variable is actually a list joined using the variable `join_results`. This variable **can only** contain:
 - `{{dice}}`
 - `{{info}}`
 - `{{original_dice}}`
@@ -70,10 +80,12 @@ The `final` variable may only contain `{{results}}`, `{{link}}`, and `{{name}}`.
 By default, the format is defined as follows:
 - Final: `[[{{name}}{{results}}]](<{{link}}>)`,
 - Results: ``{{info}} `{{dice}}` ``,
-- Results join: `; `,
+- Join results: `; `,
 - Dice: `{{dice}}`,
 - Info: `{{info}} - `,
 - Name: `__{{name}}__: ` ,
+- Original Dice: `{{original_dice}}`,
+- Character: `{{character}}`
 
 Which gives: ``[[__Name__ :  Critical Failure - `[29] ⩾ 10`]](<https://discord.com/channels/guildId/channelId/messageId>)``
 
@@ -97,4 +109,4 @@ __**Character**__ (<@000000000000000000>)  (\`>= 11\`):
 **`/config create_link reset`**
 :::
 
-Resets the link format to its default values.
+Remove the configuration and reset the link format to default values.
