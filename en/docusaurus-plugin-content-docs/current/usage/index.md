@@ -56,6 +56,15 @@ Without a chosen type, it displays the server statistics, as well as the leaderb
 Displays the global statistics for the server.
 :::
 
+:::usage
+**`/karma reset (@user) (everyone)`**
+Resets the ranking.
+
+Options are reserved for administrators :
+- `@user`: Optional, allows you to reset the statistics of a specific user.
+- `everyone`: Optional, if specified, resets the statistics for all users on the server.
+:::
+
 :::warning
 Obviously, the karma only works for dice rolled with the bot, and does not work with custom crits that do not match the standard texts `Failure`, `Success`, etc.
 :::
