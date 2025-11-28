@@ -40,3 +40,21 @@ Allows you to delete an existing snippet from the list.
 Displays the list of existing snippets for the user.
 
 ![list_snippet](../assets/snippets/list.png)
+
+## Exporting snippets (`/user_config snippets export`)
+:::usage
+**`/user_config snippets export`**
+:::
+Allows you to export all user snippets in JSON format, for backup or sharing elsewhere.
+
+![export_snippet](../assets/snippets/export.png)
+
+## Importing snippets (`/user_config snippets import`)
+:::usage
+**`/user_config snippets import [file]`**
+- `file`: JSON data of snippets to import
+:::
+
+Allows you to import snippets from a JSON file, enabling users to easily transfer or share their snippets across different servers or accounts.
+![import_cmd](../assets/snippets/import_cmd.png)
+![import_snippet](../assets/snippets/import.png)
