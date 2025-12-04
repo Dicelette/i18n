@@ -6,172 +6,171 @@ A quick reference of main terms used in Dicelette.
 
 ---
 
-## A
+# A
 
-- **Admin Command**:  
+- **Admin Command**:
   A command that can only be executed by users with Discord server management permissions (such as Manage Roles).
-- **Auto Role**:  
+- **Auto Role**:
   A Discord role automatically assigned to users based on an action (e.g., registering a character or validating stats).
-- **Auto-completion / Auto-completed Field**:  
+- **Auto-completion / Auto-completed Field**:
   A command field that suggests available options as you type (such as character or dice names).
 
 ---
 
-## B
+# B
 
-- **Bulk Roll**:  
+- **Bulk Roll**:
   A feature allowing multiple dice rolls in one command (e.g., `5#(1d6+2)` rolls five dice).
 
-- **Bot Log**:  
+- **Bot Log**:
   A channel or thread where the bot saves dice results and important events.
 
 ---
 
-## C
+# C
 
-- **Character Sheet**:  
+- **Character Sheet**:
   A record of a character's statistics, skills, and macro, linked to a Discord user.
-- **Channel Selector**:  
+- **Channel Selector**:
   A command option where the argument begins with `#` to indicate a Discord channel.
-- **Command Argument**:  
+- **Command Argument**:
   A value or option provided to a command; can be required or optional.
-- **Critical Success / Failure**:  
+- **Critical Success / Failure**:
 The highest or lowest possible roll, usually with special effects.
-- **CSV Template**:  
+- **CSV Template**:
   A spreadsheet structure used for batch importing or exporting character sheets and stats.
-- **Custom Crit (Custom Critical)**:  
+- **Custom Crit (Custom Critical)**:
   A user-defined formula or threshold for critical success or failure, beyond the default rules.
 
 ---
 
-## D
+# D
 
-- **Dice Notation**:  
+- **Dice Notation**:
   A way to write dice rolls, such as `1d20+3`, understood by the bot.
-- **Dice Roll / Roll**:  
+- **Dice Roll / Roll**:
   The act of generating a random result using dice notation.
-- **Dice Type**:  
+- **Dice Type**:
   The default dice formula set in a model or template, often referencing a stat (e.g., `1d20+$`).
-- **Direct Notation**:  
+- **Direct Notation**:
   Typing the dice formula directly in a message (e.g., `1d20`), which the bot detects and rolls.
 
 ---
 
-## E
+# E
 
-- **Embed**:  
+- **Embed**:
   A rich-format Discord message used for displaying character sheets, dice results, or bot logs.
-- **Ephemeral Roll / Hidden Roll**:  
+- **Ephemeral Roll / Hidden Roll**:
   A die roll result that is only visible to the user who made the roll (used for secret checks).
-- **Export / Import**:  
+- **Export / Import**:
   Downloading or uploading character data (usually in CSV format) for backup or migration.
 
 ---
 
-## F
+# F
 
-- **Forum**:  
+- **Forum**:
   A Discord channel type supporting posts and threads—Dicelette can use forums to log or post character sheets.
 
 ---
 
-## G
+# G
 
-- **Game Master (GM) Command**:  
+- **Game Master (GM) Command**:
   A command designed for game masters to roll dice or manage characters for players.
-- **Graph**:  
+- **Graph**:
   A visual representation (chart) of a character's stats.
 
 ---
 
-## H
+# H
 
-- **Hidden/Ephemeral Roll**:  
+- **Hidden/Ephemeral Roll**:
   See Ephemeral Roll.
 
 ---
 
-## I
+# I
 
-- **Indirect Notation**:  
+- **Indirect Notation**:
   Placing a die formula in brackets inside a message (e.g., `Attack [1d20+2]`). The bot only rolls the dice portion.
 
 ---
 
-## M
+# L
 
-- **Message Link**:  
+- **Log Channel**:
+  The Discord channel where the bot saves logs, errors, and character changes.
+
+---
+
+# M
+
+- **Message Link**:
   A Discord URL that points directly to a specific message—used in logs, context, or results.
-- **Model / Template**:  
+- **Model / Template**:
   A structure defining which stats and dice are available for character sheets on a server.
-- **Modal**:  
+- **Modal**:
   A Discord popup or interactive form used for entering or editing data.
-- **Macro**:  
+- **Macro**:
   Custom dice formulas saved in a character’s sheet or the server template.
 ---
 
-## O
+# O
 
-- **Optional Parameter**:  
+- **Optional Parameter**:
   A command argument that is not required, often shown as `(argument)`.
 
 ---
 
-## P
+# P
 
-- **Parameter / Argument**:  
+- **Parameter / Argument**:
   An input value passed to a command.
-- **Player**:  
+- **Player**:
   A person using the bot, typically a Discord user with a registered character.
 
 ---
 
-## R
+# R
 
-- **Required Parameter**:  
+- **Required Parameter**:
   A mandatory command argument, usually shown with `[argument]`.
 
 ---
 
-## S
+# S
 
-- **Scene**:  
+- **Scene**:
   A dedicated thread or channel for a game session, used for logging dice rolls.
-- **Semi-Direct Notation**:  
+- **Semi-Direct Notation**:
   A message starting with a die formula followed by text (e.g., `1d20+5 Sneak attack`); both are logged.
-- **Sheet**:  
+- **Sheet**:
   Short for Character Sheet.
-- **Skill**:  
+- **Skill**:
   A specific ability or proficiency, often linked to a statistic and used in checks.
-- **Slash Command**:  
+- **Slash Command**:
   A Discord command prefixed with `/`, like `/roll` or `/dbroll`, offering structured input and auto-completion.
-- **Statistic (Stat)**:  
+- **Statistic (Stat)**:
   A numerical value representing a character’s attribute (e.g., Strength, Intelligence).
+- **Success Threshold**:  An expression or value a roll must meet or exceed to be considered a success.
 
 ---
 
-## T
+# T
 
-- **Thread**:  
+- **Thread**:
   A Discord sub-channel for focused discussions or logging dice rolls.
-- **Type Dice**:  
+- **Type Dice**:
   See Dice Type.
 
 ---
 
-## U
+# U
 
-- **User Selector**:  
+- **User Selector**:
   A command argument beginning with `@` to specify a user or role.
-
----
-
-## Miscellaneous
-
-- **Log Channel**:  
-  The Discord channel where the bot saves logs, errors, and character changes.
-- **Success Threshold**:  
-An expression or value a roll must meet or exceed to be considered a success.
 
 ---
 

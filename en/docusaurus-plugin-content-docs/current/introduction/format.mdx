@@ -7,79 +7,85 @@ import { CL} from "@site/src/components/utils.tsx";
 ## Symbols and Expressions
 
 - **<mark>`$`</mark>** :
-  - <CL>Usage</CL>: Represents the value of the statistic used in the dice formula.
-  - <CL>Where?</CL> Used in dice types (`/dbroll`, `/calc`, critical formulas, etc.)  
-    :::example  
-      - `1d6 > $`: Compares the dice result to the selected statistic value.  
-      - `1d6 + $`: Adds the statistic to the dice result.  
-      - `1d100 <=$`: For systems like Call of Cthulhu, compares to the stat threshold.
-    :::
+	  - <CL>Usage</CL>: Represents the value of the statistic used in the dice formula.
+	  - <CL>Where?</CL> Used in dice types (`/dbroll`, `/calc`, critical formulas, etc.)  
+	    :::example  
+	      - `1d6 > $`: Compares the dice result to the selected statistic value.  
+	      - `1d6 + $`: Adds the statistic to the dice result.  
+	      - `1d100 <=$`: For systems like Call of Cthulhu, compares to the stat threshold.
+	    :::
 
 - **<mark>`{exp}`</mark>** :
-  - <CL>Usage:</CL> Allows inserting a dynamic expression into a dice formula, derived from a calculated part of the command.
-  - <CL>Advanced Syntax:</CL> `{exp||default}` allows defining a default value if the expression is not provided.  
-    :::example `{exp||2}` (default value = 2)
-    :::  
-  - <CL>Where?</CL> Often used in templates or reusable formulas to inject a dynamic value at roll time.  
-    :::example
-      - `1d6 > {exp}`: the value of `exp` will be replaced at roll time.  
-      - `1d6 > {exp||10}`: if `exp` is not provided, the comparison is made to 10.  
-    :::
+	  - <CL>Usage:</CL> Allows inserting a dynamic expression into a dice formula, derived from a calculated part of the command.
+	  - <CL>Advanced Syntax:</CL> `{exp||default}` allows defining a default value if the expression is not provided.  
+	    :::example `{exp||2}` (default value = 2)
+	    :::  
+	  - <CL>Where?</CL> Often used in templates or reusable formulas to inject a dynamic value at roll time.  
+	    :::example
+	      - `1d6 > {exp}`: the value of `exp` will be replaced at roll time.  
+	      - `1d6 > {exp||10}`: if `exp` is not provided, the comparison is made to 10.  
+	    :::
 
 - **<mark>`{{...}}`</mark>** :
-  - <CL>Usage:</CL> Delimits a complex mathematical expression evaluated by <mark>MathJS</mark>.
-  - <CL>Where?</CL> In all commands supporting formulas (`/calc`, `/dbroll`, `/macro`, etc.)
-    :::example  
-      - `1d6 + {{ceil($ / 2)}}`: Adds the rounded half of the stat to the dice result.  
-      - `1d6 > {{ceil($ / 2)}}`: The success threshold is half the stat, rounded.  
-    :::
+	  - <CL>Usage:</CL> Delimits a complex mathematical expression evaluated by <mark>MathJS</mark>.
+	  - <CL>Where?</CL> In all commands supporting formulas (`/calc`, `/dbroll`, `/macro`, etc.)
+	    :::example  
+	      - `1d6 + {{ceil($ / 2)}}`: Adds the rounded half of the stat to the dice result.  
+	      - `1d6 > {{ceil($ / 2)}}`: The success threshold is half the stat, rounded.  
+	    :::
 
 - **<mark>`[comment]`</mark>** :
-  - <CL>Usage:</CL> Adds a comment to a dice roll.  
-  - <CL>Where?</CL> In [shared dice](./expression.mdx#shared-unique-rolls-reusing-results).  
-    :::example `1d20;&-2[HP Loss]`: Applies -2 to the result of `1d20` and annotates the  second line result.
-    :::
+	  - <CL>Usage:</CL> Adds a comment to a dice roll.  
+	  - <CL>Where?</CL> In [shared dice](./expression.mdx#shared-unique-rolls-reusing-results).  
+	    :::example `1d20;&-2[HP Loss]`: Applies -2 to the result of `1d20` and annotates the  second line result.
+	    :::
 
 - **<mark>`#comment`</mark>** :
-  - <CL>Usage:</CL> Global comment for a dice roll. The `#` symbol can be omitted when used in direct messages.  
-  - <CL>Where?</CL> At the end of the dice roll, to annotate the action. Also allows creating a global comment in shared dice.  
-    Not used for dice via slash commands.  
-    :::example
-    - `1d20+5 # My dice roll`
-    - `1d20;&+5;&*2 # My shared dice roll`
-    :::
+	  - <CL>Usage:</CL> Global comment for a dice roll. The `#` symbol can be omitted when used in direct messages.  
+	  - <CL>Where?</CL> At the end of the dice roll, to annotate the action. Also allows creating a global comment in shared dice.  
+	    Not used for dice via slash commands.  
+	    :::example
+	    - `1d20+5 # My dice roll`
+	    - `1d20;&+5;&*2 # My shared dice roll`
+	    :::
 
 - **<mark>`&`</mark>**, **<mark>`;&+x;`</mark>**, etc.** :
-  - <CL>Usage:</CL> Allows reusing the result of the same dice in multiple formulas (unique shared rolls).
-    :::example
-    ```
-    /roll 1d20;&+5;&*2
-    ```
-    Displays:  
-    ```
-    ※ 1d20 ⟶ [14] =  14 
-    ◈ [1d20]+5 ⟶ [14]+5 =  19 
-    ◈ [1d20]×2 ⟶ [14]×2 =  28 
-    ```
-    :::
+	  - <CL>Usage:</CL> Allows reusing the result of the same dice in multiple formulas (unique shared rolls).
+	    :::example
+	    ```
+	    /roll 1d20;&+5;&*2
+	    ```
+	    Displays:  
+	    ```
+	    ※ 1d20 ⟶ [14] =  14 
+	    ◈ [1d20]+5 ⟶ [14]+5 =  19 
+	    ◈ [1d20]×2 ⟶ [14]×2 =  28 
+	    ```
+	    :::
 
 - **<mark>`()`</mark> (parentheses in dice names)** :
-  - <CL>Usage:</CL> Specifies the statistic to use for custom criticals.  
+	- <CL>Usage:</CL> Specifies the statistic to use for custom criticals.  
     :::example[ `Animal Instinct (Strength)` ]
     :::
+- **<mark>@nom</mark>** :
+	- Usage: Allow to use an another character in the rolls (in the command `/roll`, [the messages](../usage/message.md) et `/mj roll`)
+		- Also allow to mention someone else to roll a dice on your behalf (only for moderator) in the [direct dice syntax](../usage/message.md).
+	:::example[`1d100 @character`]
+	:::
+
 
 ---
 :::example
 - **Dice type:**  
-  - `1d6 > $` or `1d6 + $`  
-  - `1d6 + {{ceil($/2)}}`
+	  - `1d6 > $` or `1d6 + $`  
+	  - `1d6 + {{ceil($/2)}}`
 - **Macro:**
-  - `1d6 > Strength` or `1d6 + Strength`  
-  - `1d6 + {{ceil(Strength / 2)}}`
+	  - `1d6 > Strength` or `1d6 + Strength`  
+	  - `1d6 + {{ceil(Strength / 2)}}`
 - **Custom critical:**  
-  - Name: `Animal Instinct (Strength)`  
-  - Formula: `>$` (`$` will be replaced by the Strength value)  
-  - Result: `1d6>10` (if `Strength = 10`)
+	  - Name: `Animal Instinct (Strength)`  
+	  - Formula: `>$` (`$` will be replaced by the Strength value)  
+	  - Result: `1d6>10` (if `Strength = 10`)
 :::
 
 ---
