@@ -59,6 +59,7 @@ It is also possible to associate specific functions with these variables by addi
 - `:trunc=N`: truncates to N characters. For example, `{{name:trunc=5}}` will give the first `5` characters of the name.
 - `:short`: Keeps only the initials if the word contains several (example: `Jean-Luc Picard` becomes `JLP`).
 - `:long`: Keeps the entire word unchanged (exactly as if no option were applied).
+- `:sanitize_short` : Will delete the accented characters only for initials. For example, `Émile Zola` becomes `EZ` instead of `ÉZ`.
 
 These options are applied in the order in which they are written. For example, `{{name:short:upper}}` will give the initials in uppercase.
 
