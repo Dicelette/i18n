@@ -68,4 +68,34 @@ Adds a link to the die backup in the die result message.
 
 ![Link to backup](/assets/rolls/config/backup_link.png)
 
+## Sort order 
+
+:::usage
+**`/config set_order (?order)`**
+- `?order`: Order chosen for displaying results. Choose between:
+  - <u>Ascending</u>
+  - <u>Descending</u>
+  - <u>None</u> (*disabled*)
+:::
+
+By default, the dice output (for example `4d6`) are not sorted. It is possible to sort them with [the syntax provided for this purpose (`s`, `sa`, `sd` at the end of the input)](https://dice-roller.github.io/documentation/guide/notation/modifiers.html#sorting). This option allow to sort it directly by default, without adding the notation.
+
+:::tip
+If the sort symbol is added to the die, then it will take precedence over the configuration.
+:::
+
+## Disable the comparison
+
+:::usage
+**`/config disable_compare (?toggle)`**
+- `?toggle` : On `True` will disable the success/failure message.
+:::
+
+Simplify the input syntax to get directly the number of success or failure (*target failure/success*) in place of the information message, by avoiding having to place the dice between braces. 
+
+:::warning["This syntax disable the opposition comparison"]
+:::
+
+[Please refer to this page for more information on comparisons.](../introduction/expression.mdx#comparators).
+
 <small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>

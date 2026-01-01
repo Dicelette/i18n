@@ -37,6 +37,7 @@ In these specific cases, the bot will not display success, failure, or critical 
 :::tldr
 - If you want to count the number of dice passing a comparison, you must enclose the die and comparator in curly braces `{}`.
 - If you want to use target failures, you must retain the Dice Roller syntax.
+- It is possible to set this behavior by default via the [configuration](../config/display.md#disable-the-comparison).
 :::
 
 #### Opposition Comparison
@@ -72,6 +73,14 @@ The full formula syntax is: `{c[f|s]:[>=<!]+(text)}`
 
 :::warning[ This method is not compatible with the exceptions mentioned in the previous section. ]
 :::
+
+### Exploding Die
+
+It is possible to combine "target count" with exploding dice by **duplicating** the comparison sign, such as `{3d6!>>4}`.
+:::roll[ `3d6!>>4` ⟶ `[6!, 5, 3, 1]` = ` [2] `]
+:::
+
+This also prevents the exploding dice from exploding on the number after the comparison sign and always explodes on the die's maximum.
 
 ## Mathematical Expressions with MathJS
 
