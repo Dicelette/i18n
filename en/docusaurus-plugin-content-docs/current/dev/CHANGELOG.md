@@ -2,6 +2,45 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.31.0](https://github.com/Dicelette/discord-dicelette/compare/2.30.9...2.31.0) (2026-01-02)
+
+
+### Features
+
+* add disableCompare & sortOrder ([3d965f9](https://github.com/Dicelette/discord-dicelette/commit/3d965f9f93f34fc54c397ab3283e674cd95af9f2))
+* add setPity command for managing pity configuration ([24b6612](https://github.com/Dicelette/discord-dicelette/commit/24b66127076347c854e84e018a5bca93489e7775))
+* add sortOrder parameter to rollCustomCriticalsFromDice function ([e02812a](https://github.com/Dicelette/discord-dicelette/commit/e02812a6904f424e00895d6e0f5824fd103ca6bc))
+* implement trivial comparison caching for pity management ([20a500d](https://github.com/Dicelette/discord-dicelette/commit/20a500d4ce609a20752e81fa3afb5a528f18dd45))
+* **order:** add support for sort order global configuration ([9ad6a27](https://github.com/Dicelette/discord-dicelette/commit/9ad6a272b4d2fd7b4bb827d39ff22dab06ff1164))
+* **pity:** add pity feature and adjust karma display ([07e3be0](https://github.com/Dicelette/discord-dicelette/commit/07e3be0ac67a4c6971f0b553d69d53026428691f))
+* **pity:** trigger pity based on a random value, starting at 75%. ([3c5c0a2](https://github.com/Dicelette/discord-dicelette/commit/3c5c0a2bfed255be5f0ad542a4888f35ece36724))
+
+
+### Bug Fixes
+
+* allow double sign in exploding dice ([6f6c598](https://github.com/Dicelette/discord-dicelette/commit/6f6c598a9370fe7ce3e2b860a624bfa9236cbc30))
+* **bulk:** shouldn't match critical if the dice type doesn't match in bulk roll ([7b399ac](https://github.com/Dicelette/discord-dicelette/commit/7b399acf28f9c909838af05d04d0518005f6f512))
+* comment indentation ([277ecf9](https://github.com/Dicelette/discord-dicelette/commit/277ecf92b3af2a8971979210422416e6301ee60e))
+* **context:** should not add the context link if the option is disabled ([97b826a](https://github.com/Dicelette/discord-dicelette/commit/97b826a209dad6dfe3e1586ccbc6eb22338f4052))
+* **disableCompare:** incomplete comment preservation for multiple comments. ([1f9d754](https://github.com/Dicelette/discord-dicelette/commit/1f9d7544dd7ddf02bcd50de7012c28c421c0f005))
+* **disableCompare:** message in example ([60f4c2d](https://github.com/Dicelette/discord-dicelette/commit/60f4c2d1c9afe9a25e5bc9257c226deb8496b012))
+* **disableCompare:** update parameter names for clarity in processChainedDiceRoll and isRolling functions ([9dc8634](https://github.com/Dicelette/discord-dicelette/commit/9dc8634ae2982299118f3044dec8165be6f647ee))
+* **karma:** display emoji when >1 ([a053cb5](https://github.com/Dicelette/discord-dicelette/commit/a053cb571f00a3785c399e3357cbf56ebf2a6b80))
+* **karma:** double counting ([3bad446](https://github.com/Dicelette/discord-dicelette/commit/3bad4460b29950125b65145596a36debc9105709))
+* **karma:** fix misleading longestStreak display ([802cbb1](https://github.com/Dicelette/discord-dicelette/commit/802cbb105ace8b038ded54f85ef5aab49d5de4e7))
+* **karma:** total key not found ([5ac2777](https://github.com/Dicelette/discord-dicelette/commit/5ac27773b638380d7dfef07dbfb04d7386b491a3))
+* no need to check the type of critical as typescript do this for me ([0ba0323](https://github.com/Dicelette/discord-dicelette/commit/0ba0323bfca70f5d3a70cf3ce0893afc08d9de92))
+* **pity:** curly brace roll should be detected as trivial too ([b6063e4](https://github.com/Dicelette/discord-dicelette/commit/b6063e4054d8fa62876085220ad66e7aadb147cc))
+* **pity:** forgot to pass pity in the shared roll ([067035a](https://github.com/Dicelette/discord-dicelette/commit/067035a36e8cc8565a6928a11aea4bbb744c8a11))
+* **pity:** incorrect operator use (should use `||`) ([dc82d27](https://github.com/Dicelette/discord-dicelette/commit/dc82d2787cc09d7574a4f4e92bd9be713d45e2f7))
+* **pity:** should check pity only in guild context ([87d1170](https://github.com/Dicelette/discord-dicelette/commit/87d11702d3aab63be2b1088643f18363d21cc8b4))
+* **pity:** the prevCacheKey was updated to use the channelId ([de77392](https://github.com/Dicelette/discord-dicelette/commit/de773929101dadd1d31820ed4ab1add423ecfa11))
+* **pity:** when adding count, streaks are not updated; when deleting, they must also not be decremented, otherwise the series becomes inconsistent. ([e3da8d1](https://github.com/Dicelette/discord-dicelette/commit/e3da8d1a205d802810c763593a709f50e3467486))
+* **pity:** wrong authorid during delete in the cache ([06b2334](https://github.com/Dicelette/discord-dicelette/commit/06b23348a48c4a11be8ef9c9804aec343f2a2827))
+* Potential null reference when accessing guild settings. ([104836c](https://github.com/Dicelette/discord-dicelette/commit/104836c1dc199470d1adef06f7b9f3b5b91092cd))
+* **shared:** should not displaying a empty line if not comments exists in the shared dice ([75e6cbf](https://github.com/Dicelette/discord-dicelette/commit/75e6cbf3d3a87cf5d0f14bad2a6b8ffb2b976bae))
+* **sortOrder:** function should be awaited ([1745703](https://github.com/Dicelette/discord-dicelette/commit/1745703ffce59046773f216bf88148c49dd9a4f2))
+
 ## [2.30.9](https://github.com/Dicelette/discord-dicelette/compare/2.30.8...2.30.9) (2025-12-24)
 
 
@@ -23,7 +62,7 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Bug Fixes
 
-* **roll:** should support `{dice}` and {`{dice}`>20} as target failure/success ([f025c93](https://github.com/Dicelette/discord-dicelette/commit/f025c931303a979a5938f95d93f49582a5ccdadc))
+* **roll:** should support {dice} and {{dice}>20} as target failure/success ([f025c93](https://github.com/Dicelette/discord-dicelette/commit/f025c931303a979a5938f95d93f49582a5ccdadc))
 
 ## [2.30.6](https://github.com/Dicelette/discord-dicelette/compare/2.30.3...2.30.6) (2025-12-17)
 
@@ -32,7 +71,7 @@ All notable changes to this project will be documented in this file. See [commit
 
 * broken cs/cf in baseRoll ([75fac8c](https://github.com/Dicelette/discord-dicelette/commit/75fac8cec1e6ea2e9ef6f477a85e78057aafe7d3))
 * **regex:** `!` should not be valid if not followed by `!=` in theses case ([42408bf](https://github.com/Dicelette/discord-dicelette/commit/42408bff707ad7a4cf83e595c44697dd96dfcea5))
-* **snippets:** should support `{dice}` and {`{dice}`>20} ([ca2b38e](https://github.com/Dicelette/discord-dicelette/commit/ca2b38e6f9c46c56d27585e569f588359e8e9134))
+* **snippets:** should support {dice} and {{dice}>20} ([ca2b38e](https://github.com/Dicelette/discord-dicelette/commit/ca2b38e6f9c46c56d27585e569f588359e8e9134))
 
 ## [2.30.5](https://github.com/Dicelette/discord-dicelette/compare/2.30.4...2.30.5) (2025-12-17)
 
@@ -47,7 +86,7 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Bug Fixes
 
-* **snippets:** should support `{dice}` and {`{dice}`>20} ([ca2b38e](https://github.com/Dicelette/discord-dicelette/commit/ca2b38e6f9c46c56d27585e569f588359e8e9134))
+* **snippets:** should support {dice} and {{dice}>20} ([ca2b38e](https://github.com/Dicelette/discord-dicelette/commit/ca2b38e6f9c46c56d27585e569f588359e8e9134))
 
 ## [2.30.3](https://github.com/Dicelette/discord-dicelette/compare/2.30.2...2.30.3) (2025-12-16)
 
@@ -1119,7 +1158,7 @@ All notable changes to this project will be documented in this file. See [commit
 * **channels:** enhance channel type checks to exclude non-text channels ([920f6f3](https://github.com/Dicelette/discord-dicelette/commit/920f6f3eab3eb6c49b0351f9ccc885c2ed90b3b7))
 * **configuration:** remove unused disabledLogs variable ([bbd0a4d](https://github.com/Dicelette/discord-dicelette/commit/bbd0a4d60f338ed729a1276a0cd0f71a8e5921cd))
 * **dependencies:** update discord.js to latest version ([f547642](https://github.com/Dicelette/discord-dicelette/commit/f547642b42fd2b290d60ef133fab4e903be24211))
-* **embeds:** specify message type as Djs.Message`<boolean>` ([a7f488f](https://github.com/Dicelette/discord-dicelette/commit/a7f488fc1858e31762ca5fcfbb3a23ea4633d201))
+* **embeds:** specify message type as Djs.Message<boolean> ([a7f488f](https://github.com/Dicelette/discord-dicelette/commit/a7f488fc1858e31762ca5fcfbb3a23ea4633d201))
 * **errors:** add missing permission error messages for bot access ([e69da26](https://github.com/Dicelette/discord-dicelette/commit/e69da2618287515c925ff0bd64537e55df09cf70))
 * remove log ([045acaf](https://github.com/Dicelette/discord-dicelette/commit/045acaf280c3cf97f9907b22cfd2d83a0475f5c9))
 * **reply:** ensure proper handling of reply options for edited responses ([491e1dc](https://github.com/Dicelette/discord-dicelette/commit/491e1dcfa5f162751fc703ca7999eedea53d1bf9))
@@ -1171,8 +1210,8 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Bug Fixes
 
-* **dice:** expression should be also converted even used in `{exp}` ([9fec858](https://github.com/Dicelette/discord-dicelette/commit/9fec858c0dce36183ecb65f9e87c951b2f24ae35))
-* **dice:** use `{exp}` to prevent colliding with {`{exp}`} stats name ([3732260](https://github.com/Dicelette/discord-dicelette/commit/373226062fb91c0e71ab979874ac53167a39e96d))
+* **dice:** expression should be also converted even used in {exp} ([9fec858](https://github.com/Dicelette/discord-dicelette/commit/9fec858c0dce36183ecb65f9e87c951b2f24ae35))
+* **dice:** use {exp} to prevent colliding with {{exp}} stats name ([3732260](https://github.com/Dicelette/discord-dicelette/commit/373226062fb91c0e71ab979874ac53167a39e96d))
 * **roll:** evaluate expressions in dice rolls and update modificator handling ([43a9697](https://github.com/Dicelette/discord-dicelette/commit/43a9697eea402f0688638b225c840de807c8a8e2))
 
 ## [1.39.0](https://github.com/Dicelette/discord-dicelette/compare/1.38.2...1.39.0) (2025-02-11)
@@ -1180,7 +1219,7 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Features
 
-* **dbd:** allow using {`{exp}`} in dice for replace with the expression ([719d883](https://github.com/Dicelette/discord-dicelette/commit/719d88357712d534f85428110f674790560f5d73))
+* **dbd:** allow using {{exp}} in dice for replace with the expression ([719d883](https://github.com/Dicelette/discord-dicelette/commit/719d88357712d534f85428110f674790560f5d73))
 
 
 ### Bug Fixes
