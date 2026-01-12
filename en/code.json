@@ -1,10 +1,10 @@
 {
   "theme.ErrorPageContent.title": {
-    "message": "Cette page a planté.",
+    "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Retour au début de la page",
+    "message": "Back to top of the page",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
@@ -16,114 +16,114 @@
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Pagination de la liste des articles du blog",
+    "message": "Blog post list pagination",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Nouvelles entrées",
+    "message": "Newer entries",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Anciennes entrées",
+    "message": "Older entries",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Pagination des articles du blog",
+    "message": "Blog post pagination",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Article plus récent",
+    "message": "Newer post",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Article plus ancien",
+    "message": "Older post",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "Un article|{count} articles",
+    "message": "One post|{count} posts",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagués avec « {tagName} »",
+    "message": "{nPosts} tagged with \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "Voir tous les tags",
+    "message": "View all tags",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Basculer entre le mode sombre et clair (actuellement {mode})",
+    "message": "Toggle between dark and light mode (currently {mode})",
     "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "mode sombre",
+    "message": "dark mode",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "mode clair",
+    "message": "light mode",
     "description": "The name for the light color mode"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Fil d'Ariane",
+    "message": "Breadcrumbs",
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Pages de documentation",
+    "message": "Documentation pages",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Précédent",
+    "message": "Previous",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Suivant",
+    "message": "Next",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un document tagué|{count} documents tagués",
+    "message": "One tagged document|{count} tagged documents",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} avec \"{tagName}\"",
+    "message": "{nDocsTagged} with \"{tagName}\"",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
     "message": "Version: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Ceci est la documentation de la prochaine version {versionLabel} de {siteTitle}.",
+    "message": "This is the documentation for the upcoming {siteTitle} {versionLabel} release.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Ceci est la documentation de {siteTitle} {versionLabel}, qui n'est plus activement maintenue.",
+    "message": "This is the documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Pour une documentation à jour, consultez la {latestVersionLink} ({versionLabel}).",
+    "message": "For up-to-date documentation, please check the {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "dernière version",
+    "message": "latest version",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Éditer cette page",
+    "message": "Edit this page",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Lien direct vers {heading}",
+    "message": "Direct link to {heading}",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " le {date}",
+    "message": " on {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " par {user}",
+    "message": " by {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Dernière mise à jour{atDate}{byUser}",
+    "message": "Last updated{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
@@ -131,19 +131,19 @@
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.NotFound.title": {
-    "message": "Page introuvable",
+    "message": "Page not found",
     "description": "The title of the 404 page"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags :",
+    "message": "Tags:",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Fermer",
+    "message": "Close",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.admonition.caution": {
-    "message": "attention",
+    "message": "caution",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
@@ -155,79 +155,79 @@
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "remarque",
+    "message": "note",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "astuce",
+    "message": "tip",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
-    "message": "attention",
+    "message": "warning",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Navigation article de blog récent",
+    "message": "Recent blog post navigation",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copié",
+    "message": "Copied",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copier le code",
+    "message": "Copy code",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copier",
+    "message": "Copy",
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Activer/désactiver le retour à la ligne",
+    "message": "Toggle word wrap",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Développer la catégorie '{label}' de la barre latérale",
+    "message": "Expand sidebar category '{label}'",
     "description": "The ARIA label to expand the sidebar category"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Réduire la catégorie '{label}' de la barre latérale",
+    "message": "Collapse sidebar category '{label}'",
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Main",
+    "message": "Main navigation",
     "description": "The ARIA label for the main navigation"
   },
   "theme.NotFound.p1": {
-    "message": "Nous n'avons pas trouvé ce que vous recherchez.",
+    "message": "We couldn’t find what you were looking for.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Veuillez contacter le propriétaire du site qui vous a lié à l'URL d'origine et leur faire savoir que leur lien est cassé.",
+    "message": "Please contact the site owner who linked you to the original URL and let them know their link is broken.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "Sur cette page",
+    "message": "On this page",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Langues",
+    "message": "Languages",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.blog.post.readMore": {
-    "message": "Lire plus",
+    "message": "Read more",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "En savoir plus sur {title}",
+    "message": "Read more about {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "Une minute de lecture|{readingTime} minutes de lecture",
+    "message": "One minute read|{readingTime} minutes read",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Page d'accueil",
+    "message": "Home",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.navAriaLabel": {
@@ -235,39 +235,39 @@
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Réduire le menu latéral",
+    "message": "Collapse sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Réduire le menu latéral",
+    "message": "Collapse sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Fermer la barre de navigation",
+    "message": "Close navigation sidebar",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Retour au menu principal",
+    "message": "← Back to main menu",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Ouvrir/fermer la barre de navigation",
+    "message": "Toggle navigation sidebar",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Déplier le menu latéral",
+    "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Déplier le menu latéral",
+    "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Réessayer",
+    "message": "Try again",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
-    "message": "Aller au contenu principal",
+    "message": "Skip to main content",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
@@ -275,27 +275,161 @@
     "description": "The title of the tag list page"
   },
   "tagline": {
-    "message": "A hightly customizable dice bot for every roleplay sessions!",
+    "message": "A highly customizable dice bot for every roleplay session!",
     "description": "The tagline for the website"
   },
-  "Inviter le bot": {
-    "message": "Invite the bot"
+  "Le dé de critique est invalide : $ ne peut pas être utilisé sans statistiques.": {
+    "message": "The critical dice is invalid: $ cannot be used without statistics."
   },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} items",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
+  "Les critiques customisés ne peuvent pas être utilisés sans dé type.": {
+    "message": "Customized critics cannot be used without a type."
+  },
+  "La macro nommée \"{{x}}\" (\"{{formule}}\") ne semble pas être un dé.": {
+    "message": "The macro named “{{x}}” (“{{formula}}”) does not appear to be a dice."
+  },
+  "Le dé type \"{{x}}\" ne peut pas contenir de critiques (ex: 1d100{cs:>=96}{cf:<=5}). Utilisez les critiques customisés à la place.": {
+    "message": "The “{{x}}” type die cannot contain critical (e.g., 1d100{cs:>=96}{cf:<=5}). Use custom critical instead."
+  },
+  "Le dé \"{{x}}\" est invalide. Journalisation : {{error}}": {
+    "message": "The dice “{{x}}” is invalid. Logging: {{error}}"
+  },
+  "La formule \"{{x}}\" est invalide.": {
+    "message": "The formula “{{x}}” is invalid."
+  },
+  "Le maximum doit être supérieur au minimum": {
+    "message": "The maximum must be greater than the minimum."
+  },
+  "Les macro ont été mal renseignées.": {
+    "message": "The macros have been incorrectly entered."
   },
   "Trop de dés (max : 25)": {
     "message": "Too many dice (max: 25)"
   },
   "Aucune statistique n'a été trouvée": {
-    "message": "No statistic found"
+    "message": "No statistics were found."
+  },
+  "Trop de statistiques (max : 25)": {
+    "message": "Too many statistics (max: 25)"
+  },
+  "Une erreur est survenue : {{x}}": {
+    "message": "An error has occurred: {{x}}"
+  },
+  "Système de dés avancé": {
+    "message": "Advanced dice system"
+  },
+  "Lancez des dés avec des expressions complexes, créez des dés personnalisés et organisez automatiquement les résultats dans des fils dédiés.": {
+    "message": "Roll dice with complex expressions, create custom dice, and automatically organize results in dedicated threads."
+  },
+  "Gestion intelligente des personnages": {
+    "message": "Intelligent character management"
+  },
+  "Créez des modèles adaptés à votre système de jeu et gérez vos fiches de personnage avec un contrôle total sur vos données.": {
+    "message": "Create templates tailored to your game system and manage your character sheets with complete control over your data."
+  },
+  "Configuration flexible": {
+    "message": "Flexible configuration"
+  },
+  "Personnalisez chaque aspect du bot : auto-rôles, gestion des scènes, suppression HRP, et bien plus selon vos besoins.": {
+    "message": "Customize every aspect of the bot: auto-roles, scene management, HRP removal, and much more according to your needs."
+  },
+  "Type de fichier invalide": {
+    "message": "Invalid file type"
+  },
+  "Veuillez sélectionner un fichier JSON.": {
+    "message": "Please select a JSON file."
+  },
+  "Modèle importé avec succès.": {
+    "message": "Model successfully imported."
+  },
+  "Erreur de lecture": {
+    "message": "Reading error"
+  },
+  "Impossible de lire le fichier sélectionné.": {
+    "message": "Unable to read the selected file."
+  },
+  "Veuillez corriger les erreurs": {
+    "message": "Please correct the errors."
+  },
+  "Télécharger le modèle": {
+    "message": "Download the template"
+  },
+  "Préremplir le formulaire à partir d'un fichier JSON généré précédemment": {
+    "message": "Pre-fill the form from a previously generated JSON file"
+  },
+  "Importer un JSON": {
+    "message": "Import JSON"
+  },
+  "Réinitialiser le formulaire et supprimer les données enregistrées": {
+    "message": "Reset the form and delete the saved data"
+  },
+  "Vider le formulaire": {
+    "message": "Clear the form"
+  },
+  "Télécharger le CSV": {
+    "message": "Download CSV"
+  },
+  "Inviter le bot": {
+    "message": "Invite the bot"
+  },
+  "Général": {
+    "message": "General"
+  },
+  "Rendre obligatoire le nom du personnage": {
+    "message": "Make the character's name mandatory"
+  },
+  "Fiches privées": {
+    "message": "Private sheet"
+  },
+  "Utilisée uniquement dans le CSV d'importation de fiche": {
+    "message": "Used only in the record import CSV file"
+  },
+  "Total": {
+    "message": "Total"
+  },
+  "Forcer la distribution des points": {
+    "message": "Force point distribution"
+  },
+  "Renvoie une erreur si la somme des statistiques est inférieure au total défini": {
+    "message": "Returns an error if the sum of the statistics is less than the defined total."
+  },
+  "Dé principal": {
+    "message": "Main dice"
+  },
+  "Affecter uniquement les dés naturels": {
+    "message": "Applying only on natural dice"
+  },
+  "Exclure de la sélection des dés de statistiques": {
+    "message": "Exclude from the selection of statistics dice"
+  },
+  "Utilisable sur les macros": {
+    "message": "Usable on macros"
+  },
+  "Utilisation": {
+    "message": "Usage"
+  },
+  "Exemple": {
+    "message": "Example"
+  },
+  "Roll": {
+    "message": "Roll"
+  },
+  "Attention": {
+    "message": "Attention"
+  },
+  "TL;DR": {
+    "message": "TL;DR"
+  },
+  "Pin": {
+    "message": "Pin"
   },
   "Les deux valeurs ne peuvent être identiques": {
-    "message": "The two values cannot be identical"
+    "message": "The two values cannot be identical."
   },
   "La valeur ne peut pas être inférieure à 0": {
-    "message": "The value can't be less than 0"
+    "message": "The value cannot be less than 0."
+  },
+  "Critique": {
+    "message": "Critic"
   },
   "Succès": {
     "message": "Success"
@@ -304,49 +438,82 @@
     "message": "Failure"
   },
   "Ce nom est déjà utilisé": {
-    "message": "This name is already in use"
+    "message": "This name is already used"
   },
-  "Le nom ne peut pas être vide": {
-    "message": "The name can't be empty"
+  "Le texte ne peut pas être vide": {
+    "message": "The text cannot be empty"
+  },
+  "Critiques Personnalisés": {
+    "message": "Custom Critics"
+  },
+  "Signe": {
+    "message": "Sign"
   },
   "Nom": {
     "message": "Name"
+  },
+  "Formule": {
+    "message": "Formula"
+  },
+  "Le nom ne peut pas être vide": {
+    "message": "The name cannot be empty"
+  },
+  "Macros": {
+    "message": "Macros"
   },
   "Valeur": {
     "message": "Value"
   },
   "La valeur ne peut pas être vide": {
-    "message": "The value can't be empty"
+    "message": "The value cannot be empty"
   },
-  "Rendre obligatoire le nom du personnage": {
-    "message": "Make the character name required"
+  "Ajouter une macro": {
+    "message": "Add a macro"
   },
-  "Total": {
-    "message": "Total"
+  "Ajouter une statistique": {
+    "message": "Add a statistic"
   },
-  "Dé principal": {
-    "message": "Primary dice"
+  "macros": {
+    "message": "macros"
+  },
+  "statistiques (max 25)": {
+    "message": "statistiques (max 25)"
+  },
+  "Vous avez atteint le nombre maximum de": {
+    "message": "Vous avez atteint le nombre maximum de"
+  },
+  "Dupliquer ce champ": {
+    "message": "Dupliquer ce champ"
+  },
+  "Dupliquer": {
+    "message": "Dupliquer"
+  },
+  "Supprimer ce champ": {
+    "message": "Supprimer ce champ"
+  },
+  "Supprimer": {
+    "message": "Supprimer"
   },
   "La valeur minimale ne peut pas être supérieure à la valeur maximale": {
-    "message": "The minimum value can't be greater than the maximum value"
+    "message": "La valeur minimale ne peut pas être supérieure à la valeur maximale"
   },
   "La valeur minimale ne peut pas être négative": {
-    "message": "The minimum value can't be negative"
+    "message": "La valeur minimale ne peut pas être négative"
   },
   "La valeur minimale doit être un nombre": {
-    "message": "The minimum value must be a number"
+    "message": "La valeur minimale doit être un nombre"
   },
   "La valeur maximale ne peut pas être inférieure à la valeur minimale": {
-    "message": "The maximum value can't be less than the minimum value"
+    "message": "La valeur maximale ne peut pas être inférieure à la valeur minimale"
   },
   "La valeur maximale ne peut pas être négative": {
-    "message": "The maximum value can't be negative"
+    "message": "La valeur maximale ne peut pas être négative"
   },
   "La valeur maximale doit être un nombre": {
-    "message": "The maximum value must be a number"
+    "message": "La valeur maximale doit être un nombre"
   },
   "Statistiques": {
-    "message": "Statistics"
+    "message": "Statistiques"
   },
   "Min": {
     "message": "Min"
@@ -355,130 +522,30 @@
     "message": "Max"
   },
   "Combinaison": {
-    "message": "Combination"
+    "message": "Combinaison"
   },
-  "Télécharger le modèle": {
-    "message": "Download the template"
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "system mode",
+    "description": "The name for the system color mode"
   },
-  "Veuillez corriger les erreurs": {
-    "message": "Please correct errors"
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
-  "Ajouter une statistique": {
-    "message": "Add a statistic"
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opens in new tab)",
+    "description": "The ARIA label for the external link icon"
   },
-  "Dupliquer ce champ": {
-    "message": "Duplicate this field"
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expand the dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
   },
-  "Dupliquer": {
-    "message": "Duplicate"
-  },
-  "Supprimer ce champ": {
-    "message": "Delete this field"
-  },
-  "Supprimer": {
-    "message": "Delete"
-  },
-  "Vous avez atteint le nombre maximum de": {
-    "message": "You have reached the maximum number of"
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Collapse the dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
   "theme.SearchBar.seeAll": {
     "message": "See all {count} results"
-  },
-  "theme.SearchBar.label": {
-    "message": "Search",
-    "description": "The ARIA label and placeholder for search button"
-  },
-  "theme.SearchModal.searchBox.resetButtonTitle": {
-    "message": "Clear the query",
-    "description": "The label and ARIA label for search box reset button"
-  },
-  "theme.SearchModal.searchBox.cancelButtonText": {
-    "message": "Cancel",
-    "description": "The label and ARIA label for search box cancel button"
-  },
-  "theme.SearchModal.startScreen.recentSearchesTitle": {
-    "message": "Recent",
-    "description": "The title for recent searches"
-  },
-  "theme.SearchModal.startScreen.noRecentSearchesText": {
-    "message": "No recent searches",
-    "description": "The text when there are no recent searches"
-  },
-  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
-    "message": "Save this search",
-    "description": "The title for save recent search button"
-  },
-  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
-    "message": "Remove this search from history",
-    "description": "The title for remove recent search button"
-  },
-  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
-    "message": "Favorite",
-    "description": "The title for favorite searches"
-  },
-  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
-    "message": "Remove this search from favorites",
-    "description": "The title for remove favorite search button"
-  },
-  "theme.SearchModal.errorScreen.titleText": {
-    "message": "Unable to fetch results",
-    "description": "The title for error screen"
-  },
-  "theme.SearchModal.errorScreen.helpText": {
-    "message": "You might want to check your network connection.",
-    "description": "The help text for error screen"
-  },
-  "theme.SearchModal.footer.selectText": {
-    "message": "to select",
-    "description": "The select text for footer"
-  },
-  "theme.SearchModal.footer.selectKeyAriaLabel": {
-    "message": "Enter key",
-    "description": "The ARIA label for select key in footer"
-  },
-  "theme.SearchModal.footer.navigateText": {
-    "message": "to navigate",
-    "description": "The navigate text for footer"
-  },
-  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
-    "message": "Arrow up",
-    "description": "The ARIA label for navigate up key in footer"
-  },
-  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
-    "message": "Arrow down",
-    "description": "The ARIA label for navigate down key in footer"
-  },
-  "theme.SearchModal.footer.closeText": {
-    "message": "to close",
-    "description": "The close text for footer"
-  },
-  "theme.SearchModal.footer.closeKeyAriaLabel": {
-    "message": "Escape key",
-    "description": "The ARIA label for close key in footer"
-  },
-  "theme.SearchModal.footer.searchByText": {
-    "message": "Search by",
-    "description": "The 'Powered by' text for footer"
-  },
-  "theme.SearchModal.noResultsScreen.noResultsText": {
-    "message": "No results for",
-    "description": "The text when there are no results"
-  },
-  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
-    "message": "Try searching for",
-    "description": "The text for suggested query"
-  },
-  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
-    "message": "Believe this query should return results?",
-    "description": "The text for reporting missing results"
-  },
-  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
-    "message": "Let us know.",
-    "description": "The link text for reporting missing results"
-  },
-  "theme.SearchModal.placeholder": {
-    "message": "Search docs",
-    "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "One document found|{count} documents found",
@@ -501,7 +568,7 @@
     "description": "The ARIA label for search page input"
   },
   "theme.SearchPage.algoliaLabel": {
-    "message": "Search by Algolia",
+    "message": "Powered by Algolia",
     "description": "The description label for Algolia mention"
   },
   "theme.SearchPage.noResultsText": {
@@ -512,164 +579,17 @@
     "message": "Fetching new results...",
     "description": "The paragraph for fetching new search results"
   },
-  "Utilisation": {
-    "message": "Usage"
+  "theme.SearchBar.label": {
+    "message": "Search",
+    "description": "The ARIA label and placeholder for search button"
   },
-  "La formule \"{{x}}\" est invalide.": {
-    "message": "The formula \"{{x}}\" is invalid."
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "Clear the query",
+    "description": "The label and ARIA label for search box reset button"
   },
-  "Fiches privées": {
-    "message": "Privates sheets"
-  },
-  "Utilisée uniquement dans le CSV d'importation de fiche": {
-    "message": "Used only in the CSV for sheet import"
-  },
-  "Une erreur est survenue : {{x}}": {
-    "message": "An error occurred: {{x}}"
-  },
-  "statistiques (max 25)": {
-    "message": "statistics (max: 25)"
-  },
-  "Trop de statistiques (max : 25)": {
-    "message": "Too many statistics (max: 25)"
-  },
-  "Exemple": {
-    "message": "Example"
-  },
-  "theme.blog.author.pageTitle": {
-    "message": "{authorName} - {nPosts}",
-    "description": "The title of the page for a blog author"
-  },
-  "theme.blog.authorsList.pageTitle": {
-    "message": "Authors",
-    "description": "The title of the authors page"
-  },
-  "theme.blog.authorsList.viewAll": {
-    "message": "View all authors",
-    "description": "The label of the link targeting the blog authors page"
-  },
-  "theme.contentVisibility.unlistedBanner.title": {
-    "message": "Unlisted page",
-    "description": "The unlisted content banner title"
-  },
-  "theme.contentVisibility.unlistedBanner.message": {
-    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
-    "description": "The unlisted content banner message"
-  },
-  "theme.contentVisibility.draftBanner.title": {
-    "message": "Draft page",
-    "description": "The draft content banner title"
-  },
-  "theme.contentVisibility.draftBanner.message": {
-    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
-    "description": "The draft content banner message"
-  },
-  "Le dé de critique est invalide : $ ne peut pas être utilisé sans statistiques.": {
-    "message": "The critical die is invalid: $ cannot be used without statistics."
-  },
-  "Les critiques customisés ne peuvent pas être utilisés sans dé type.": {
-    "message": "Custom critics cannot be used without a type die."
-  },
-  "Affecter uniquement les dés naturels": {
-    "message": "Affect only on natural die"
-  },
-  "Le texte ne peut pas être vide": {
-    "message": "This text can't be empty"
-  },
-  "Signe": {
-    "message": "Sign"
-  },
-  "Formule": {
-    "message": "Formula"
-  },
-  "theme.blog.author.noPosts": {
-    "message": "This author has not written any posts yet.",
-    "description": "The text for authors with 0 blog post"
-  },
-  "Le dé \"{{x}}\" est invalide. Journalisation : {{error}}": {
-    "message": "The die \"{{x}}\" is invalid. Logs : {{error}}"
-  },
-  "Critiques Personnalisés": {
-    "message": "Custom Critics"
-  },
-  "Exclure de la sélection des dés de statistiques": {
-    "message": "Exclude from the selection of dice statistics"
-  },
-  "Télécharger le CSV": {
-    "message": "Download CSV"
-  },
-  "Pin": {
-    "message": "Pin"
-  },
-  "theme.colorToggle.ariaLabel.mode.system": {
-    "message": "system mode",
-    "description": "The name for the system color mode"
-  },
-  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
-    "message": "Expand the dropdown",
-    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
-  },
-  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
-    "message": "Collapse the dropdown",
-    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
-  },
-  "Forcer la distribution des points": {
-    "message": "Force the points distribution"
-  },
-  "Renvoie une erreur si la somme des statistiques est inférieure au total défini": {
-    "message": "Returns an error if the sum of the statistics is less than the defined total"
-  },
-  "Roll": {
-    "message": "Roll"
-  },
-  "TL;DR": {
-    "message": "TL;DR"
-  },
-  "Système de dés avancé": {
-    "message": "Advanced dice system"
-  },
-  "Lancez des dés avec des expressions complexes, créez des dés personnalisés et organisez automatiquement les résultats dans des fils dédiés.": {
-    "message": "Throw dice with complex expressions, create custom dice, and automatically organize results in dedicated threads."
-  },
-  "Gestion intelligente des personnages": {
-    "message": "Intelligent character management"
-  },
-  "Créez des modèles adaptés à votre système de jeu et gérez vos fiches de personnage avec un contrôle total sur vos données.": {
-    "message": "Create templates tailored to your game system and manage your character sheets with full control over your data."
-  },
-  "Configuration flexible": {
-    "message": "Flexible configuration"
-  },
-  "Attention": {
-    "message": "Attention"
-  },
-  "Le dé type \"{{x}}\" ne peut pas contenir de critiques (ex: 1d100{cs:>=96}{cf:<=5}). Utilisez les critiques customisés à la place.": {
-    "message": "The dice type \"{{x}}\" cannot contain critics (ex: 1d100{cs:>=96}{cf:<=5}). Use custom critics instead."
-  },
-  "La macro nommée \"{{x}}\" (\"{{formule}}\") ne semble pas être un dé.": {
-    "message": "The macro named \"{{x}}\" (\"{{formule}}\") doesn't seems to be a dice."
-  },
-  "Le maximum doit être supérieur au minimum": {
-    "message": "The maximum must be greater than the minimum"
-  },
-  "Les macro ont été mal renseignées.": {
-    "message": "The macros are malformed."
-  },
-  "Utilisable sur les macros": {
-    "message": "Use on macros"
-  },
-  "Macros": {
-    "message": "Macros"
-  },
-  "Ajouter une macro": {
-    "message": "Add a macro"
-  },
-  "macros": {
-    "message": "macros"
-  },
-  "theme.IconExternalLink.ariaLabel": {
-    "message": "(opens in new tab)",
-    "description": "The ARIA label for the external link icon"
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "Cancel",
+    "description": "The label and ARIA label for search box cancel button"
   },
   "theme.SearchModal.searchBox.placeholderText": {
     "message": "Search docs",
@@ -703,6 +623,30 @@
     "message": "Back to keyword search",
     "description": "The ARIA label for back to keyword search button"
   },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "Recent",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "No recent searches",
+    "description": "The text when there are no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "Save this search",
+    "description": "The title for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "Remove this search from history",
+    "description": "The title for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "Favorite",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "Remove this search from favorites",
+    "description": "The title for remove favorite search button"
+  },
   "theme.SearchModal.startScreen.recentConversationsTitle": {
     "message": "Recent conversations",
     "description": "The title for recent conversations"
@@ -710,6 +654,14 @@
   "theme.SearchModal.startScreen.removeRecentConversationButtonTitle": {
     "message": "Remove this conversation from history",
     "description": "The title for remove recent conversation button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "Unable to fetch results",
+    "description": "The title for error screen"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "You might want to check your network connection.",
+    "description": "The help text for error screen"
   },
   "theme.SearchModal.resultsScreen.askAiPlaceholder": {
     "message": "Ask AI: ",
@@ -763,48 +715,96 @@
     "message": "Searched for",
     "description": "The text after tool call"
   },
+  "theme.SearchModal.footer.selectText": {
+    "message": "Select",
+    "description": "The select text for footer"
+  },
   "theme.SearchModal.footer.submitQuestionText": {
     "message": "Submit question",
     "description": "The submit question text for footer"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter key",
+    "description": "The ARIA label for select key in footer"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "Navigate",
+    "description": "The navigate text for footer"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "Arrow up",
+    "description": "The ARIA label for navigate up key in footer"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "Arrow down",
+    "description": "The ARIA label for navigate down key in footer"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "Close",
+    "description": "The close text for footer"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Escape key",
+    "description": "The ARIA label for close key in footer"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "Powered by",
+    "description": "The 'Powered by' text for footer"
   },
   "theme.SearchModal.footer.backToSearchText": {
     "message": "Back to search",
     "description": "The back to search text for footer"
   },
-  "Personnalisez chaque aspect du bot : auto-rôles, gestion des scènes, suppression HRP, et bien plus selon vos besoins.": {
-    "message": "Personalize every aspect of the bot: auto-roles, scene management, OOC deletion, and much more according to your needs."
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "No results found for",
+    "description": "The text when there are no results"
   },
-  "Général": {
-    "message": "General"
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "Try searching for",
+    "description": "The text for suggested query"
   },
-  "Critique": {
-    "message": "Critics"
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "Believe this query should return results?",
+    "description": "The text for reporting missing results"
   },
-  "Type de fichier invalide": {
-    "message": "Invalid file type"
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "Let us know.",
+    "description": "The link text for reporting missing results"
   },
-  "Veuillez sélectionner un fichier JSON.": {
-    "message": "Please select a JSON file."
+  "theme.SearchModal.placeholder": {
+    "message": "Search docs",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
-  "Modèle importé avec succès.": {
-    "message": "Template imported successfully."
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
   },
-  "Erreur de lecture": {
-    "message": "Read error"
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
   },
-  "Impossible de lire le fichier sélectionné.": {
-    "message": "Unable to read the selected file."
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
   },
-  "Préremplir le formulaire à partir d'un fichier JSON généré précédemment": {
-    "message": "Pre-fill the form from a previously generated JSON file"
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
   },
-  "Importer un JSON": {
-    "message": "Import JSON"
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
   },
-  "Réinitialiser le formulaire et supprimer les données enregistrées": {
-    "message": "Reset the form and delete saved data"
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
   },
-  "Vider le formulaire": {
-    "message": "Clear the form"
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
   }
 }

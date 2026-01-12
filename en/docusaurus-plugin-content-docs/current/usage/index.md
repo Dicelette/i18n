@@ -90,3 +90,6 @@ There are several help commands, depending on what you need:
 - `/help register`: Displays specific help for registering a server model and character files, and directs you to [documentation](../sheet/model/index.md).
 - `/help bug`: Displays a link to create a bug report.
 - `/help suggestion`: Displays a link to make a suggestion.
+- `/info`: Get bot general stats (number of server, version, uptime) and useful links.
+
+<small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>
