@@ -15,10 +15,6 @@ To understand all the dice notations that can be used with the bot (direct, indi
 
 ![Roll](/assets/rolls/slash-commands.gif)
 
-:::tip
-The global command (usable in DMs and in all servers allowing it) for the command is `/r`.
-:::
-
 ## Creating a New Scene
 
 :::usage
@@ -77,10 +73,6 @@ Obviously, the karma only works for dice rolled with the bot, and does not work 
 :::
 
 This command allows to randomly select one or more options from a given list.
-
-:::tip
-The global command (usable in DMs and in all servers allowing it) for the command is `/select`.
-:::
 
 ## Help
 
