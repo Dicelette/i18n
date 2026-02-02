@@ -20,10 +20,12 @@ This bot detects dice notation and sends the result using three methods:
 
 :::tip
 In the textual notation, it's possible to reference:
-- A statistic, using `$statistic` (e.g., `$strength`).
+- A statistic, using `$statistic` (e.g., `$strength`).[^1]
 - A character, using `@character` (e.g., `@Bob`).
 - An opposition, by “stacking” the comparison signs: 1d100>20>10 (the last value will be treated as the opposition).
 As long as the player has a registered character sheet.
 :::
 
 It is also possible to use slash-commands to throw dice, like `/roll` ([see here for more information](../usage/index.md#dice-rolling))  
+
+[^1]: To use the value of a statistic as the number of dice, you must use `($stat)dX` (e.g., `($strength)d20`).

@@ -68,11 +68,16 @@ import { CL} from "@site/src/components/utils.tsx";
     :::example[ `Animal Instinct (Strength)` ]
     :::
 - **<mark>@nom</mark>** :
-	- Usage: Allow to use an another character in the rolls (in the command `/roll`, [the messages](../usage/message.md) et `/mj roll`)
+	- Usage: Allow to use a character in the rolls (in the command `/roll`, [the messages](../usage/message.md) et `/mj roll`)
 		- Also allow to mention someone else to roll a dice on your behalf (only for moderator) in the [direct dice syntax](../usage/message.md).
 	:::example[ `1d100 @character` ]
 	:::
 
+- **<mark>`$stat`</mark>** :
+    - <Cl>Usage:</Cl> Allows to use the value of a statistic.
+    - <Cl>Where:</CL> In dice rolls (in `/roll`, [the messages](../usage/message.md) et `/mj roll`) as well as in expressions.
+    :::example [`1d20 + $strength`]
+    :::
 
 ---
 :::example
