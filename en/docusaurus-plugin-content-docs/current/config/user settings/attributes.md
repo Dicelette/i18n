@@ -1,8 +1,8 @@
 ---
 title: Attributes
 sidebar_position: 3
+credit: neantderthals
 ---
-
 ==Attributes== allow each user to define and manage specific numerical attributes for a server, without the need to configure a template or accompany the template.
 
 :::warning
@@ -30,12 +30,15 @@ This syntax can be used:
 :::tip
 As with snippets, each key must be unique. It is recommended to use:
 - short names;
-- without spaces (if a space is used anyway, the value remains accessible by replacing spaces with `-`, `_` or `.`).
+- without spaces (if a space is used anyway, the value remains accessible by replacing spaces with `_` or `.`).
+- without `-` (hyphen) because they can be confused with negation (`$myStat-10`)
 :::
 
 :::warning
 Attributes are stored globally at the server level and are therefore shared between all characters belonging to the same player.
 :::
+
+![](../../assets/attributes/usage.png)
 
 # Creating an attribute
 
@@ -47,6 +50,8 @@ Attributes are stored globally at the server level and are therefore shared betw
 
 As with snippets, if the attribute already exists, its value will simply be updated.
 
+![](../../assets/attributes/create.png)
+
 # Deletion
 
 :::usage
@@ -55,31 +60,41 @@ As with snippets, if the attribute already exists, its value will simply be upda
 :::
 
 Allows you to delete an existing attribute from the list of attributes.
+![](../../assets/attributes/delete.png)
 
 # Listing attributes
 
 :::usage
-**`/user_config snippets list`**
+**`/user_config attributes list`**
 :::
 
 Displays the list of existing attributes for the user.
 
+![](../../assets/attributes/list.png)
+
 # Export attributes
 
 :::usage
-**`/user_config snippets export`**
+**`/user_config attributes export`**
 :::
 
 Exports all of the user's attributes in JSON format so that they can be saved or shared.
+
+![](../../assets/attributes/export.png)
 
 # Import attributes
 
 Imports attributes from a JSON file. This allows you to easily transfer or share data between different servers or accounts.
 
 :::usage
-**`/user_config snippets import [file] (?overwrite)`**
+**`/user_config attributes import [file] (?overwrite)`**
 - `file`: JSON data of the attributes to be imported
 - `?overwrite`: Allows you to overwrite the data rather than merge it with the old data.
 :::
+
 By default, the data is merged. If two attributes have the same name, the imported attribute will replace the existing one.
 During import, the attributes are validated and only those that comply will be added.
+
+![](../../assets/attributes/import_1.png)
+
+![](../../assets/attributes/import_2.png)

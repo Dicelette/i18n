@@ -1,75 +1,76 @@
 ---
 title: Snippets
-sidebar_position: 7
+sidebar_position: 2
+credit: neantderthals
 ---
-
-==Snippets== are reusable dice that are not tied to any character or specific model. They can be created and used by users to simplify frequent dice rolls without needing to configure a model.
+The ==snippets== are reusable dices that aren’t tied to a specific character or model.
+They can be created and used by the users to simply frequents dice roll without needing to configure a model.
 
 :::important
-Stats are not supported in snippets because they are not linked to a character.
+The statistics aren’t taken into account in the snippets as they aren’t tied to a character. However, the [attributes](attributes.md) are.
 :::
 
 :::danger
-[Attributes](attributes.md) can be used in a snippet if one has been previously saved.
+The [attributs](./attributes.md) can be used in a snippet as long as the snippet has been already saved.
 :::
 
-# Creating snippets
+# Snippets creation
 
 :::usage
 **`/user_config snippets create [name] [dice]`**
-- `name`: Name of the snippet
-- `dice`: Dice to be rolled (e.g. `1d20+5`)
+- `name` : name of the snippet
+- `dice` : Dice roll expression (ex : `1d20+5`)
 :::
 
-
-
-If the snippet already exists, its dice value will be updated.
+If the snippet already exist, it’ll be updated to it’s new value
 
 ![create_snippet](../../assets/snippets/create.png)
 
-# Deletion
+# Suppression
 
 :::usage
 **`/user_config snippets delete [*name]`**
-- `*name`: Name of the snippet to delete
+- `*name` : name of the snippet to delete
 :::
 
-Allows you to delete an existing snippet from the list.
+Allow to delete a snippet off the list.
 
 ![delete_snippet](../../assets/snippets/delete.png)
 
-# Listing snippets
+# Snippet list
 
 :::usage
-**`/user_config snippets list`**
+**`/user_config snippets lister`**
 :::
 
-Displays the list of existing snippets for the user.
+Show the list of snippets for the user
 
 ![list_snippet](../../assets/snippets/list.png)
 
-# Exporting snippets
+# Export snippets
 
 :::usage
 **`/user_config snippets export`**
 :::
 
-Export all snippets in JSON format, for backup or sharing elsewhere.
+Allows to export all the snippets from the user in a JSON file to save or share them.
 
 ![export_snippet](../../assets/snippets/export.png)
 
-# Importing snippets
+# Import snippets
 
-Allows you to import snippets from a JSON file, enabling users to easily transfer or share their snippets across different servers or accounts.
+Importe des snippets depuis un fichier JSON. Cela permet de transférer ou partager facilement des données entre différents serveurs ou comptes.
+Import snippets from a JSON file. This allows easy sharing or transfer of data between servers or accounts.
 
 :::usage
-**`/user_config snippets import [file] (?overwrite)`**
-- `file`: JSON data of snippets to import
-- `?overwrite`: Overwrite existing data instead of merging them.
+**`/user_config snippets import [file] (?erase)`**
+- `file` : Data JSON of the snippets to import.
+- `?erase` : Replace the existing data instead of fusing them.
 :::
 
-By default, the data will be merged, but if two snippets share the same name, the new one will overwrite the old one.
-The snippets will be checked during import, and only valid ones will be added.
+The data will be fused by default. If two snippets have the same name, the new imported snippet with the name will replace the previous one.
 
-![import_cmd](../../assets/snippets/import_cmd.png)
-![import_snippet](../../assets/snippets/import.png)
+During import, snippets will be verified and only the conforms ones will be added.
+
+![import_snippet](../../assets/snippets/import_cmd.png)
+![import_snippet_2](../../assets/snippets/import.png)
