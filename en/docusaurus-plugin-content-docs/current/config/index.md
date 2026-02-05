@@ -43,24 +43,24 @@ When a value is not provided, the corresponding fields will be reset to default.
 - `(threshold)` : Number of fail before pity activation (min: 2)
 :::
 
-Enable the pity on dice rolls: after a certain number of consecutives failures, the bot guarantees automatic success on the next rolls.
+Enable the pity on dice rolls: after a certain number of consecutive failures, the bot guarantees automatic success on the next rolls.
 
 How it works: the closer you get to the threshold the greater the probability of activation, starting at 75%. Once the threshold is reached (aka 100%), pity is automatically triggered[^1].
 
 :::tip
-The "pity" is a re-lauch of the die (until 100 reroll) until it reach a success. It only works for dice that have a comparison (`XdY+Z>A`).
+The "pity" is a re-launch of the die (until 100 reroll) until it reach a success. It only works for dice that have a comparison (`XdY+Z>A`).
 :::
 
 :::warning
 To prevent cheating, the consecutive failure counter is cached for so-called "trivial" comparisons, with timestamps to identify consecutive failure.
 A trivial comparison is always a success or a failure, whatever the outcome of the roll (ex: `1d20>100` is always a failure).
 
-However, trivial comparisons may be counted if the message is not detected within the allocated time (one minute). This is rare, but it is recommanded that you:
+However, trivial comparisons may be counted if the message is not detected within the allocated time (one minute). This is rare, but it is recommended that you:
 - Do not overuse trivial comparisons.
 - Increase the pity threshold to limit the risk of cheating.
 :::
 
-To disable the pity sustem, simply enter the command without any parameters.
+To disable the pity system, simply enter the command without any parameters.
 
 <small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>
 

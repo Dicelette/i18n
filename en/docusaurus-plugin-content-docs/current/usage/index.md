@@ -29,7 +29,7 @@ The bot will then create a new thread, prefixed with `🎲`, where it will send 
 
 ## Karma
 
-The bot will automatically count successful and failed rolls on the server by user. <mark>This only works for dice rolled with the bot with a comparison</mark>, indicating `Failure` or `Success` in the message. Criticals are also counted.
+The bot will automatically count successful and failed rolls on the server by user. <mark>This only works for dice rolled with the bot with a comparison</mark>, indicating `Failure` or `Success` in the message. Critical are also counted.
 
 This command allows you to obtain:
 - A leaderboard of the most (or least!) lucky players on the server,

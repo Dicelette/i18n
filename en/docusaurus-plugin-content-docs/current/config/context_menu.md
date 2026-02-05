@@ -9,7 +9,7 @@ To open a context menu, right-click (or long press on mobile) on a message, then
 
 # Create a Link to a Result
 
-This command allows you to generate a direct link to a dice roll result from the bot. Useful for sharing a specific result in another channel or with another user.
+This command allows you to generate a direct link to a roll result from the bot. Useful for sharing a specific result in another channel or with another user.
 
 This command can be customized in two ways:
 - Per user, for each server, using `/user_config create_link`

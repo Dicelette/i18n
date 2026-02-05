@@ -45,7 +45,7 @@ Allows you to have both a dedicated log and to keep the result indefinitely in t
 
 Adds a link to the context of the die in the die save.
 - If auto-delete is enabled, the link created will return to the previous die message.
-- Otherwise the link will refer to the die's message directly.
+- Otherwise, the link will refer to the die's message directly.
 
 :::warning
 If the context message is deleted, the link will no longer work.
@@ -96,6 +96,6 @@ Simplify the input syntax to get directly the number of success or failure (*tar
 :::warning["This syntax disable the opposition comparison"]
 :::
 
-[Please refer to this page for more information on comparisons.](../introduction/expression.mdx#comparators).
+[Please refer to this page for more information on comparisons](../introduction/expression.mdx#comparators).
 
 <small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>

@@ -36,8 +36,8 @@ You can use the `$` symbol (as with standard dice), the name of a statistic or c
 *Reference*: [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html)  
 In Call of Cthulhu, successes are based on the value of the statistic. The typical die will therefore be `1D100<=$`.  
 Customized reviews will be:
-- Major Success": `<=round($/2)`.
-- Extreme Success": `<=round($/5)`.
+- Major Success: `<=round($/2)`.
+- Extreme Success: `<=round($/5)`.
 :::
 
 :::tip

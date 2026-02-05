@@ -9,7 +9,7 @@ sidebar_position: 1
 ![](../../assets/edit/user.png)
 Each tree commands will open a modal to edit the corresponding data.
 
-If you are using a old version of the bot, you will have to use the commands.
+If you are using an old version of the bot, you will have to use the commands.
 
 To add the new button.
 
@@ -54,7 +54,7 @@ As the command, it doesn't allow duplicate character name. Each character must h
 
 ![move](../../assets/edit/move.png)
 
-It will **move** the character to another user, deleting the one on the old user. An error will be throw in case of duplicate, and action will be undone.
+It will **move** the character to another user, deleting the one on the old user. An error will be thrown in case of duplicate, and action will be undone.
 
 :::usage[Command]
 **`/edit user [@new_user] (@old_user) (*character)`**

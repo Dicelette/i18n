@@ -3,7 +3,8 @@ title: Attributes
 sidebar_position: 3
 credit: neantderthals
 ---
-==Attributes== allow each user to define and manage specific numerical attributes for a server, without the need to configure a template or accompany the template.
+
+<mark>Attributes</mark> allow each user to define and manage specific numerical attributes for a server, without the need to configure a template or accompany the template.
 
 :::warning
 If a record has statistics, the attributes are added to it, but the statistics replace attributes with the same name.
@@ -15,7 +16,7 @@ To be used in a snippet, an attribute must first be registered.
 
 # Usage
 
-Unlike [snippets](snippets.md), attributes cannot be used directly. They function as shortcuts (similar to statistics) in the form of keys. In practical terms, this allows the **name** of an attribute to be used in a dice roll, prefixed with the `$` symbol.
+Unlike [snippets](snippets.md), attributes cannot be used directly. They function as shortcuts (similar to statistics) in the form of keys. In practical terms, this allows the **name** of an attribute to be used in a die roll, prefixed with the `$` symbol.
 
 :::example[`1d$force`]
 When `force` is `12`, the die is automatically converted to `1d12`.
@@ -78,7 +79,7 @@ Displays the list of existing attributes for the user.
 **`/user_config attributes export`**
 :::
 
-Exports all of the user's attributes in JSON format so that they can be saved or shared.
+Exports all user's attributes in JSON format so that they can be saved or shared.
 
 ![](../../assets/attributes/export.png)
 
