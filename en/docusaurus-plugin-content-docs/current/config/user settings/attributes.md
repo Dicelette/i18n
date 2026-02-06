@@ -10,8 +10,8 @@ credit: neantderthals
 If a record has statistics, the attributes are added to it, but the statistics replace attributes with the same name.
 :::
 
-:::danger
-To be used in a snippet, an attribute must first be registered.
+:::tip
+Attributes doesn't allow to enable and use `/dbroll`, `/macro`, `/display` and `/calc` without a configured template.
 :::
 
 # Usage
@@ -40,6 +40,10 @@ Attributes are stored globally at the server level and are therefore shared betw
 :::
 
 ![](../../assets/attributes/usage.png)
+![](../../assets/attributes/usage_2.png)
+:::danger
+To be used in a snippet or a macro, an attribute must first be registered.
+:::
 
 # Creating an attribute
 
