@@ -34,5 +34,9 @@
   "item.label.Configuration": {
     "message": "Configuration",
     "description": "Navbar item with label Configuration"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
   }
 }

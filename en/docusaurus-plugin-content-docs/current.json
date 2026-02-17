@@ -18,5 +18,9 @@
   "sidebar.model.category.Template": {
     "message": "Template",
     "description": "The label for category 'Template' in sidebar 'model'"
+  },
+  "sidebar.config.category.Per user": {
+    "message": "Per user",
+    "description": "The label for category 'Per user' in sidebar 'config'"
   }
 }
