@@ -101,5 +101,27 @@ By default, the data is merged. If two attributes have the same name, the import
 During import, the attributes are validated and only those that comply will be added.
 
 ![](../../assets/attributes/import_1.png)
-
 ![](../../assets/attributes/import_2.png)
+
+# Replace unknown attributes
+
+Allow to replace the unknown attributes in the rolls by a specific value.
+
+:::usage
+**`/user_config attributes replace_unknown (value)`**
+- `value`: Value to replace the unknown attributes
+:::
+
+To disable the replacement, simply reuse the command without providing a value.
+
+It is possible to use dice or other attributes, as long as they are recognized in future rolls.
+
+:::info
+This settings is not verified when saving.
+:::
+
+:::warning[This option doesn't work with:]
+- `/dbroll` when the roll is linked to a **character sheet** (especially in **expressions**).
+- `/macro` when the macro is linked to a statistic.
+- `/calc`
+:::
