@@ -11,6 +11,9 @@ You can view the current server configuration with the `/config display` command
 - **`/config display template`**: Display the template configuration (links, statistics names, excluded or global dice names), if any.
 :::
 
+> [!info]
+> You can configure the bot directly within the [Dashboard](https://dashboard.dicelette.com/).
+
 ## Change language
 
 :::usage
