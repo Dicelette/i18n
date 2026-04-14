@@ -2,9 +2,7 @@
 title: Edition
 sidebar_position: 1
 ---
-
-
-### Edit user data
+### Edit a character's sheet
 
 ![](../../assets/edit/user.png)
 Each tree commands will open a modal to edit the corresponding data.
@@ -13,7 +11,7 @@ If you are using an old version of the bot, you will have to use the commands.
 
 To add the new button.
 
-#### Editing the avatar image
+### Editing the avatar image
 
 ![edit image](../../assets/edit/image.png)
 
@@ -38,7 +36,7 @@ If both URL and file are provided, the file will take priority.
 
 Even as the two options are optional, at least one of them must be provided, or an error will be thrown.
 
-#### Rename a character
+### Rename a character
 ![rename](../../assets/edit/rename.png)
 
 As the command, it doesn't allow duplicate character name. Each character must have different name, or error will be thrown.
@@ -50,7 +48,7 @@ As the command, it doesn't allow duplicate character name. Each character must h
 - `*character`: Name of the character to edit. If not specified, the default character will be edited.
 :::
 
-#### Move to another user
+### Transfert to another user
 
 ![move](../../assets/edit/move.png)
 
@@ -62,6 +60,19 @@ It will **move** the character to another user, deleting the one on the old user
 - `@old_user`: User to move the character from.
 - `*character`: Name of the character to move. If not specified, the default character will be moved.
 :::
+
+### Move the sheet
+
+![move_sheet](../../assets/edit/move_to.png)
+
+:::info
+Only moderators can move a character sheet from a channel to another.
+:::
+
+To move a sheet to another channel, simply select the destination channel from the drop-down menu.
+
+After the move, the previous message will be deleted.
+
 
 ### Editing Statistics
 
