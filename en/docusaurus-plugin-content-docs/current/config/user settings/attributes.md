@@ -6,8 +6,16 @@ credit: neantderthals
 
 <mark>Attributes</mark> allow each user to define and manage specific numerical attributes for a server, without the need to configure a template or accompany the template.
 
+Attributes also supports combination **only** between them, but not with statistics. This allows you to create more complex attributes based on the basic ones, without having to create a template for it.
+
+:::example
+- `force` = `12`
+- `Agility` = `10`
+- `force+agility` = `12+10` = `22`
+:::
+
 :::warning
-If a record has statistics, the attributes are added to it, but the statistics replace attributes with the same name.
+If a record has statistics, the attributes are added to it, **but** the statistics replace attributes with the same name.
 :::
 
 :::tip
