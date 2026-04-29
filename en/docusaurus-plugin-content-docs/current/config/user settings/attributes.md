@@ -6,6 +6,10 @@ credit: neantderthals
 
 <mark>Attributes</mark> allow each user to define and manage specific numerical attributes for a server, without the need to configure a template or accompany the template.
 
+:::warning
+If a sheet has statistics, the attributs will be appened, but statistics will replace attributes when they have the same name.
+:::
+
 Attributes also supports combination **only** between them, but not with statistics. This allows you to create more complex attributes based on the basic ones, without having to create a template for it.
 
 :::example
