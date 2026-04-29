@@ -72,7 +72,7 @@ Here, the command requires you to choose the die to use. It is not possible to c
 :::info
 Allows you to roll dice saved by each user on the server. Unlike macros, snippets are not stored in a character sheet and are not linked to stats or the model.
 
-Snippets can include comments, mathematical expressions, success thresholds, opposition thresholds, as well as character names (using `@name`).
+Snippets can include comments, mathematical expressions, success thresholds, opposition thresholds, as well as character names (using `@name`) and attributes.
 :::
 
 :::usage
@@ -82,7 +82,8 @@ Snippets can include comments, mathematical expressions, success thresholds, opp
 - <CL>opposition</CL>: “Secondary” success threshold, only evaluated if there is a primary success threshold already saved in the dice.
 - <CL>comment</CL>: Action comment, which will be merged with any existing comment already present in the snippet.
 - <CL>success_threshold</CL>: The success threshold to use, if any.
-
+- <CL>critical_success</CL>: Overwrite the critical success value. Need to be written with the sign (`>=,<=, ==`, etc.). Will overwrite if the critical success is defined with [the associated syntax](../../introduction/expression.mdx#Critical-Successes-and-Failures).
+- <CL>critical_failure</CL>: Same as above, but for critical failure.
 :::
 
 To create a snippet, [see this section](../../config/user settings/snippets.md).

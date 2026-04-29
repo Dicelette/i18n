@@ -11,7 +11,7 @@ The two following commands allow game masters to roll dice for any registered pl
 - **`/gm dbroll (@player) (*statistic) (... other option) (*character) (?hidden)`**
 - **`/gm macro (@player) [*dice name] (... other options) (*character) (?hidden)`**
 - **`/gm calc (@player) [*statistic] [*sign] [expression] (... other options) (*character) (?hidden)`**
-- **`/gm roll (@player) [dice] (?hidden)`**
+- **`/gm roll (@player) [dice] (...other options) (?hidden)`**
 :::
 
 All commands are similar to [dbroll](./dice.mdx#dbroll-dbroll), [macro](./dice.mdx#macro-macro), [calc](./calc.mdx#based-on-statistic-calc), and [roll](../index.md) but additionally require specification of the player for whom the roll is being made. As with the other commands, you can choose a character belonging to this player or leave the default choice.

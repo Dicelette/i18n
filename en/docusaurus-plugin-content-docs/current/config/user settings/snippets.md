@@ -14,6 +14,7 @@ The statistics aren’t taken into account in the snippets as they aren’t tied
 The [attributs](./attributes.md) can be used in a snippet as long as the snippet has been already saved.
 :::
 
+
 # Snippets creation
 
 :::usage

@@ -6,8 +6,11 @@ sidebar_position: 1
 ## Dice Rolling
 
 :::usage
-**`/roll (dice) (?hidden)`**
+**`/roll [dice] (comments) (critical_success) (critical_failure) (?hidden)`**
 - `dice`: The dice to roll, which can be a simple die (e.g., `d20`, `2d6+3`, etc.) or a more [complex expression](./../introduction/expression.mdx).
+- `comments` : Optional comments that will overwrite any comments written in the `dice` value.
+- `critical_success`: Overwrite the critical success value. Need to be written with the sign (`>=,<=, ==`, etc.). Will overwrite if the critical success is defined with [the associated syntax](./../introduction/expression.mdx#Critical-Successes-and-Failures).
+- `critical_failure`: Same as above, but for failure. 
 - `?hidden`: Optional boolean to indicate if the roll should be hidden (cf. [hidden roll](../config/threads.md#hidden-dice)).
 :::
 
