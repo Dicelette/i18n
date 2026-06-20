@@ -40,6 +40,15 @@ import { CL} from "@site/src/components/utils.tsx";
     :::example `1d20;&-2[HP Loss]`: Applies -2 to the result of `1d20` and annotates the  second line result.
     :::
 
+- **<mark>`[value]`</mark>**:
+    - <CL>Usage:</CL> Uses the value in brackets as a "statistic" number that will replace `$` in custom formulas.
+    - <CL>Where?</CL> In all user-written dice, macros, and snippets.
+    :::example[ `$+2` ]
+      - `1d6 + [2]`: `[2]` will be replaced by `2+2`
+      - `1d6 > [10]`: `[10]` will be replaced by `10+2`
+      - `1d6 + [$dexterity+$constitution]`: `[$dexterity+$constitution]` will be replaced by `$dexterity+$constitution+2`
+    :::
+
 - **<mark>`#comment`</mark>** :
 	  - <CL>Usage:</CL> Global comment for a dice roll. The `#` symbol can be omitted when used in direct messages.  
 	  - <CL>Where?</CL> At the end of the dice roll, to annotate the action. Also allows creating a global comment in shared dice.  
