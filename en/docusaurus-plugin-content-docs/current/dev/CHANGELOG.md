@@ -90,7 +90,7 @@ All notable changes to this project will be documented in this file. See [commit
 * allow attributes in snippets ([c74cbe6](https://github.com/Dicelette/discord-dicelette/commit/c74cbe646bc18a4a13670621e642654646bd5d2c))
 * allow better handling combination of maths and test value ([2c7368c](https://github.com/Dicelette/discord-dicelette/commit/2c7368c58b4c0f6c10a8b567ca6cb0db01ac2b79))
 * allow bracket command ([70a4a02](https://github.com/Dicelette/discord-dicelette/commit/70a4a02c2284dcd5db98dbf51149b788a3b8d387))
-* allow calcultation in <(value) ([e7630cb](https://github.com/Dicelette/discord-dicelette/commit/e7630cb42d33016bea676f4c13495cfa66acedfc))
+* allow calcultation in `<(value)` ([e7630cb](https://github.com/Dicelette/discord-dicelette/commit/e7630cb42d33016bea676f4c13495cfa66acedfc))
 * allow critical success/failure message ([f0f233c](https://github.com/Dicelette/discord-dicelette/commit/f0f233ce9e8691cf4080eb40c3ca4f9c69373b1f))
 * allow force distribution of points ([085b11e](https://github.com/Dicelette/discord-dicelette/commit/085b11e07a9680b4d8c36d3bc935c269e135ad04))
 * allow multiple logs for forum ([0485125](https://github.com/Dicelette/discord-dicelette/commit/0485125a4bd4e9c6e7e3fabbf525589cf31b020d))

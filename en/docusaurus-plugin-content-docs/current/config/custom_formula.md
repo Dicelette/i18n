@@ -6,8 +6,8 @@ sidebar_position: 7
 This command allows you to create a custom [Mathjs](https://mathjs.org/) formula, which serves as a "template". This template will automatically replace the values between brackets `[]`.
 
 Custom formulas can be created in two ways:
-- Either by a user for each server, via the command `/user_config custom_formula`
-- Or by an administrator for the server, via the command `/config custom_formula`
+- Either by a user for each server via the command `/user_config custom_formula`
+- Or by an administrator for the server via the command `/config custom_formula`
 
 :::info
 If a custom formula is created by an administrator for the server, it will take precedence over the one created by a user.
