@@ -77,6 +77,16 @@ Obviously, the karma only works for dice rolled with the bot, and does not work 
 
 This command allows to randomly select one or more options from a given list.
 
+## 8ball
+:::usage
+**`/8ball (question) (?include_elusive)`**
+- `question`: Optional, the question to ask the 8ball.
+- `?include_elusive`: Optional, boolean to indicate if the answer can be elusive (e.g., "Maybe", "I don't know", etc.). Default is false.
+:::
+
+Ask question to the [magic 8ball](https://en.wikipedia.org/wiki/Magic_8_Ball) and get a random answer from the possible answers.
+
+
 ## Help
 
 There are several help commands, depending on what you need:
