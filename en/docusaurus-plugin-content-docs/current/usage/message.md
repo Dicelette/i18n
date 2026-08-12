@@ -19,8 +19,8 @@ This bot detects dice notation and sends the result using three methods:
    ![Semi-direct](/assets/rolls/semi-direct.gif)
 
 :::tip
-In the textual notation, it's possible to reference:
-- A statistic, using `$statistic` (e.g., `$strength`).[^1]
+It's possible to reference:
+- A statistic, using `$statistic` (e.g., `$strength`) if the player has a registered character sheet or attributes.[^1]
 - A character, using `@character` (e.g., `@Bob`).
 - An opposition, by “stacking” the comparison signs: 1d100>20>10 (the last value will be treated as the opposition).
 As long as the player has a registered character sheet.
@@ -28,4 +28,8 @@ As long as the player has a registered character sheet.
 
 It is also possible to use slash-commands to throw dice, like `/roll` ([see here for more information](../usage/index.md#dice-rolling))  
 
+Finally, you can modify the comments of a roll by replying to the result message with a comment prefixed by `///` (e.g., `/// My comment`). Only your own comments can be modified. This modification is possible on all dice results rolled by the bot, whether via a slash command or via a message.
+
 [^1]: To use the value of a statistic as the number of dice, you must use `($stat)dX` (e.g., `($strength)d20`).
+
+<small>For more information on field syntax: [see the dedicated page](../introduction/format.mdx).</small>
