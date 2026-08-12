@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [4.7.1](https://github.com/Dicelette/discord-dicelette/compare/4.7.0...4.7.1) (2026-08-11)
+
+### Bug Fixes
+
+* **bracket-mention:** an "[@word](https://github.com/word)" outside the brackets is just narration, not a character/mention marker ([6be6069](https://github.com/Dicelette/discord-dicelette/commit/6be6069728c49289d314d20e73756b2251521c24))
+## [4.7.0](https://github.com/Dicelette/discord-dicelette/compare/4.6.4...4.7.0) (2026-08-11)
+
+### Features
+
+* **comment:** add functionality to edit roll comments and handle synchronization ([505792e](https://github.com/Dicelette/discord-dicelette/commit/505792eb57fdc5e794f1fd15eba2c75f469de7df))
+* **comments:** add COMMENT_EDIT_PREFIX constant and enhance regex patterns for message handling ([bf0cc41](https://github.com/Dicelette/discord-dicelette/commit/bf0cc41cb42f12a81ffb2f44e5898935523aea2e))
+* **template:** add read-only template view for guild members ([f4e3785](https://github.com/Dicelette/discord-dicelette/commit/f4e37857c919bed873cf0bf03b5fef4697b91016))
+## [4.6.4](https://github.com/Dicelette/discord-dicelette/compare/4.6.3...4.6.4) (2026-08-11)
+
+### Bug Fixes
+
+* **bulkroll:** display result on a new line for bulk roll that have comments ([dd5a71a](https://github.com/Dicelette/discord-dicelette/commit/dd5a71aae3afd892613737a6f4156b38e6c3f5e5))
+* **result:** new line for bulk roll comments with inforoll ([bb885bc](https://github.com/Dicelette/discord-dicelette/commit/bb885bc18fdcfdefaa40252a5c0a3d75fb734e6e))
+* **roll:** apply semi direct formula after replacing stats in dice formula, as in /roll ([43fc81e](https://github.com/Dicelette/discord-dicelette/commit/43fc81eb23118eaeb88abe251887a1222184e078))
+## [4.6.3](https://github.com/Dicelette/discord-dicelette/compare/4.6.2...4.6.3) (2026-08-10)
+
+### Bug Fixes
+
+* **pnpm:** standardize quotes in pnpm-workspace.yaml ([bd71ee0](https://github.com/Dicelette/discord-dicelette/commit/bd71ee02cb0c80dcea83fb93f1393d215d337d54))
+* **roll:** custom formula with a space was silently dropped by dice detection ([4156bbe](https://github.com/Dicelette/discord-dicelette/commit/4156bbe21a9e1e9bcffc059c01289843f33bca89))
+* **translation:** adjust message when using from guild to get the formula ([2307abf](https://github.com/Dicelette/discord-dicelette/commit/2307abf5c2f40a15b8656fecb156d56a7155cb34))
+## [4.6.2](https://github.com/Dicelette/discord-dicelette/compare/4.6.1...4.6.2) (2026-08-07)
+
+### Bug Fixes
+
+* **modals:** track page stats to get a accurate number of page ([52d9327](https://github.com/Dicelette/discord-dicelette/commit/52d932758d2c3c3f9e5dc9954cdcb1ef85ffda2d))
+* **stats:** handle missing statistics and improve modal display logic ([89a0590](https://github.com/Dicelette/discord-dicelette/commit/89a05902dfa43e1a35c2cd2a793ed7129a24ffc8))
 ## [4.6.1](https://github.com/Dicelette/discord-dicelette/compare/4.6.0...4.6.1) (2026-08-07)
 
 ### Bug Fixes
