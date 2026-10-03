@@ -2,6 +2,55 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [5.0.0](https://github.com/Dicelette/discord-dicelette/compare/4.10.1...5.0.0) (2026-10-03)
+
+### ⚠ BREAKING CHANGES
+
+* **user-settings:** rename `/config` to `/admin` and `/user_config` to `/settings`
+
+### Features
+
+* **user-settings:** add user option management & configuration ([88e94cc](https://github.com/Dicelette/discord-dicelette/commit/88e94cc14d66c49f97508a37992c2d7be17e5128))
+
+## [4.10.2](https://github.com/Dicelette/discord-dicelette/compare/4.10.1...4.10.2) (2026-09-24)
+
+## [4.10.1](https://github.com/Dicelette/discord-dicelette/compare/4.10.0...4.10.1) (2026-09-24)
+
+### Bug Fixes
+
+* **shared:** comments colliding with bracket + collision with opposition. Shared should works normally now ([9152bcd](https://github.com/Dicelette/discord-dicelette/commit/9152bcd60a4a5639b60f8e8302df217f284041b8))
+
+## [4.10.0](https://github.com/Dicelette/discord-dicelette/compare/4.9.0...4.10.0) (2026-08-28)
+
+### Features
+
+* **auth:** optimize guild filtering with concurrent processing and enhance karma overview loading ([a1e655c](https://github.com/Dicelette/discord-dicelette/commit/a1e655c3c3d4626830072d29e6bde2a7cc062e7a))
+
+### Bug Fixes
+
+* **roll:** unrecognized stats settings was ignored ([70d05e9](https://github.com/Dicelette/discord-dicelette/commit/70d05e9bf5975b3d5096525f96891e44dc31e8ab))
+## [4.9.0](https://github.com/Dicelette/discord-dicelette/compare/4.8.3...4.9.0) (2026-08-26)
+
+### Features
+
+* **share:** add public character list and leaderboard metadata handling ([a6f1ce5](https://github.com/Dicelette/discord-dicelette/commit/a6f1ce52b20ccf2dbe5d7a9ff39234f2c7c4b990))
+## [4.8.3](https://github.com/Dicelette/discord-dicelette/compare/4.8.2...4.8.3) (2026-08-25)
+
+### Bug Fixes
+
+* **logger:** improve logging behavior in development and production environments ([80f29d5](https://github.com/Dicelette/discord-dicelette/commit/80f29d517af9650ade929e0cbaf5320523789b93))
+## [4.8.2](https://github.com/Dicelette/discord-dicelette/compare/4.8.1...4.8.2) (2026-08-25)
+## [4.8.1](https://github.com/Dicelette/discord-dicelette/compare/4.8.0...4.8.1) (2026-08-24)
+## [4.8.0](https://github.com/Dicelette/discord-dicelette/compare/4.7.2...4.8.0) (2026-08-23)
+
+### Features
+
+* **dashboard:** add karma + better menu / refresh ([b77510d](https://github.com/Dicelette/discord-dicelette/commit/b77510d7a122f5620f488774e6387f3425753d26))
+## [4.7.2](https://github.com/Dicelette/discord-dicelette/compare/4.7.1...4.7.2) (2026-08-22)
+
+### Bug Fixes
+
+* **karma:** option for selectuser should allow self (as in empty selectedUser option) ([5551195](https://github.com/Dicelette/discord-dicelette/commit/555119539a4b040d001216fcc45376a1d10fa682))
 ## [4.7.1](https://github.com/Dicelette/discord-dicelette/compare/4.7.0...4.7.1) (2026-08-11)
 
 ### Bug Fixes
