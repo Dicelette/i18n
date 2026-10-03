@@ -4,14 +4,14 @@ sidebar_position: 3
 ---
 
 :::usage
-**<mark>`/config auto_role dice`</mark> (@role)**  
-**<mark>`/config auto_role stats`</mark> (@role)**
+**<mark>`/admin auto_role dice`</mark> (@role)**  
+**<mark>`/admin auto_role stats`</mark> (@role)**
 - `@role` : The role to assign during the validation of the dice or stats.
 :::
 
 These commands allow to automatically add role when:
-- A die is added (with <mark>`/config auto_role dice`</mark>)
-- Stats are validated (with <mark>`/config auto_role stats`</mark>)
+- A die is added (with <mark>`/admin auto_role dice`</mark>)
+- Stats are validated (with <mark>`/admin auto_role stats`</mark>)
 
 This allows to restrict the usage of <mark>`/macro`</mark> and <mark>`/dbroll`</mark> to the user that have the possibility to use it.
 

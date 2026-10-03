@@ -28,13 +28,13 @@ The bot also functions in forums, but with a few differences:
 - In this case, it's a message that will be created instead of a thread.
 :::
 
-Additionally, via the command [`/config result_channel`](../config/threads.md), you can configure this behavior by setting a channel or disabling the automatic creation of threads.
+Additionally, via the command [`/admin result_channel`](../config/threads.md), you can configure this behavior by setting a channel or disabling the automatic creation of threads.
 
 ## Channels
 
 The bot will **also** send the result to the channel where the command was initially sent. This message:
 
-- Will be deleted after 3 minutes (configurable using `/config delete_after`).
+- Will be deleted after 3 minutes (configurable using `/admin delete_after`).
 - Will contain a link to the message in the log.
 
 ## Usage

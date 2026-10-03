@@ -12,8 +12,8 @@ To open a context menu, right-click (or long press on mobile) on a message, then
 This command allows you to generate a direct link to a roll result from the bot. Useful for sharing a specific result in another channel or with another user.
 
 This command can be customized in two ways:
-- Per user, for each server, using `/user_config create_link`
-- Per server, by administrators, using `/config create_link`
+- Per user, for each server, using `/settings create_link`
+- Per server, by administrators, using `/admin create_link`
 
 :::important
 The server format takes priority over the user format.
@@ -22,7 +22,7 @@ The server format takes priority over the user format.
 ## Format
 
 :::usage
-**`/config create_link format [final] (results) (dice) (info) (name) (original_dice) (character) (join_results)`**
+**`/admin create_link format [final] (results) (dice) (info) (name) (original_dice) (character) (join_results)`**
 - `dice`: The raw dice result, usually `[RES](SIGN)(COMPARISON)`, for example `[29]>=10`.
 - `info`: The information text, such as critical (including custom), failure, or success messages.
 - `name`: The name of the statistic or macro, if one is found.
@@ -94,7 +94,7 @@ Which gives: ``[[__Name__ :  Critical Failure - `[29] ⩾ 10`]](<https://discord
 ## Display
 
 :::usage
-**`/config create_link display`**
+**`/admin create_link display`**
 :::
 
 Displays the list of the current link formats for the server, along with an example based on the following format:
@@ -107,7 +107,7 @@ __**Character**__ (<@000000000000000000>)  (\`>= 11\`):
 
 ## Reset
 :::usage
-**`/config create_link reset`**
+**`/admin create_link reset`**
 :::
 
 Remove the configuration and reset the link format to default values.

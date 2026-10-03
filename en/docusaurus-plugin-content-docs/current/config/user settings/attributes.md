@@ -56,7 +56,7 @@ To be used in a snippet or a macro, an attribute must first be registered.
 # Creating an attribute
 
 :::usage
-**`/user_config attribute create [name] [value]`**
+**`/settings attribute create [name] [value]`**
 - `name`: Name of the attribute
 - `value`: Number to be recorded
 :::
@@ -68,7 +68,7 @@ As with snippets, if the attribute already exists, its value will simply be upda
 # Deletion
 
 :::usage
-**`/user_config attributes delete [*name]`**
+**`/settings attributes delete [*name]`**
 - `*name`: Name of the snippet to be deleted
 :::
 
@@ -78,7 +78,7 @@ Allows you to delete an existing attribute from the list of attributes.
 # Listing attributes
 
 :::usage
-**`/user_config attributes list`**
+**`/settings attributes list`**
 :::
 
 Displays the list of existing attributes for the user.
@@ -88,7 +88,7 @@ Displays the list of existing attributes for the user.
 # Export attributes
 
 :::usage
-**`/user_config attributes export`**
+**`/settings attributes export`**
 :::
 
 Exports all user's attributes in JSON format so that they can be saved or shared.
@@ -100,7 +100,7 @@ Exports all user's attributes in JSON format so that they can be saved or shared
 Imports attributes from a JSON file. This allows you to easily transfer or share data between different servers or accounts.
 
 :::usage
-**`/user_config attributes import [file] (?overwrite)`**
+**`/settings attributes import [file] (?overwrite)`**
 - `file`: JSON data of the attributes to be imported
 - `?overwrite`: Allows you to overwrite the data rather than merge it with the old data.
 :::
@@ -116,7 +116,7 @@ During import, the attributes are validated and only those that comply will be a
 Allow to replace the unknown attributes in the rolls by a specific value.
 
 :::usage
-**`/user_config attributes replace_unknown (value)`**
+**`/settings attributes replace_unknown (value)`**
 - `value`: Value to replace the unknown attributes
 :::
 

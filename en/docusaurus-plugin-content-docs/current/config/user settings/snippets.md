@@ -18,7 +18,7 @@ The [attributs](./attributes.md) can be used in a snippet as long as the attribu
 # Snippets creation
 
 :::usage
-**`/user_config snippets create [name] [dice]`**
+**`/settings snippets create [name] [dice]`**
 - `name` : name of the snippet
 - `dice` : Dice roll expression (ex : `1d20+5`)
 :::
@@ -30,7 +30,7 @@ If the snippet already exist, it’ll be updated to it’s new value
 # Suppression
 
 :::usage
-**`/user_config snippets delete [*name]`**
+**`/settings snippets delete [*name]`**
 - `*name` : name of the snippet to delete
 :::
 
@@ -41,7 +41,7 @@ Allow to delete a snippet off the list.
 # Snippet list
 
 :::usage
-**`/user_config snippets lister`**
+**`/settings snippets lister`**
 :::
 
 Show the list of snippets for the user
@@ -51,7 +51,7 @@ Show the list of snippets for the user
 # Export snippets
 
 :::usage
-**`/user_config snippets export`**
+**`/settings snippets export`**
 :::
 
 Allows to export all the snippets from the user in a JSON file to save or share them.
@@ -64,7 +64,7 @@ Importe des snippets depuis un fichier JSON. Cela permet de transférer ou parta
 Import snippets from a JSON file. This allows easy sharing or transfer of data between servers or accounts.
 
 :::usage
-**`/user_config snippets import [file] (?erase)`**
+**`/settings snippets import [file] (?erase)`**
 - `file` : Data JSON of the snippets to import.
 - `?erase` : Replace the existing data instead of fusing them.
 :::

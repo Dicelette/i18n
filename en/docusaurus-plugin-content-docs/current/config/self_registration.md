@@ -4,7 +4,7 @@ sidebar_position: 6
 ---
 
 :::usage
-`/config self_register [?toggle] (?validation_moderation)`
+`/admin self_register [?toggle] (?validation_moderation)`
 - `?toggle`: enable/disable the self-registration
 - `?validation_moderation`: Only the moderators can validate the sheet after the self-registration by the player.
 - `?disallow_channel` : User can't set any channel (by ID) to register their character. If set on `true`, the sheet will be sent in the default channel.

@@ -4,7 +4,7 @@ description: Configure automatic deletion of out-of-character (OOC) messages in 
 sidebar_position: 5
 ---
 
-The `/config delete_ooc` command allows you to configure the automatic deletion of out-of-character (OOC) messages in specific channels.
+The `/admin delete_ooc` command allows you to configure the automatic deletion of out-of-character (OOC) messages in specific channels.
 
 :::info
 This feature is especially useful for maintaining immersion in roleplay channels by automatically deleting OOC messages after a defined delay.
@@ -13,7 +13,7 @@ This feature is especially useful for maintaining immersion in roleplay channels
 ## Basic Configuration
 
 :::usage
-**`/config delete_ooc (prefix) (suffix) (regex) (timer) (#channel) (?thread_mode)`**
+**`/admin delete_ooc (prefix) (suffix) (regex) (timer) (#channel) (?thread_mode)`**
 - `prefix`: Prefix of OOC messages to delete  
 - `suffix`: Suffix of OOC messages to delete  
 - `regex`: Regular expression to detect OOC messages  
@@ -45,7 +45,7 @@ Regular expressions can be complex and may lead to unintended deletions. Prefer 
 **Deletion using prefix/suffix:**
 ```
 
-/config delete\_ooc prefix:- suffix:- timer:180 channel:#ooc
+/admin delete\_ooc prefix:- suffix:- timer:180 channel:#ooc
 
 ```
 Deletes OOC messages wrapped in `-` (e.g., `-ooc message-`) and transfers them to `#ooc` after 3 minutes.
@@ -53,7 +53,7 @@ Deletes OOC messages wrapped in `-` (e.g., `-ooc message-`) and transfers them t
 **Deletion using regex:**
 ```
 
-/config delete\_ooc regex:$ooc::(.*)$ timer:60
+/admin delete\_ooc regex:$ooc::(.*)$ timer:60
 
 ```
 Deletes messages like `(ooc:: message)` after one minute.
@@ -61,7 +61,7 @@ Deletes messages like `(ooc:: message)` after one minute.
 **Direct deletion:**
 ```
 
-/config delete\_ooc prefix:((( suffix:))) timer:120
+/admin delete\_ooc prefix:((( suffix:))) timer:120
 
 ```
 Deletes messages wrapped in `(((` and `)))` after 2 minutes without transferring them.
@@ -81,8 +81,8 @@ When using the command, a selection interface will appear to choose the channels
 To disable OOC message deletion:
 
 :::usage
-**`/config delete_ooc`** (without parameters)  
-**`/config delete_ooc timer:0`**
+**`/admin delete_ooc`** (without parameters)  
+**`/admin delete_ooc timer:0`**
 :::
 
 Both methods fully disable the feature.

@@ -8,13 +8,13 @@ Diverses options allows to personalize the display of the dice's results, whethe
 ## Timestamp: `timestamp`
 
 :::usage
-**`/config timestamp [?toggle]`**
+**`/admin timestamp [?toggle]`**
 - `?toggle`: Disable or enable the timestamp.
 :::
 
 If the option is enabled (**true**), the timestamp will be displayed in the dice results.
 
-![](/assets/rolls/config/timestamp.png)
+![](/assets/rolls/admin/timestamp.png)
 
 :::tip
 The timestamp automatically adapts to the user's time zone.
@@ -23,7 +23,7 @@ The timestamp automatically adapts to the user's time zone.
 ## Time before deletion
 
 :::usage
-**`/config delete_after [time]`**
+**`/admin delete_after [time]`**
 - `[time]` : Delay in second (0 = never deleted)
 :::
 
@@ -39,7 +39,7 @@ Allows you to have both a dedicated log and to keep the result indefinitely in t
 ### Link to the die context
 
 :::usage
-**`/config context [?toggle]`**
+**`/admin context [?toggle]`**
 - `?toggle`: Disable or enable the context link.
 :::
 
@@ -51,7 +51,7 @@ Adds a link to the context of the die in the die save.
 If the context message is deleted, the link will no longer work.
 :::
 
-![Link to context](/assets/rolls/config/context.png)
+![Link to context](/assets/rolls/admin/context.png)
 
 :::tip
 This option is disabled if there is no channel or thread for saving the result.
@@ -60,18 +60,18 @@ This option is disabled if there is no channel or thread for saving the result.
 ### Link to the saved dice
 
 :::usage
-**`/config save_link [?toggle]`**
+**`/admin save_link [?toggle]`**
 - `?toggle`: Disable or enable the link to the saved dice.
 :::
 
 Adds a link to the die backup in the die result message.
 
-![Link to backup](/assets/rolls/config/backup_link.png)
+![Link to backup](/assets/rolls/admin/backup_link.png)
 
 ## Sort order 
 
 :::usage
-**`/config set_order (?order)`**
+**`/admin set_order (?order)`**
 - `?order`: Order chosen for displaying results. Choose between:
   - <u>Ascending</u>
   - <u>Descending</u>
@@ -87,7 +87,7 @@ If the sort symbol is added to the die, then it will take precedence over the co
 ## Disable the comparison
 
 :::usage
-**`/config disable_compare (?toggle)`**
+**`/admin disable_compare (?toggle)`**
 - `?toggle` : On `True` will disable the success/failure message.
 :::
 

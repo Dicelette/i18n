@@ -6,8 +6,8 @@ sidebar_position: 7
 This command allows you to create a custom [Mathjs](https://mathjs.org/) formula, which serves as a "template". This template will automatically replace the values between brackets `[]`.
 
 Custom formulas can be created in two ways:
-- Either by a user for each server via the command `/user_config custom_formula`
-- Or by an administrator for the server via the command `/config custom_formula`
+- Either by a user for each server via the command `/settings custom_formula`
+- Or by an administrator for the server via the command `/admin custom_formula`
 
 :::info
 If a custom formula is created by an administrator for the server, it will take precedence over the one created by a user.
@@ -36,7 +36,7 @@ The dice can be used both in the custom formula and in the rolled die. For examp
 ## Configuration
 
 :::usage
-**`/user_config custom_formula configure (formula)`**
+**`/settings custom_formula configure (formula)`**
 - `formula`: The custom formula to use. It must be a valid Mathjs formula, with the `$` symbol to represent the value between brackets `[]`.
 :::
 
@@ -45,13 +45,13 @@ If the `formula` option is left empty, the custom formula will be deleted for th
 During configuration, the formulas are checked against the Mathjs rules. If the formula is not valid, an error message will be displayed.
 
 :::tip
-The administrative command `/config custom_formula` works in the same way.
+The administrative command `/admin custom_formula` works in the same way.
 :::
 
 ## Display
 
 :::usage
-**`/user_config custom_formula display`**
+**`/settings custom_formula display`**
 :::
 
 Allows you to display the custom formula currently configured for the user or server. If no formula is configured, an error message will be displayed.

@@ -4,7 +4,7 @@ sidebar_position: 5
 ---
 
 :::usage
-**`/config logs (#channel)`**
+**`/admin logs (#channel)`**
 - `#channel`: Channel to log errors and changes (optional)
 :::
 

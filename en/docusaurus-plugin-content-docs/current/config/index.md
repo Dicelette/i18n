@@ -5,10 +5,10 @@ sidebar_position: 1
 
 The following commands are restricted by default to members with the <mark>Manage Roles</mark> permission.
 
-You can view the current server configuration with the `/config display` commands :
+You can view the current server configuration with the `/admin display` commands :
 :::usage
-- **`/config display general`**: Display the server's general configuration.
-- **`/config display template`**: Display the template configuration (links, statistics names, excluded or global dice names), if any.
+- **`/admin display general`**: Display the server's general configuration.
+- **`/admin display template`**: Display the template configuration (links, statistics names, excluded or global dice names), if any.
 :::
 
 > [!info]
@@ -17,7 +17,7 @@ You can view the current server configuration with the `/config display` command
 ## Change language
 
 :::usage
-**`/config change_language [language]`
+**`/admin change_language [language]`
 - `[language]`: Language to use (`fr` or `en`)
 :::
 
@@ -28,7 +28,7 @@ For the moment, only English and French are available.
 ## Edit the bot
 
 :::usage
-**`/config edit_me (nick) (bio) (avatar) (banner)`**
+**`/admin edit_me (nick) (bio) (avatar) (banner)`**
 - `(nick)`: New nickname for the bot on the server.
 - `(bio)`: New biography for the bot.
 - `(avatar)`: New avatar image for the bot, as a file.
@@ -42,7 +42,7 @@ When a value is not provided, the corresponding fields will be reset to default.
 ## Pity
 
 :::usage
-**`/config pity (threshold)`**
+**`/admin pity (threshold)`**
 - `(threshold)` : Number of fail before pity activation (min: 2)
 :::
 

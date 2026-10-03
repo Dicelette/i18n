@@ -17,20 +17,20 @@ If the roll is made in a thread prefixed by `🎲`, the result will not be sent 
 ## Configure the result's channel
 
 :::usage
-**`/config result_channel [?disable_thread] (#channel)`**
+**`/admin result_channel [?disable_thread] (#channel)`**
 - `?disable_thread`: Disable the automatic thread creation for the results.
 - `#channel`: target channel
 :::
 
 - If `disable_thread` is enabled, results are sent to the salon without creating a thread (and auto-delete is disabled).
 - If a salon is specified, results will be sent to a thread in that salon (unless `disable_thread` is enabled).
-- Without arguments, the behavior corresponds to `/config result_channel true`.
+- Without arguments, the behavior corresponds to `/admin result_channel true`.
 
 
 :::example
-- **Send to a specific channel**: `/config result_channel #channel`.
-- **Disable automatic creation/result channel**: `/config result_channel true`
-- **Use automatic thread creation**: `/config result_channel false`
+- **Send to a specific channel**: `/admin result_channel #channel`.
+- **Disable automatic creation/result channel**: `/admin result_channel true`
+- **Use automatic thread creation**: `/admin result_channel false`
 :::
 
 If the copy is entirely disabled, the [automatic deletion](./display.md#time-before-deletion) of the results will be disabled too.
@@ -38,7 +38,7 @@ If the copy is entirely disabled, the [automatic deletion](./display.md#time-bef
 ### Hidden dice
 
 :::usage
-**`/config hidden_roll [?toggle] (#channel)`**
+**`/admin hidden_roll [?toggle] (#channel)`**
 - `?toggle`: Enable or disable the hidden rolls.
 - `#channel`: Channel to use to save the hidden rolls
 :::
