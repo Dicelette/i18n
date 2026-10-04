@@ -81,7 +81,7 @@ Allows you to delete an existing attribute from the list of attributes.
 **`/settings attributes list`**
 :::
 
-Displays the list of existing attributes for the user.
+Displays the list of existing attributes for the user and the `replace_unknown` value if it is set.
 
 ![](../../assets/attributes/list.png)
 
@@ -123,6 +123,8 @@ Allow to replace the unknown attributes in the rolls by a specific value.
 To disable the replacement, simply reuse the command without providing a value.
 
 It is possible to use dice or other attributes, as long as they are recognized in future rolls.
+
+To see the current value, use `/settings attributes list`.
 
 :::info
 This settings is not verified when saving.

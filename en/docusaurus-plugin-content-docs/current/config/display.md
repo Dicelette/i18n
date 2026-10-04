@@ -14,7 +14,7 @@ Diverses options allows to personalize the display of the dice's results, whethe
 
 If the option is enabled (**true**), the timestamp will be displayed in the dice results.
 
-![](/assets/rolls/admin/timestamp.png)
+![](/assets/rolls/config/timestamp.png)
 
 :::tip
 The timestamp automatically adapts to the user's time zone.
@@ -51,7 +51,7 @@ Adds a link to the context of the die in the die save.
 If the context message is deleted, the link will no longer work.
 :::
 
-![Link to context](/assets/rolls/admin/context.png)
+![Link to context](/assets/rolls/config/context.png)
 
 :::tip
 This option is disabled if there is no channel or thread for saving the result.
@@ -66,7 +66,7 @@ This option is disabled if there is no channel or thread for saving the result.
 
 Adds a link to the die backup in the die result message.
 
-![Link to backup](/assets/rolls/admin/backup_link.png)
+![Link to backup](/assets/rolls/config/backup_link.png)
 
 ## Sort order 
 

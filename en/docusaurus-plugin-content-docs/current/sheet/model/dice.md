@@ -33,7 +33,7 @@ The presence of the `$` sign makes the statistic mandatory. Otherwise, the die c
 
 You can customize a macro (saved die) using different syntaxes:  
 
-- **Custom Critics:** If you use custom critical with `$`, the **dice name** must include the **statistic in parentheses**, like `Animal Instinct (Strength)`. See the [Custom Critics Hits](./critics.md#custom-critics) section for more details.  
+- **Custom Critics:** If you use custom critical with `$`, the **dice name** must include the **statistic in parentheses**, like `Animal Instinct (Strength)`. See the [Custom Critics Hits](./critics.md#custom) section for more details.  
 - **Statistic Name:** Allows referencing a statistic directly in the dice.  
 
 :::example

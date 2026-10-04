@@ -5,13 +5,124 @@ sidebar_position: 1
 
 Welcome! 🎲 Here's your companion for adventures on Discord: a versatile bot designed to make your role-playing game sessions smoother and more enjoyable.
 
+This page introduces the bot's basic syntax, the one you will use in every game session, then points you to the rest of the documentation.
+
+## Rolling a die
+
+Dicelette reads your messages directly: you don't need a command to roll a die. Three notations exist, depending on what you want to do with your message.
+
+| Notation | Example | Result |
+| --- | --- | --- |
+| **Direct** | `1d20` | Your message is deleted and replaced by the result, sent in the channel and in the log. |
+| **Indirect** | `I force the door [1d20]` | Your message is kept. Only the content of the brackets is rolled: the bot replies with the result, and the log contains a link to your original message. |
+| **Semi-direct** | `1d20 I force the door` | The first die found is rolled, and the rest of the message is sent to the log as a [comment](#comments). |
+
+You can also use the `/roll` slash command (e.g. `/roll 1d20+3`). In every case, results are gathered in a thread prefixed with `🎲`, the *log*: see the [default behavior](./behavior.md).
+
+For more details on the three notations, see [Sending message](../usage/message.md) and the [basic commands](../usage/index.md#dice-rolling).
+
+## Comments
+
+A comment adds context to a roll: it is displayed along with the result. Depending on what you want to annotate, there are several ways to write one.
+
+- **Global comment: `#comment`**. Placed at the end of the dice, it annotates the whole roll. In a direct message, the `#` can be omitted: this is what makes the semi-direct notation possible.
+
+  :::example
+  - `/roll 1d20+5 #Attack`
+  - `1d20 I force the door`
+  :::
+
+- **Line comment: `[comment]`**. In a [shared roll](./expression.mdx#shared-unique-rolls-reusing-results) (`;&`), it annotates a specific formula.
+
+  :::example `1d20;&-2 [hp loss] #comment`
+  :::
+
+- **Editing a comment afterwards: `///`**. Reply to the result message with `/// My comment`. Only your own comments can be edited, on every result rolled by the bot (slash command or message). `///` is the default prefix: [it can be changed](../config/user%20settings/comment_prefix.md).
+
+With the shared roll example above, the result displays the global comment first, and the underlined line comment in front of the relevant formula:
+
+:::roll[ `1d20;&-2 [hp loss] #comment` ]
+*comment*  
+  ※ `1d20` ⟶ `[2]` = ` 2 `  
+  ◈ <u>hp loss</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `  
+:::
+
+:::warning Comments are sensitive to spaces
+- A `[bracketed]` or `#global` comment must be preceded by a space.
+- The `#` of a global comment must be stuck to its text: `#Attack`.
+- In a shared roll, don't add a space before or after the `;` separating the formulas, otherwise the rest will be considered a comment.
+:::
+
+:::tip Square brackets `[]` have several meanings
+- In a message, `[1d20]` is a die to roll ([indirect notation](#rolling-a-die)).
+- After a shared roll, `[text]` is a comment.
+- In template dice, macros and snippets, `[value]` is a number treated as a statistic: see the [Syntax](./format.mdx) page.
+:::
+
+## Statistics and characters
+
+If you have registered a character sheet (or attributes), you can use your statistics directly in a roll:
+
+- **`$statistic`**: value of a statistic, for example `1d20 + $strength`. To use it as a number of dice, write `($strength)d20`.
+- **`@character`**: rolls the die with a specific character, for example `1d100 @Bob`.
+
+Moderators can also mention a player in a direct message to roll a die on their behalf.
+
+To create your first character, see [Template](../sheet/model/index.md) and [Registering an user](../sheet/user.md).
+
+## Successes and failures
+
+When a die is followed by a comparison sign (`>`, `<`, `=`…), the bot compares the result and tells you whether it is a success or a failure. With `1d20>10`:
+
+:::roll[ **Success** — `1d20` ⟶ `[20]` = `[20] > 10` ]
+:::
+
+- To add an **opposition**, stack the signs: `1d100>20>10` (the last one is the opposition).
+- To **count** the dice that pass a comparison instead of comparing the total, put them in curly braces: `{3d12>20}`.
+
+The details of these rules are in the [Dice Notations](./expression.mdx#comparators) page.
+
+## Going further with rolls
+
+- **Shared rolls**: `1d20;&+5;&*2` rolls a single die and applies several formulas to it. → [Shared unique rolls](./expression.mdx#shared-unique-rolls-reusing-results)
+- **Bulk rolls**: `4#2d10` repeats the roll four times. → [Bulk rolls](./expression.mdx#bulk-rolls)
+- **Mathematical expressions**: `1d6 + {{ceil($ / 2)}}`, usable in template dice, `/calc`, `/dbroll`, etc. → [Mathematical expressions](./expression.mdx#mathematical-expressions-with-mathjs)
+- **Criticals**: `{cs:<2}` and `{cf:>10}` define critical success and failure thresholds. → [Critical successes and failures](./expression.mdx#cs-cf)
+- **Symbols**: the full list (`$`, `{exp}`, `{{...}}`, `&`…) is in the [Syntax](./format.mdx) page.
+
+## Reading command syntax
+
+In the documentation, command fields are described as follows:
+
+- <mark class='green'>`[field]`</mark>: mandatory.
+- <mark class='green'>`(field)`</mark>: optional.
+- <mark class='green'>`(*field)`</mark>: auto-completed.
+- <mark class='green'>`@field`</mark>: a mention (user or role, depending on the command).
+- <mark class='green'>`#field`</mark>: a channel.
+- <mark class='green'>`?field`</mark>: a true/false value.
+
+For example, `/roll (dice) (?hidden)` is a command whose two fields are optional, the second one being a true/false value. See the [Syntax](./format.mdx#commands-syntax) page for character auto-completion.
+
+## Where to go next?
+
+| You want to… | Page |
+| --- | --- |
+| Be guided step by step | [Step by step guide](./tutorial.mdx) |
+| Understand where results end up (threads, forums, reactions) | [Default behavior](./behavior.md) |
+| Master symbols and dice notations | [Syntax](./format.mdx) and [Dice Notations](./expression.mdx) |
+| Know all the commands | [Commands](../usage/index.md) |
+| Create a template and character sheets | [Template](../sheet/model/index.md) |
+| Adapt the bot to your server | [Configuration](../config/index.md) |
+| A quick answer or a definition | [FAQ](./faq.md) and [Glossary](./glossary.md) |
+| Know how your data is stored | [Technical overview](../dev/technique.md) |
+
 ## Main Features
 
 ### 🎲 Advanced Dice System
 
 - **Flexible dice rolls**: Full support for [complex expressions](./expression.mdx) to support all types of rolls.
 - **Custom dice**: Create and use dice specific to your characters and campaigns.
-- **Automatic result management**: Results can be organized in [dedicated threads](../admin/threads.md) to avoid clutter, or sent to a specific channel.
+- **Automatic result management**: Results can be organized in [dedicated threads](../config/threads.md) to avoid clutter, or sent to a specific channel.
 
 ### 📊 Complete Character Management
 
@@ -23,15 +134,15 @@ Welcome! 🎲 Here's your companion for adventures on Discord: a versatile bot d
 
 ### 🔧 Flexible Server Configuration
 
-- **Customizable settings**: Adapt the bot to your needs with numerous [configuration options](../admin/index.md).
-- **[Auto-roles](../admin/auto_role.md)**: Automatic role assignment for simplified permission management.
-- **[Logging](../admin/logs.md)**: Track modifications and error management
-- **[Self-registration](../admin/self_registration.md)**: Allow players to register their own characters
-- **[OOC message removal](../admin/strip_ooc.md)**: Automatic cleanup of out-of-character messages
-- **[Display options](../admin/display.md)**: Customize result display (timestamps, deletion delays, anchor links...)
+- **Customizable settings**: Adapt the bot to your needs with numerous [configuration options](../config/index.md).
+- **[Auto-roles](../config/auto_role.md)**: Automatic role assignment for simplified permission management.
+- **[Logging](../config/logs.md)**: Track modifications and error management
+- **[Self-registration](../config/self_registration.md)**: Allow players to register their own characters
+- **[OOC message removal](../config/strip_ooc.md)**: Automatic cleanup of out-of-character messages
+- **[Display options](../config/display.md)**: Customize result display (timestamps, deletion delays, anchor links...)
 - **Multilingual support**: Interface available in French and English
 
-### 🎭 Game Master Features[^2]
+### 🎭 Game Master Features[^1]
 
 - **Rolls for players**: Make rolls on behalf of your players.
 - **Hidden rolls**: Make secret rolls hidden from players to maintain suspense.
@@ -43,51 +154,12 @@ Welcome! 🎲 Here's your companion for adventures on Discord: a versatile bot d
 - **Automatic cleanup**: Intelligent management of obsolete data
 - **Intuitive user interface**: Forms and interactive menus to simplify usage
 
-## How It Works
+## Your data
 
-### Technical Architecture
-
-The bot uses the [@diceRoller](https://dice-roller.github.io/documentation/) API for all dice calculations, ensuring reliable results and a wide variety of supported expressions.
-
-### Data-Respectful Approach
-
-Unlike other solutions, this bot prioritizes your control over your data:
-- **Minimal storage**: Only message IDs and essential information are saved
-- **Full control**: Your character sheets remain in your Discord messages
-- **Automatic cleanup**: Obsolete data is automatically deleted
-
-This approach guarantees maximum security and full control over your gaming information.
-
-## Data Management
-
-### What is Stored
-
-The bot uses a SQLite3 database[^1] to store only:
-- IDs of messages containing your sheets
-- Links between users and their characters
-- Server configuration settings
-- Custom statistics templates
-
-### Automatic Cleanup
-
-Data is automatically deleted in several cases:
-- Deletion of registered messages or channels
-- Bot removal from the server
-- Use of integrated cleanup features
-
-### Privacy Respect
-
-:::note Contact for deletion
-If you want to delete your data after leaving a server, contact us via Discord (`@mara__li`) or email (`lisandra_dev@yahoo.com`) with your Discord ID or server ID.
-:::
-
-:::warning Manual cleanup
-In case of issues with automatic deletion, use the manual deletion commands available in the bot to clean up your data.
-:::
+Dicelette only keeps the essentials (message IDs, links between players and characters, server settings and templates): your character sheets stay in your Discord messages. For details on storage, automatic cleanup and how to request the deletion of your data, see the [Technical overview](../dev/technique.md).
 
 ---
 
 🚀 **Ready to start?** [Invite the bot to your server](https://discord.com/api/oauth2/authorize?client_id=1182819335878754385&permissions=395137215504&scope=bot+applications.commands)
 
-[^1]: Local database using [Enmap](https://enmap.evie.dev/) for optimized management.
-[^2]: By default, players with the <mark>Manage Roles</mark> permission are considered "game masters".
+[^1]: By default, players with the <mark>Manage Roles</mark> permission are considered "game masters".

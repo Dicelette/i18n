@@ -36,7 +36,7 @@ The dice can be used both in the custom formula and in the rolled die. For examp
 ## Configuration
 
 :::usage
-**`/settings custom_formula configure (formula)`**
+**`/settings custom_formula configure (formula)`** *or* **`/admin custom_formula configure (formula)`**
 - `formula`: The custom formula to use. It must be a valid Mathjs formula, with the `$` symbol to represent the value between brackets `[]`.
 :::
 
@@ -52,6 +52,7 @@ The administrative command `/admin custom_formula` works in the same way.
 
 :::usage
 **`/settings custom_formula display`**
+**`/admin custom_formula display`**
 :::
 
 Allows you to display the custom formula currently configured for the user or server. If no formula is configured, an error message will be displayed.

@@ -49,7 +49,7 @@ A die roll can be compared to an opposition using the following syntax: `dice[ba
 **Success** — `1d20` ⟶ `[20]` = `[20] > 5` (__opposition__)  & `> 10` (__base__)
 :::
 
-### Critical Successes and Failures
+### Critical Successes and Failures {#cs-cf}
 
 You can define thresholds for critical successes and failures in dice rolls using the following syntax:
 - <CL>Critical Failure</CL>: `{cf:[sign](value)}`
@@ -59,7 +59,7 @@ This expression can be placed anywhere in the dice roll, except after a comment,
 
 Where:
 - `sign` is the comparison operator (`>`, `<`, `=`, etc.).
-- `value` can be a number, a die, a math expression, or a statistic (just like [custom critical](../sheet/model/critics.md#custom-critics)).
+- `value` can be a number, a die, a math expression, or a statistic (just like [custom critical](../sheet/model/critics.md#custom)).
 - `*` (optional) allows comparison only on the **natural die** (the first dice roll), not the total.
 
 :::roll[ **Critical Failure** — `1d20>=20{cf:>10}` ⟶ `[20]` = ` 20 > 10 ` ]

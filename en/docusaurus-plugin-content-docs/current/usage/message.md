@@ -28,7 +28,7 @@ As long as the player has a registered character sheet.
 
 It is also possible to use slash-commands to throw dice, like `/roll` ([see here for more information](../usage/index.md#dice-rolling))  
 
-Finally, you can modify the comments of a roll by replying to the result message with a comment prefixed by `///` (e.g., `/// My comment`). Only your own comments can be modified. This modification is possible on all dice results rolled by the bot, whether via a slash command or via a message.
+Finally, you can modify the comments of a roll by replying to the result message with a comment prefixed by `///` by default (e.g., `/// My comment`). Only your own comments can be modified. This modification is possible on all dice results rolled by the bot, whether via a slash command or via a message. [This prefix can be changed](../config/user%20settings/comment_prefix.md).
 
 [^1]: To use the value of a statistic as the number of dice, you must use `($stat)dX` (e.g., `($strength)d20`).
 
