@@ -38,7 +38,7 @@ The data is automatically deleted when the bot is removed from the server.
 Dicelette cannot be held responsible for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use Dicelette Bot. Dicelette makes no guarantees regarding the availability, accuracy, or reliability of the service.
 
 #### 7. Modification of TOS
-Dicelette reserves the right to modify these TOS at any time. Changes will be posted on the official Dicelette website [Dicelette](https://dicelette.github.io/). It is your responsibility to regularly review these TOS to be aware of any changes.
+Dicelette reserves the right to modify these TOS at any time. Changes will be posted on the official Dicelette website [Dicelette](https://www.dicelette.app/). It is your responsibility to regularly review these TOS to be aware of any changes.
 
 #### 8. Termination
 Dicelette reserves the right to suspend or terminate access to Dicelette Bot at any time and without notice in case of violation of these TOS or for any other reason deemed necessary.

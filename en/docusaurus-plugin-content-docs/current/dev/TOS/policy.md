@@ -4,7 +4,7 @@ title: Privacy Policy
 
 ### Dicelette Privacy Policy
 
-Welcome to Dicelette (https://dicelette.github.io/). Your privacy is important to us. This privacy policy describes how we collect, use, disclose and protect your information when you use our Dicelette Discord bot.
+Welcome to Dicelette (https://www.dicelette.app/). Your privacy is important to us. This privacy policy describes how we collect, use, disclose and protect your information when you use our Dicelette Discord bot.
 
 #### 1. Information Collection
 
@@ -48,4 +48,4 @@ We may update our privacy policy at any time. Changes will be posted on this pag
 If you have any questions about this Privacy Policy, please contact us via [our GitHub page](https://github.com/dicelette).
 
 ---
-For more information, please see our [Terms of Use](https://dicelette.github.io/en/docs/TOS).
+For more information, please see our [Terms of Use](https://www.dicelette.app/en/docs/TOS).
