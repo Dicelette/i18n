@@ -90,11 +90,12 @@ Ask question to the [magic 8ball](https://en.wikipedia.org/wiki/Magic_8_Ball) an
 ## Help
 
 There are several help commands, depending on what you need:
-- `/help info`: Displays general bot info, including how to roll a die or create a scene.
-- `/help admin`: Displays administration commands, such as [logs](../config/logs.md) or [result_channel](../config/threads.md#configure-the-results-channel).
-- `/help register`: Displays specific help for registering a server model and character files, and directs you to [documentation](../sheet/model/index.md).
-- `/help bug`: Displays a link to create a bug report.
-- `/help suggestion`: Displays a link to make a suggestion.
+- `/commands info`: Displays general bot info, including how to roll a die or create a scene.
+- `/commands admin`: Displays administration commands, such as [logs](../config/logs.md) or [result_channel](../config/threads.md#configure-the-results-channel).
+- `/commands register`: Displays specific help for registering a server model and character files, and directs you to [documentation](../sheet/model/index.md).
+- `/commands bug`: Displays a link to create a bug report.
+- `/commands suggestion`: Displays a link to make a suggestion.
+- `/aide` : Bot general help (syntax, usage...)
 - `/info`: Get bot general stats (number of server, version, uptime) and useful links.
 
 <small>For more information about the commands syntax, see: [the dedicated page](../introduction/format.mdx).</small>
